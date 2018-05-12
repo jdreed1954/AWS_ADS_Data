@@ -1,0 +1,3 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-4z09l4mrxirqawfnm,172.31.17.21,,52.94.209.3,443,IPv4,TCP,A5FF60C43434A64E45E653435E3CCE4FC5A7BE0F,2018-05-07 20:30:00,/usr/bin/amazon-ssm-agent,/usr/bin/amazon-ssm-agent
+185946404262,o-4z09l4mrxirqawfnm,172.31.17.21,,52.218.160.28,443,IPv4,TCP,DC2FAC96CF096640E2BB61DB79142BCB43260F90,2018-05-07 20:30:00,/usr/bin/curl,curl -s --fail --retry 5 --max-time 30 -o /tmp/awsdiscoveryagent.ltYUUjxn/discovery.gpg https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/discovery.gpg

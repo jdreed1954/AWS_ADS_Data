@@ -1,0 +1,4 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-52chpzdphw2uysf30,192.168.199.131,,54.240.253.128,443,IPv4,TCP,867B811BEEFDADDC482D20BECC14D6EBDC9F20B1,2018-05-04 22:30:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd
+185946404262,o-52chpzdphw2uysf30,192.168.199.131,,152.7.106.23,80,IPv4,TCP,AE8B705CC8041426967CBDE754944F9052475534,2018-05-05 01:15:00,/usr/bin/python,/usr/bin/python /usr/share/PackageKit/helpers/yum/yumBackend.py get-updates none
+185946404262,o-52chpzdphw2uysf30,192.168.199.131,,54.240.253.128,443,IPv4,TCP,867B811BEEFDADDC482D20BECC14D6EBDC9F20B1,2018-05-05 03:00:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd

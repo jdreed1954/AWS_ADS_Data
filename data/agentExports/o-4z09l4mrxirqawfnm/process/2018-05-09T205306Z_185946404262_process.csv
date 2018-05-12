@@ -1,0 +1,5 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-4z09l4mrxirqawfnm,7AA8C4211E3025921CBB36B83E5E2867204C1DAC,false,bash,/bin/bash /var/opt/aws/discovery/update,/bin/bash,2018-05-09 20:35:17
+185946404262,o-4z09l4mrxirqawfnm,DC2FAC96CF096640E2BB61DB79142BCB43260F90,false,curl,curl -s --fail --retry 5 --max-time 30 -o /tmp/awsdiscoveryagent.ltYUUjxn/discovery.gpg https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/discovery.gpg,/usr/bin/curl,2018-05-09 20:35:17
+185946404262,o-4z09l4mrxirqawfnm,3B5033CF35BDEFB7BD9441490269A77D7337433E,false,sshd,"sshd: [accepted] ",/usr/sbin/sshd,2018-05-09 20:50:48
+185946404262,o-4z09l4mrxirqawfnm,08DB6AE7B8F7E3BF4AC81B44CAA8288767C8F778,false,sshd,"sshd: [net]      ",/usr/sbin/sshd,2018-05-09 20:50:48

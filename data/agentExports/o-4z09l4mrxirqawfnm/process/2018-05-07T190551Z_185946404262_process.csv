@@ -1,0 +1,4 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-4z09l4mrxirqawfnm,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-07 19:03:01
+185946404262,o-4z09l4mrxirqawfnm,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-07 19:03:01
+185946404262,o-4z09l4mrxirqawfnm,45499B677CF230464D7F20713606AE59E821D29A,false,sleep,/bin/sleep 2574s,/bin/sleep,2018-05-07 19:03:01

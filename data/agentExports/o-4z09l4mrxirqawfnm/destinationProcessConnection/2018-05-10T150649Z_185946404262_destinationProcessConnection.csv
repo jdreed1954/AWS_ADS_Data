@@ -1,0 +1,2 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-4z09l4mrxirqawfnm,192.169.152.2,,172.31.17.21,22,IPv4,TCP,3B5033CF35BDEFB7BD9441490269A77D7337433E,2018-05-10 14:45:00,/usr/sbin/sshd,"sshd: [accepted] "

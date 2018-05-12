@@ -1,0 +1,4 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-1e75y7xr9ifx0j1zd,172.31.25.58,,52.94.210.188,443,IPv4,TCP,A5FF60C43434A64E45E653435E3CCE4FC5A7BE0F,2018-05-10 23:30:00,/usr/bin/amazon-ssm-agent,/usr/bin/amazon-ssm-agent
+185946404262,o-1e75y7xr9ifx0j1zd,172.31.25.58,,54.240.253.128,443,IPv4,TCP,867B811BEEFDADDC482D20BECC14D6EBDC9F20B1,2018-05-10 23:30:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd
+185946404262,o-1e75y7xr9ifx0j1zd,172.31.25.58,,54.240.254.131,443,IPv4,TCP,867B811BEEFDADDC482D20BECC14D6EBDC9F20B1,2018-05-10 23:30:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd
