@@ -1,0 +1,93 @@
+---
+title: "EM Environment Inventory (Prototype)"
+author: "James D. Reed (jim.reed@prestigeservices.us)"
+date: "May 11, 2018"
+output: 
+  html_document:
+    df_print: paged
+  word_document:
+        reference_docx: headingthree.docx
+        highlight: tango
+        df_print: tibble
+  pdf_document:
+        includes:
+          in_header: header.tex
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+
+EMroot <- "data/agentExports"
+
+source("C:/Users/jdree/Desktop/MyProjects/AWS_Export/awsADS_functions.R")
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# AWS Data Inventory
+
+The purpose of this report is to provide a high-level summary of the record collected to date.
+
+## Reports
+
+The data collected from AWS consists of several types of data.  Here are the tables that have been collected:
+
+**Included in this Report**
+
+* results
+* osInfo
+* systemPerformance
+* networkInterface
+* destinationProcessConnection
+* sourceProcessConnection
+* process
+
+
+### List Agent IDs in Current Data Store
+
+The agent IDs are the unique identifiers of the AWS ADS agents installed within the customer's data center.  In the case of VMware hypervisor VMs, the agent ID is the identity of the OVA appliance installed. If additional performance metrics are required for a VM or the customer has a non-virtualized server, the agent ID is the identity of the actual agent installed on the server or VM.
+
+Following are the Agent IDs found in the data store containing exported data from the AWS Migration Hub.  The Agent IDs will be used to identify which environment the data pertain to.
+
+```{r}
+agent_IDs <- getAgentIDs(root = EMroot)
+knitr::kable(tibble(AgentID = agent_IDs))
+```
+
+There are `r length(agent_IDs)` Agent IDs.  See the list of these immediately above.
+
+
+### Number of Records Per Type by Agent ID
+
+
+```{r Results, results = 'asis'}
+resList <-   map(agent_IDs, ~ getResults(EMroot,. ))
+osList  <-   map(agent_IDs, ~ getosInfo(EMroot,. ))
+prList  <-   map(agent_IDs, ~ getPerf(EMroot,. ))
+nwList  <-   map(agent_IDs, ~ getNetworkInterface(EMroot,. ))
+dpList  <-   map(agent_IDs, ~ getDestProcConn(EMroot,. ))
+spList  <-   map(agent_IDs, ~ getSrcProcConn(EMroot,. ))
+pList   <-   map(agent_IDs, ~ getProcess(EMroot,. ))
+
+
+
+inventory <- tibble(
+  AgentID          = agent_IDs, 
+  Results          = map_int(resList, ~ nrow(.)),
+  OSInfo           = map_int(osList, ~ nrow(.)),
+  Performance      = map_int(prList, ~ nrow(.)),
+  NetworkInterface = map_int(nwList, ~ nrow(.)),
+  DstProcessCon    = map_int(dpList, ~ nrow(.)),
+  SrcProcessCon    = map_int(spList, ~ nrow(.)),
+  Processes        = map_int(pList,  ~ nrow(.))
+  )
+  
+knitr::kable(inventory, cap="AWS/ADS Records per Collection Type by Agent ID")
+
+```
+
+
+
+
+**Run Date: **`r Sys.Date()`

@@ -1,0 +1,260 @@
+---
+title: "EM Environment Summary (Prototype)"
+author: "James D. Reed (jreed011@regis.edu)"
+date: "May 9, 2018"
+output: 
+  pdf_document:
+        includes:
+          in_header: header.tex
+  word_document:
+        reference_docx: headingthree.docx
+        highlight: tango
+        df_print: tibble
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+
+EMroot <- "data/agentExports"
+
+source("C:/Users/jdree/Desktop/MyProjects/AWS_Export/awsADS_functions.R")
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# AWS Data Collection Summary
+
+The purpose of this report is to review the high-level data collected from the customer's environment.  The intent is to check for completeness and accuracy.  Note, all the records in each data frame are NOT displayed.  In some cases, the head is shown and others the tail.  A complete set of the data in Excel format will be delivered to the customer for a more in-depth review of the data.
+
+## Reports
+
+The data collected from AWS consists of several types of data.  Here are the tables that have been collected:
+
+**Included in this Report**
+
+* results
+* osInfo
+* systemPerformance
+* networkInterface
+* destinationProcessConnection
+* sourceProcessConnection
+
+**Not Included in this Report**
+
+* process
+
+
+### List Agent IDs in Current Data Store
+
+The agent IDs are the unique identifiers of the agents installed within their data center.  In the case of Hypervisor VMs, the agent ID is the identity of the OVA appliance installed into the vCenter.  If additional performance metrics are required for a VM or the customer has a non-visualized server, the agent ID is the identity of the actual agent installed on the server or VM.
+
+Following are the Agent IDs found in the data store containing exported data from the AWS Migration Hub.  The Agent IDs will be used to identify which environment the data pertain to in the reports below.
+
+```{r}
+agent_IDs <- getAgentIDs(root = EMroot)
+cat(agent_IDs)
+```
+
+There are `r length(agent_IDs)` Agent IDs.  See the list of these immediately above.
+
+
+### Export Results Report
+
+The export results summary give valuable validation information about the date and time of each export.  Note, especially, the expSumTrunc and statusMessge fields.  The former indicates whether or not the export was truncated; a FALSE is the positive value we want to see.  Of course, the latter field indicates the status of the export.  "Export task is successful." is the appositive value.
+
+```{r Results, results = 'asis'}
+resList <-  map(agent_IDs, ~ getResults(EMroot,. ))
+
+clist <- list(c("reqStart", "reqEnd", "FilesGen", "SizeOfResults", "expStartedAt",  "expStatus"),
+                c("reqStart", "reqEnd", "expSumTrunc", "actStart", "actEnd", "statusMessage"))
+
+
+for (i in 1:length(resList)){
+  Account <- resList[[i]][1,]$accountNumber
+  AgentID <- resList[[i]][1,]$agentID
+  RptHdr <- paste("Report: Results / Account Number: ", Account," Agent ID: ", AgentID, sep ="")
+  
+  print(knitr::kable(head(resList[[i]][,c(3:8)]),        caption = RptHdr, col.names = clist[[1]]))
+  print(knitr::kable(head(resList[[i]][,c(3,4,9:12)]),   caption = RptHdr, col.names = clist[[2]]))
+  cat("\n\n***")
+}
+```
+### Operating System Information Report
+
+The Operating System Information Report contains information on the OS name, OS Version, CPU Type and Hypervisor.  There should be no surprises here.  Confirm that is comports with what you know about your data center assets.  Note any discrepancies or outliers.
+
+
+```{r OSInfo, results = 'asis'}
+osList <-  map(agent_IDs, ~ getosInfo(EMroot,. ))
+
+c_names <-  c("Date/Time", "Hostname", "osName", "osVersion", "cpuType", "hypervisor")
+
+for (i in 1:length(osList)){
+  if (nrow(osList[[i]] > 0)) {
+    Account <- osList[[i]][1,]$accountNumber
+    AgentID <- osList[[i]][1,]$agentId
+    RptHdr <- paste("Report: OS Info / Account Number: ", Account," Agent ID: ", AgentID, sep ="")
+    
+    print(knitr::kable(tail(osList[[i]][,c(8,6,3:5,7)]),  caption = RptHdr, col.names = c_names))
+    cat("\n\n***")
+  }
+}
+```
+
+### Performance Report
+
+The performance data frames contain many metrics and cannot typically be displayed within a single table.  Hence the table is split into three pieces with the Date/Time repeated in each table.
+
+
+```{r Performance, results = 'asis'}
+perfList <-  map(agent_IDs, ~ getPerf(EMroot,. ))
+
+clist <- list(
+    c("Date/Time", "DskBytesRdPS", "DskBytesWrtnPS", "DskRdOpsPS", "DskWrtOpsPS"),
+    c("Date/Time", "NWBytesRdPS", "NWBytesWrtnPS", "LogProcs", "Cores", "CPUs"),
+    c("Date/Time", "Disks", "NwCrds", "CpuPct", "Disk.GB","DiskFree.GB", "RAM.MB", "freeRAM.MB") 
+)
+for (i in 1:length(perfList)){
+  if ( nrow(perfList[[i]]) > 0) {
+    Account <- perfList[[i]][1,]$accountNumber
+    AgentID <- perfList[[i]][1,]$agentId
+    RptHdr <- paste("Report: Performance / Account Number: ", Account," Agent ID: ", AgentID, sep ="")
+    
+    print(knitr::kable(head(perfList[[i]][,c(19,3:6)]),   caption = RptHdr, col.names = clist[[1]]))
+    print(knitr::kable(head(perfList[[i]][,c(19,7:11)]),  caption = RptHdr, col.names = clist[[2]]))
+    print(knitr::kable(head(perfList[[i]][,c(19,12:18)]), caption = RptHdr, col.names = clist[[3]]))
+    cat("\n\n***")
+  }
+}
+```
+
+
+
+
+### Network Interface Report
+
+This report gives details on all of the active network interfaces found in the data center.  Make note of any IP addresses that are NOT in your inventory.
+
+```{r , results = 'asis'}
+nwList <-  map(agent_IDs, ~ getNetworkInterface(EMroot,. ))
+
+c_names <-  c("Date/Time",  "Name", "MAC", "Family", "ipAddress", "Gateway", "netMask")
+for (i in 1:length(nwList)){
+  if(nrow(nwList[[i]]) > 0 ) {
+    Account <- nwList[[i]][1,]$accountNumber
+    AgentID <- nwList[[i]][1,]$agentId
+    RptHdr <- paste("Report: Network Interface / Account Number: ", Account,
+                    " Agent ID: ", AgentID, sep ="")
+    print(knitr::kable(tail(nwList[[i]][,c(9,3:8)]),  caption = RptHdr, col.names = c_names))
+    cat("\n\n***")
+  }
+}
+```
+
+\newpage
+\blandscape
+
+### Destination Process Connection Report
+
+
+
+```{r DestProcConn, results = 'asis'}
+
+pcList <-  map(agent_IDs, ~ getDestProcConn(EMroot,. ))
+
+
+c_names <- c("CreationDate", "rcIP", "srcPort", "destIP", "destPort",
+             "ipVer","transProtocol", "agntAssProcID", "cmdPath", "cmdParam")
+
+for (i in 1:length(pcList)) {
+  if (nrow(pcList[[i]]) > 0) {
+    Account <- pcList[[i]][1,]$accountNumber
+    AgentID <- pcList[[i]][1,]$agentId
+    RptHdr <- paste("Report: Destination Process Connection / Account Number: ", 
+                    Account," Agent ID: ", AgentID, sep ="")
+    
+    print(knitr::kable(tail(pcList[[i]][,c(10,3:9,11,12)]),  caption = RptHdr, col.names = c_names))
+  cat("\n\n***")
+  }
+}
+```
+
+\elandscape
+
+\newpage
+\blandscape
+
+
+### Source Process Connection Report
+
+
+
+```{r SrcProcConn, results = 'asis'}
+
+pcList <-  map(agent_IDs, ~ getSrcProcConn(EMroot,. ))
+
+
+c_names <- c("CreationDate", "rcIP", "srcPort", "destIP", "destPort",
+             "ipVer","transProtocol", "agntAssProcID", "cmdPath", "cmdParam")
+
+for (i in 1:length(pcList)){
+  if (nrow(pcList[[i]]) > 0) {
+    Account <- pcList[[i]][1,]$accountNumber
+    AgentID <- pcList[[i]][1,]$agentId
+    RptHdr <- paste("Report: Source Process Connection / Account Number: ", 
+                    Account," Agent ID: ", AgentID, sep ="")
+    
+    print(knitr::kable(pcList[[i]][,c(10,3:9,11,12)],  caption = RptHdr, col.names = c_names))
+    cat("\n\n***")
+  }
+}
+```
+
+\elandscape
+
+\newpage
+\blandscape
+
+### Process Report
+
+
+
+```{r ProcessRpt, results = 'asis'}
+
+pList <-  map(agent_IDs, ~ getProcess(EMroot,. ))
+
+ c_names <-
+      c(
+        "Agent Assigned ProcId",
+        "isSystem",
+        "name",
+        "cmdLine",
+        "path",
+        "Date/Time"
+      )
+ 
+# print(map_int(pList, ~nrow(.)))
+# print(map_int(pList, ~ ncol(.)))
+for (i in 1:length(pList)){
+  if (nrow(pList[[i]]) > 0) {
+    Account <- pList[[i]][1,]$accountNumber
+    AgentID <- pList[[i]][1,]$agentId
+    RptHdr <- paste("Report: Process / Account Number: ", 
+                    Account," Agent ID: ", AgentID, sep ="")
+    
+    print(knitr::kable(head(pList[[i]][,c(3:8)], n = 50),  caption = RptHdr, col.names = c_names))
+    cat("\n\n***")
+  }
+}
+```
+
+\elandscape
+
+
+
+
+
+**Run Date: **`r Sys.Date()`
