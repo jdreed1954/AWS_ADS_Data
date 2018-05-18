@@ -5,3 +5,7 @@
 *.html
 *.docx
 *.pdf
+EM-Assessment.Rproj
+data
+*.csv
+*.json

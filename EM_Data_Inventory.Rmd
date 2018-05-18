@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # AWS Data Inventory
 
-The purpose of this report is to provide a high-level summary of the record collected to date.
+The purpose of this report is to provide a high-level summary of the records collected to date.
 
 ## Reports
 
@@ -51,8 +51,14 @@ The agent IDs are the unique identifiers of the AWS ADS agents installed within 
 Following are the Agent IDs found in the data store containing exported data from the AWS Migration Hub.  The Agent IDs will be used to identify which environment the data pertain to.
 
 ```{r}
-agent_IDs <- getAgentIDs(root = EMroot)
-knitr::kable(tibble(AgentID = agent_IDs))
+
+agentIDs <- getAgentIDs(root = EMroot)
+collected <-  tibble(
+  Number   = seq(1:length(agentIDs)),
+  Agent_ID = agentIDs
+)
+
+knitr::kable(collected)
 ```
 
 There are `r length(agent_IDs)` Agent IDs.  See the list of these immediately above.
@@ -61,7 +67,7 @@ There are `r length(agent_IDs)` Agent IDs.  See the list of these immediately ab
 ### Number of Records Per Type by Agent ID
 
 
-```{r Results, results = 'asis'}
+```{r Inv1, results = 'asis'}
 resList <-   map(agent_IDs, ~ getResults(EMroot,. ))
 osList  <-   map(agent_IDs, ~ getosInfo(EMroot,. ))
 prList  <-   map(agent_IDs, ~ getPerf(EMroot,. ))
@@ -73,7 +79,8 @@ pList   <-   map(agent_IDs, ~ getProcess(EMroot,. ))
 
 
 inventory <- tibble(
-  AgentID          = agent_IDs, 
+  Number           = seq(1:length(agentIDs)),
+  AgentID          = agentIDs, 
   Results          = map_int(resList, ~ nrow(.)),
   OSInfo           = map_int(osList, ~ nrow(.)),
   Performance      = map_int(prList, ~ nrow(.)),
@@ -87,6 +94,93 @@ knitr::kable(inventory, cap="AWS/ADS Records per Collection Type by Agent ID")
 
 ```
 
+## Performance Time Spans by Agent ID
+
+```{r Inv2, results = 'asis'}
+
+prList  <-   map(agent_IDs, ~ getPerf(EMroot,. ))
+osList  <-   map(agent_IDs, ~ getosInfo(EMroot,. ))
+
+
+
+
+# Build comprehensive join of perfAll and osAll
+
+perfAll <- bind_rows(prList) %>% select(1,2,19, 3:18) %>% arrange(agentId,timestamp)
+osAll   <- bind_rows(osList) %>% select(1,2,8,6,3:5,7) %>% arrange(agentId, timestamp)
+
+
+osValues <- osAll %>% 
+  group_by(agentId) %>% 
+  summarize( hostName =   unique(hostName),  osName  = unique(osName),   
+             osVersion =  unique(osVersion), cpuType = unique(cpuType), 
+             hypervisor = unique(hypervisor))
+
+# This is the tibble to use for sizing and review - write this to an Exce3l file in tabs: Summary, host(1), host(2), ...
+compInventory <- left_join(perfAll, osValues, by = "agentId") %>% select(1,2,20,3:19,21:24)
+#######################################################################################################################
+
+
+# Calculate the number of Days Performance for each server (hostName)
+
+host_perf_time <- compInventory %>% 
+  group_by(hostName) %>% 
+  summarize(Max = ymd_hms(max(timestamp)), 
+            Min = ymd_hms(min(timestamp)), 
+            Diff.Days = difftime(Max, Min, units = "days"))
+  
+knitr::kable(host_perf_time, digits = 2, caption = "Performance Days by Hostname")
+
+
+## TO-DO
+#######################################################################################################################
+
+#
+# Build statistical summary table by hostName with these statistics:
+#
+#  Min and Max
+#  Mean, Median
+#  Std, 
+#  95% Percentile
+
+# Spreadsheet name:  <customer-prefix>-aws-performance.xlsx
+#
+# Tab     Name
+#  1      Summary
+#  2      hostName[1]
+# ...     ...
+#  N      hostName[last]
+#
+
+```
+
+
+```{r ExportData}
+require(rJava)
+require(xlsx)
+
+# Create Nested file from compInventory
+
+comp_n <- compInventory %>% 
+  mutate(Host = hostName) %>%
+  group_by(Host) %>% 
+      nest()
+
+
+# Create Excel Workbook with each hostName (agentId) on a separate tab.
+fn <- "EM_performance.xlsx"
+
+if (file.exists(fn)) file.remove(fn)  # to ensure we are writing a brand new file.
+walk2(comp_n$data, comp_n$Host,~ write.xlsx(.x, file = fn, sheetName = .y, append = TRUE))
+
+# List tabs in performance spreadsheet.  These should match the agentIds e wrote to the file.
+file <- system.file("EM_performance.xlsx", fn, package = "xlsx")
+
+wb <- loadWorkbook(fn)  
+sheets <- getSheets(wb)
+
+
+```
 
 
 
