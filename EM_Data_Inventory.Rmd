@@ -1,7 +1,7 @@
 ---
 title: "EM Environment Inventory (Prototype)"
 author: "James D. Reed (jim.reed@prestigeservices.us)"
-date: "May 11, 2018"
+date: "May 19, 2018"
 output: 
   html_document:
     df_print: paged
@@ -16,10 +16,11 @@ output:
 
 ```{r setup, include=FALSE}
 library(tidyverse)
+library(lubridate)
 
 EMroot <- "data/agentExports"
 
-source("C:/Users/jdree/Desktop/MyProjects/AWS_Export/awsADS_functions.R")
+source("C:/Users/jdree/Desktop/MyProjects/EM-Assessment/awsADS_functions.R")
 
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -55,26 +56,26 @@ Following are the Agent IDs found in the data store containing exported data fro
 agentIDs <- getAgentIDs(root = EMroot)
 collected <-  tibble(
   Number   = seq(1:length(agentIDs)),
-  Agent_ID = agentIDs
+  AgentID = agentIDs
 )
 
 knitr::kable(collected)
 ```
 
-There are `r length(agent_IDs)` Agent IDs.  See the list of these immediately above.
+There are `r length(agentIDs)` Agent IDs.  See the list of these immediately above.
 
 
 ### Number of Records Per Type by Agent ID
 
 
 ```{r Inv1, results = 'asis'}
-resList <-   map(agent_IDs, ~ getResults(EMroot,. ))
-osList  <-   map(agent_IDs, ~ getosInfo(EMroot,. ))
-prList  <-   map(agent_IDs, ~ getPerf(EMroot,. ))
-nwList  <-   map(agent_IDs, ~ getNetworkInterface(EMroot,. ))
-dpList  <-   map(agent_IDs, ~ getDestProcConn(EMroot,. ))
-spList  <-   map(agent_IDs, ~ getSrcProcConn(EMroot,. ))
-pList   <-   map(agent_IDs, ~ getProcess(EMroot,. ))
+resList <-   map(agentIDs, ~ getResults(EMroot,. ))
+osList  <-   map(agentIDs, ~ getosInfo(EMroot,. ))
+prList  <-   map(agentIDs, ~ getPerf(EMroot,. ))
+nwList  <-   map(agentIDs, ~ getNetworkInterface(EMroot,. ))
+dpList  <-   map(agentIDs, ~ getDestProcConn(EMroot,. ))
+spList  <-   map(agentIDs, ~ getSrcProcConn(EMroot,. ))
+pList   <-   map(agentIDs, ~ getProcess(EMroot,. ))
 
 
 
@@ -98,8 +99,8 @@ knitr::kable(inventory, cap="AWS/ADS Records per Collection Type by Agent ID")
 
 ```{r Inv2, results = 'asis'}
 
-prList  <-   map(agent_IDs, ~ getPerf(EMroot,. ))
-osList  <-   map(agent_IDs, ~ getosInfo(EMroot,. ))
+prList  <-   map(agentIDs, ~ getPerf(EMroot,. ))
+osList  <-   map(agentIDs, ~ getosInfo(EMroot,. ))
 
 
 
@@ -155,6 +156,8 @@ knitr::kable(host_perf_time, digits = 2, caption = "Performance Days by Hostname
 ```
 
 
+### Export Performance and OS Information Data to Excel Spreadsheet
+
 ```{r ExportData}
 require(rJava)
 require(xlsx)
@@ -182,6 +185,6 @@ sheets <- getSheets(wb)
 
 ```
 
-
+Spreadsheet created workbook **`r fn`** with **`r length(sheets)`** worksheets (tabs).
 
 **Run Date: **`r Sys.Date()`
