@@ -19,9 +19,9 @@ library(tidyverse)
 
 EMroot <- "data/agentExports"
 
-source("C:/Users/jdree/Desktop/MyProjects/AWS_Export/awsADS_functions.R")
+source("C:/Users/jdree/Desktop/MyProjects/EM-Assessment/awsADS_functions.R")
 
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
@@ -54,11 +54,17 @@ The agent IDs are the unique identifiers of the agents installed within their da
 Following are the Agent IDs found in the data store containing exported data from the AWS Migration Hub.  The Agent IDs will be used to identify which environment the data pertain to in the reports below.
 
 ```{r}
-agent_IDs <- getAgentIDs(root = EMroot)
-cat(agent_IDs)
+agentIDs <- getAgentIDs(root = EMroot)
+
+collected <-  tibble(
+  Number   = seq(1:length(agentIDs)),
+  AgentID = agentIDs
+)
+
+knitr::kable(collected)
 ```
 
-There are `r length(agent_IDs)` Agent IDs.  See the list of these immediately above.
+There are `r length(agentIDs)` Agent IDs.  See the list of these immediately above.
 
 
 ### Export Results Report
@@ -66,7 +72,7 @@ There are `r length(agent_IDs)` Agent IDs.  See the list of these immediately ab
 The export results summary give valuable validation information about the date and time of each export.  Note, especially, the expSumTrunc and statusMessge fields.  The former indicates whether or not the export was truncated; a FALSE is the positive value we want to see.  Of course, the latter field indicates the status of the export.  "Export task is successful." is the appositive value.
 
 ```{r Results, results = 'asis'}
-resList <-  map(agent_IDs, ~ getResults(EMroot,. ))
+resList <-  map(agentIDs, ~ getResults(EMroot,. ))
 
 clist <- list(c("reqStart", "reqEnd", "FilesGen", "SizeOfResults", "expStartedAt",  "expStatus"),
                 c("reqStart", "reqEnd", "expSumTrunc", "actStart", "actEnd", "statusMessage"))
@@ -88,7 +94,7 @@ The Operating System Information Report contains information on the OS name, OS 
 
 
 ```{r OSInfo, results = 'asis'}
-osList <-  map(agent_IDs, ~ getosInfo(EMroot,. ))
+osList <-  map(agentIDs, ~ getosInfo(EMroot,. ))
 
 c_names <-  c("Date/Time", "Hostname", "osName", "osVersion", "cpuType", "hypervisor")
 
@@ -110,7 +116,7 @@ The performance data frames contain many metrics and cannot typically be display
 
 
 ```{r Performance, results = 'asis'}
-perfList <-  map(agent_IDs, ~ getPerf(EMroot,. ))
+perfList <-  map(agentIDs, ~ getPerf(EMroot,. ))
 
 clist <- list(
     c("Date/Time", "DskBytesRdPS", "DskBytesWrtnPS", "DskRdOpsPS", "DskWrtOpsPS"),
@@ -139,7 +145,7 @@ for (i in 1:length(perfList)){
 This report gives details on all of the active network interfaces found in the data center.  Make note of any IP addresses that are NOT in your inventory.
 
 ```{r , results = 'asis'}
-nwList <-  map(agent_IDs, ~ getNetworkInterface(EMroot,. ))
+nwList <-  map(agentIDs, ~ getNetworkInterface(EMroot,. ))
 
 c_names <-  c("Date/Time",  "Name", "MAC", "Family", "ipAddress", "Gateway", "netMask")
 for (i in 1:length(nwList)){
@@ -163,7 +169,7 @@ for (i in 1:length(nwList)){
 
 ```{r DestProcConn, results = 'asis'}
 
-pcList <-  map(agent_IDs, ~ getDestProcConn(EMroot,. ))
+pcList <-  map(agentIDs, ~ getDestProcConn(EMroot,. ))
 
 
 c_names <- c("CreationDate", "rcIP", "srcPort", "destIP", "destPort",
@@ -194,7 +200,7 @@ for (i in 1:length(pcList)) {
 
 ```{r SrcProcConn, results = 'asis'}
 
-pcList <-  map(agent_IDs, ~ getSrcProcConn(EMroot,. ))
+pcList <-  map(agentIDs, ~ getSrcProcConn(EMroot,. ))
 
 
 c_names <- c("CreationDate", "rcIP", "srcPort", "destIP", "destPort",
@@ -224,7 +230,7 @@ for (i in 1:length(pcList)){
 
 ```{r ProcessRpt, results = 'asis'}
 
-pList <-  map(agent_IDs, ~ getProcess(EMroot,. ))
+pList <-  map(agentIDs, ~ getProcess(EMroot,. ))
 
  c_names <-
       c(
@@ -245,7 +251,7 @@ for (i in 1:length(pList)){
     RptHdr <- paste("Report: Process / Account Number: ", 
                     Account," Agent ID: ", AgentID, sep ="")
     
-    print(knitr::kable(head(pList[[i]][,c(3:8)], n = 50),  caption = RptHdr, col.names = c_names))
+    print(knitr::kable(head(pList[[i]][,c(3:8)], n = 10),  caption = RptHdr, col.names = c_names))
     cat("\n\n***")
   }
 }
