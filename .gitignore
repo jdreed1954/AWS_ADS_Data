@@ -5,6 +5,7 @@
 *.html
 *.docx
 *.pdf
+*.log
 EM-Assessment.Rproj
 data
 *.csv

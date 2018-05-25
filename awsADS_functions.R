@@ -425,7 +425,6 @@ getStats <- function(df,metric) {
   return (list(Min, Max, Std, Med, Mean))
 }
 
-
 genStatsDF <- function(df) {
   
   out <- tibble(
@@ -454,3 +453,52 @@ genStatsDF <- function(df) {
   
 }
 
+genCompPerf <-  function(DataRoot, agentIDs) {
+  
+  prList  <-   map(agentIDs, ~ getPerf(DataRoot,. ))
+  osList  <-   map(agentIDs, ~ getosInfo(DataRoot,. ))
+  
+  # Build comprehensive join of perfAll and osAll
+  
+  perfAll <- bind_rows(prList) %>% select(1,2,19, 3:18) %>% arrange(agentId,timestamp)
+  osAll   <- bind_rows(osList) %>% select(1,2,8,6,3:5,7) %>% arrange(agentId, timestamp)
+  
+  
+  osValues <- osAll %>% 
+    group_by(agentId) %>% 
+    summarize( hostName =   unique(hostName),  osName  = unique(osName),   
+               osVersion =  unique(osVersion), cpuType = unique(cpuType), 
+               hypervisor = unique(hypervisor))
+  
+  # This is the tibble to use for sizing and review - write this to an Exce3l file in tabs: Summary, host(1), host(2), ...
+  cInventory <- left_join(perfAll, osValues, by = "agentId") %>% select(1,2,20,3:19,21:24)
+  
+  return( cInventory )
+}
+
+genPctPlot <- function(dat, metric){
+  
+  print(dat$metric)
+  p <- ggplot(dat, aes(x = timestamp, y = metric)) + geom_line()
+  return(p)
+  
+  
+}
+
+
+getHostCollection <- function(DataRoot) {
+  
+  agentIDs <- getAgentIDs(root = DataRoot)
+  collected <-  tibble(
+    Number   = seq(1:length(agentIDs)),
+    AgentID = agentIDs,
+    Hostname = map_chr(agentIDs, 
+                       ~as.character(getosInfo(root = DataRoot, agentID = .)[1,"hostName"])),
+    IPaddress = map_chr(agentIDs, 
+                        ~as.character(getSourceProcConn(root = DataRoot, agentID = .)[1,"sourceIp"]))
+  )
+  
+  
+  return(collected)
+  
+}

@@ -1,25 +1,27 @@
 ---
-title: "EM Environment Summary (Prototype)"
-author: "James D. Reed (jreed011@regis.edu)"
-date: "May 9, 2018"
+title: "AWS/ADS Downloaded Data Summary"
+author: "Prestige Services"
+date: "`r format(Sys.time(), '%d %B %Y')`"
 output: 
-  pdf_document:
-        includes:
-          in_header: header.tex
+  html_document:
+    df_print: paged
   word_document:
         reference_docx: headingthree.docx
         highlight: tango
         df_print: tibble
-  html_document:
-    df_print: paged
+  pdf_document:
+        includes:
+          in_header: header.tex
+          df_print: kable
 ---
 
 ```{r setup, include=FALSE}
 library(tidyverse)
+library(kableExtra)
 
-EMroot <- "data/agentExports"
+DataRoot <- "data/agentExports"
 
-source("C:/Users/jdree/Desktop/MyProjects/EM-Assessment/awsADS_functions.R")
+source("awsADS_functions.R")
 
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -41,10 +43,8 @@ The data collected from AWS consists of several types of data.  Here are the tab
 * networkInterface
 * destinationProcessConnection
 * sourceProcessConnection
-
-**Not Included in this Report**
-
 * process
+
 
 
 ### List Agent IDs in Current Data Store
@@ -54,25 +54,21 @@ The agent IDs are the unique identifiers of the agents installed within their da
 Following are the Agent IDs found in the data store containing exported data from the AWS Migration Hub.  The Agent IDs will be used to identify which environment the data pertain to in the reports below.
 
 ```{r}
-agentIDs <- getAgentIDs(root = EMroot)
 
-collected <-  tibble(
-  Number   = seq(1:length(agentIDs)),
-  AgentID = agentIDs
-)
+collected <- getHostCollection(DataRoot)
 
-knitr::kable(collected)
+knitr::kable(collected, format = "markdown", caption = "Agent IDs in ADS Datastore ") 
 ```
 
-There are `r length(agentIDs)` Agent IDs.  See the list of these immediately above.
 
+\clearpage
 
 ### Export Results Report
 
 The export results summary give valuable validation information about the date and time of each export.  Note, especially, the expSumTrunc and statusMessge fields.  The former indicates whether or not the export was truncated; a FALSE is the positive value we want to see.  Of course, the latter field indicates the status of the export.  "Export task is successful." is the appositive value.
 
 ```{r Results, results = 'asis'}
-resList <-  map(agentIDs, ~ getResults(EMroot,. ))
+resList <-  map(agentIDs, ~ getResults(DataRoot,. ))
 
 clist <- list(c("reqStart", "reqEnd", "FilesGen", "SizeOfResults", "expStartedAt",  "expStatus"),
                 c("reqStart", "reqEnd", "expSumTrunc", "actStart", "actEnd", "statusMessage"))
@@ -83,32 +79,41 @@ for (i in 1:length(resList)){
   AgentID <- resList[[i]][1,]$agentID
   RptHdr <- paste("Report: Results / Account Number: ", Account," Agent ID: ", AgentID, sep ="")
   
-  print(knitr::kable(head(resList[[i]][,c(3:8)]),        caption = RptHdr, col.names = clist[[1]]))
-  print(knitr::kable(head(resList[[i]][,c(3,4,9:12)]),   caption = RptHdr, col.names = clist[[2]]))
-  cat("\n\n***")
+  print(knitr::kable(head(resList[[i]][,c(3:8)]),format = "markdown", 
+                     caption = RptHdr, col.names = clist[[1]])) 
+  
 }
 ```
+
+\clearpage
+
 ### Operating System Information Report
 
 The Operating System Information Report contains information on the OS name, OS Version, CPU Type and Hypervisor.  There should be no surprises here.  Confirm that is comports with what you know about your data center assets.  Note any discrepancies or outliers.
 
 
 ```{r OSInfo, results = 'asis'}
-osList <-  map(agentIDs, ~ getosInfo(EMroot,. ))
+osList <-  map(agentIDs, ~ getosInfo(DataRoot,. ))
 
 c_names <-  c("Date/Time", "Hostname", "osName", "osVersion", "cpuType", "hypervisor")
 
+# Let's make this a summary table: one record each server
 for (i in 1:length(osList)){
   if (nrow(osList[[i]] > 0)) {
-    Account <- osList[[i]][1,]$accountNumber
-    AgentID <- osList[[i]][1,]$agentId
-    RptHdr <- paste("Report: OS Info / Account Number: ", Account," Agent ID: ", AgentID, sep ="")
-    
-    print(knitr::kable(tail(osList[[i]][,c(8,6,3:5,7)]),  caption = RptHdr, col.names = c_names))
-    cat("\n\n***")
+    if (i == 1){
+      os_tbl <- osList[[i]][1,]
+    } else {
+      os_tbl <- rbind(os_tbl,osList[[i]][1,])
+    }
+   
   }
 }
+RptHdr <- paste("Report: OS Info / Account Number: ", Account,sep = "")
+print(knitr::kable(os_tbl[,c(8,6,3:5,7)]),  
+          format = "markdown", caption = RptHdr, col.names = c_names)
 ```
+
+\clearpage
 
 ### Performance Report
 
@@ -116,7 +121,7 @@ The performance data frames contain many metrics and cannot typically be display
 
 
 ```{r Performance, results = 'asis'}
-perfList <-  map(agentIDs, ~ getPerf(EMroot,. ))
+perfList <-  map(agentIDs, ~ getPerf(DataRoot,. ))
 
 clist <- list(
     c("Date/Time", "DskBytesRdPS", "DskBytesWrtnPS", "DskRdOpsPS", "DskWrtOpsPS"),
@@ -125,27 +130,32 @@ clist <- list(
 )
 for (i in 1:length(perfList)){
   if ( nrow(perfList[[i]]) > 0) {
-    Account <- perfList[[i]][1,]$accountNumber
     AgentID <- perfList[[i]][1,]$agentId
-    RptHdr <- paste("Report: Performance / Account Number: ", Account," Agent ID: ", AgentID, sep ="")
+    HostName <- collected[collected$AgentID == AgentID,]$Hostname
+    RptHdr <- paste("Report: Performance  AgentID/HostName:", AgentID, HostName, sep ="")
     
-    print(knitr::kable(head(perfList[[i]][,c(19,3:6)]),   caption = RptHdr, col.names = clist[[1]]))
-    print(knitr::kable(head(perfList[[i]][,c(19,7:11)]),  caption = RptHdr, col.names = clist[[2]]))
-    print(knitr::kable(head(perfList[[i]][,c(19,12:18)]), caption = RptHdr, col.names = clist[[3]]))
-    cat("\n\n***")
+    print(knitr::kable(head(perfList[[i]][,c(19,3:6)]),   format = "markdown", 
+                       caption = RptHdr, col.names = clist[[1]])) 
+
+    print(knitr::kable(head(perfList[[i]][,c(19,7:11)]),  format = "markdown", 
+                       caption = RptHdr, col.names = clist[[2]])) 
+    
+    print(knitr::kable(head(perfList[[i]][,c(19,12:18)]), format = "markdown", 
+                       caption = RptHdr, col.names = clist[[3]])) 
+    
   }
 }
 ```
 
 
-
+\clearpage
 
 ### Network Interface Report
 
 This report gives details on all of the active network interfaces found in the data center.  Make note of any IP addresses that are NOT in your inventory.
 
 ```{r , results = 'asis'}
-nwList <-  map(agentIDs, ~ getNetworkInterface(EMroot,. ))
+nwList <-  map(agentIDs, ~ getNetworkInterface(DataRoot,. ))
 
 c_names <-  c("Date/Time",  "Name", "MAC", "Family", "ipAddress", "Gateway", "netMask")
 for (i in 1:length(nwList)){
@@ -154,14 +164,13 @@ for (i in 1:length(nwList)){
     AgentID <- nwList[[i]][1,]$agentId
     RptHdr <- paste("Report: Network Interface / Account Number: ", Account,
                     " Agent ID: ", AgentID, sep ="")
-    print(knitr::kable(tail(nwList[[i]][,c(9,3:8)]),  caption = RptHdr, col.names = c_names))
-    cat("\n\n***")
+    print(knitr::kable(tail(nwList[[i]][,c(9,3:8)]),  format = "markdown", 
+                       caption = RptHdr, col.names = c_names)) 
   }
 }
 ```
 
-\newpage
-\blandscape
+\clearpage
 
 ### Destination Process Connection Report
 
@@ -169,11 +178,11 @@ for (i in 1:length(nwList)){
 
 ```{r DestProcConn, results = 'asis'}
 
-pcList <-  map(agentIDs, ~ getDestProcConn(EMroot,. ))
+pcList <-  map(agentIDs, ~ getDestProcConn(DataRoot,. ))
 
 
 c_names <- c("CreationDate", "rcIP", "srcPort", "destIP", "destPort",
-             "ipVer","transProtocol", "agntAssProcID", "cmdPath", "cmdParam")
+             "ipVer","transProtocol")
 
 for (i in 1:length(pcList)) {
   if (nrow(pcList[[i]]) > 0) {
@@ -182,29 +191,24 @@ for (i in 1:length(pcList)) {
     RptHdr <- paste("Report: Destination Process Connection / Account Number: ", 
                     Account," Agent ID: ", AgentID, sep ="")
     
-    print(knitr::kable(tail(pcList[[i]][,c(10,3:9,11,12)]),  caption = RptHdr, col.names = c_names))
-  cat("\n\n***")
+    print(knitr::kable(tail(pcList[[i]][,c(10,3:8)]),  format = "markdown", 
+                       caption = RptHdr, col.names = c_names))
   }
 }
 ```
 
-\elandscape
 
-\newpage
-\blandscape
-
+\clearpage
 
 ### Source Process Connection Report
 
-
-
 ```{r SrcProcConn, results = 'asis'}
 
-pcList <-  map(agentIDs, ~ getSrcProcConn(EMroot,. ))
+pcList <-  map(agentIDs, ~ getSrcProcConn(DataRoot,. ))
 
 
 c_names <- c("CreationDate", "rcIP", "srcPort", "destIP", "destPort",
-             "ipVer","transProtocol", "agntAssProcID", "cmdPath", "cmdParam")
+             "ipVer","transProtocol")
 
 for (i in 1:length(pcList)){
   if (nrow(pcList[[i]]) > 0) {
@@ -213,37 +217,31 @@ for (i in 1:length(pcList)){
     RptHdr <- paste("Report: Source Process Connection / Account Number: ", 
                     Account," Agent ID: ", AgentID, sep ="")
     
-    print(knitr::kable(pcList[[i]][,c(10,3:9,11,12)],  caption = RptHdr, col.names = c_names))
-    cat("\n\n***")
+    print(knitr::kable(head(pcList[[i]][,c(10,3:8)]),  format = "markdown", 
+                       caption = RptHdr, col.names = c_names))
   }
 }
 ```
 
-\elandscape
 
-\newpage
-\blandscape
+\clearpage
 
 ### Process Report
 
-
-
 ```{r ProcessRpt, results = 'asis'}
 
-pList <-  map(agentIDs, ~ getProcess(EMroot,. ))
+pList <-  map(agentIDs, ~ getProcess(DataRoot,. ))
 
  c_names <-
       c(
+        "Date/Time",
         "Agent Assigned ProcId",
         "isSystem",
         "name",
         "cmdLine",
-        "path",
-        "Date/Time"
+        "path"
       )
  
-# print(map_int(pList, ~nrow(.)))
-# print(map_int(pList, ~ ncol(.)))
 for (i in 1:length(pList)){
   if (nrow(pList[[i]]) > 0) {
     Account <- pList[[i]][1,]$accountNumber
@@ -251,16 +249,12 @@ for (i in 1:length(pList)){
     RptHdr <- paste("Report: Process / Account Number: ", 
                     Account," Agent ID: ", AgentID, sep ="")
     
-    print(knitr::kable(head(pList[[i]][,c(3:8)], n = 10),  caption = RptHdr, col.names = c_names))
-    cat("\n\n***")
+    print(knitr::kable(head(pList[[i]][,c(8,3:7)], n = 10),  format = "markdown", 
+                       caption = RptHdr, col.names = c_names))
   }
 }
 ```
 
-\elandscape
-
-
-
-
+\clearpage
 
 **Run Date: **`r Sys.Date()`

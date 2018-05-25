@@ -1,0 +1,137 @@
+---
+title: "AWS/ADS Data Graphics"
+author: "Prestige Services"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  pdf_document:
+        includes:
+          in_header: header.tex
+  word_document:
+        reference_docx: headingthree.docx
+        highlight: tango
+        df_print: tibble
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(lubridate)
+library(kableExtra)
+
+DataRoot <- "data/agentExports"
+
+source("awsADS_functions.R")
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# AWS Data Inventory
+
+The purpose of this report is to provide a high-level summary of the records collected to date.
+
+## Reports
+
+The data collected from AWS consists of several types of data.  Here are the tables that have been collected:
+
+**Included in this Report**
+
+* results
+* osInfo
+* systemPerformance
+* networkInterface
+* destinationProcessConnection
+* sourceProcessConnection
+* process
+
+
+### List Agent IDs in Current Data Store
+
+The agent IDs are the unique identifiers of the AWS ADS agents installed within the customer's data center.  In the case of VMware hypervisor VMs, the agent ID is the identity of the OVA appliance installed. If additional performance metrics are required for a VM or the customer has a non-virtualized server, the agent ID is the identity of the actual agent installed on the server or VM.
+
+Following are the Agent IDs found in the data store containing exported data from the AWS Migration Hub.  The Agent IDs will be used to identify which environment the data pertain to.
+
+```{r}
+
+agentIDs <- getAgentIDs(root = DataRoot)
+collected <-  tibble(
+  Number   = seq(1:length(agentIDs)),
+  AgentID = agentIDs
+)
+
+knitr::kable(collected)
+```
+
+There are `r length(agentIDs)` Agent IDs.  See the list of these immediately above.
+
+\clearpage
+
+
+### AWS/ADS Records per Collection Type by Agent ID
+
+
+```{r Inv1, results = 'asis'}
+resList <-   map(agentIDs, ~ getResults(DataRoot,. ))
+osList  <-   map(agentIDs, ~ getosInfo(DataRoot,. ))
+prList  <-   map(agentIDs, ~ getPerf(DataRoot,. ))
+nwList  <-   map(agentIDs, ~ getNetworkInterface(DataRoot,. ))
+dpList  <-   map(agentIDs, ~ getDestProcConn(DataRoot,. ))
+spList  <-   map(agentIDs, ~ getSrcProcConn(DataRoot,. ))
+pList   <-   map(agentIDs, ~ getProcess(DataRoot,. ))
+
+
+
+inventory <- tibble(
+  Number           = seq(1:length(agentIDs)),
+  AgentID          = agentIDs, 
+  Results          = map_int(resList, ~ nrow(.)),
+  OSInfo           = map_int(osList, ~ nrow(.)),
+  Performance      = map_int(prList, ~ nrow(.)),
+  NetworkInterface = map_int(nwList, ~ nrow(.)),
+  DstProcessCon    = map_int(dpList, ~ nrow(.)),
+  SrcProcessCon    = map_int(spList, ~ nrow(.)),
+  Processes        = map_int(pList,  ~ nrow(.))
+  )
+  
+knitr::kable(inventory, format = "latex", cap="AWS/ADS Records per Collection Type by Agent ID")  %>%
+          kable_styling(latex_options = c("striped", "scale_down", "hold_position"))
+```
+
+
+### Performance Time Spans by Hostname
+
+```{r Inv2, results = 'asis'}
+
+compPerf <- genCompPerf(DataRoot, agentIDs)
+
+
+# Calculate the number of Days Performance for each server (hostName)
+
+host_perf_time <- compInventory %>% 
+  group_by(hostName) %>% 
+  summarize(Max = ymd_hms(max(timestamp)), 
+            Min = ymd_hms(min(timestamp)), 
+            Diff.Days = difftime(Max, Min, units = "days"))
+  
+knitr::kable(host_perf_time, digits = 2, format = "latex", caption = "Performance Days by Hostname") %>%
+          kable_styling(latex_options = c("striped", "scale_down", "hold_position"))
+
+
+
+```
+
+
+### CPU Performance
+
+```{r CPU, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+walk(agentIDs, )
+
+
+
+```
+
+Spreadsheet created workbook **`r fn`** with **`r length(sheets)`** worksheets (tabs).
+
+**Run Date: **`r Sys.Date()`

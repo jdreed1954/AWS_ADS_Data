@@ -1,26 +1,27 @@
 ---
-title: "EM Environment Inventory (Prototype)"
-author: "James D. Reed (jim.reed@prestigeservices.us)"
-date: "May 19, 2018"
+title: "AWS/ADS Downloaded Data Inventory"
+author: "Prestige Services"
+date: "`r format(Sys.time(), '%d %B %Y')`"
 output: 
-  html_document:
-    df_print: paged
+  pdf_document:
+        includes:
+          in_header: header.tex
   word_document:
         reference_docx: headingthree.docx
         highlight: tango
         df_print: tibble
-  pdf_document:
-        includes:
-          in_header: header.tex
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(lubridate)
+library(kableExtra)
 
-EMroot <- "data/agentExports"
+DataRoot <- "data/agentExports"
 
-source("C:/Users/jdree/Desktop/MyProjects/EM-Assessment/awsADS_functions.R")
+source("awsADS_functions.R")
 
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -28,7 +29,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # AWS Data Inventory
 
-The purpose of this report is to provide a high-level summary of the records collected to date.
+The purpose of this report is to provide a high-level summary of the records collected to date.  We will refresh this report periodically to make sure we are making progress toward our goal of getting about 14 days worth of performance data for each system.  Refer to the the table titled **Performance Time Spans by Hostname** and the **Perf.Days** column.
 
 ## Reports
 
@@ -44,6 +45,7 @@ The data collected from AWS consists of several types of data.  Here are the tab
 * sourceProcessConnection
 * process
 
+\clearpage
 
 ### List Agent IDs in Current Data Store
 
@@ -52,36 +54,36 @@ The agent IDs are the unique identifiers of the AWS ADS agents installed within 
 Following are the Agent IDs found in the data store containing exported data from the AWS Migration Hub.  The Agent IDs will be used to identify which environment the data pertain to.
 
 ```{r}
+agentIDs <- getAgentIDs(root = DataRoot)  # this list is required at many places in subsequent blk
+collected <- getHostCollection(DataRoot)
 
-agentIDs <- getAgentIDs(root = EMroot)
-collected <-  tibble(
-  Number   = seq(1:length(agentIDs)),
-  AgentID = agentIDs
-)
-
-knitr::kable(collected)
+knitr::kable(collected, format = "latex") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+   row_spec(0,angle = -45) 
 ```
 
 There are `r length(agentIDs)` Agent IDs.  See the list of these immediately above.
 
+\clearpage
 
-### Number of Records Per Type by Agent ID
+
+### AWS/ADS Records per Collection Type by Agent ID
 
 
 ```{r Inv1, results = 'asis'}
-resList <-   map(agentIDs, ~ getResults(EMroot,. ))
-osList  <-   map(agentIDs, ~ getosInfo(EMroot,. ))
-prList  <-   map(agentIDs, ~ getPerf(EMroot,. ))
-nwList  <-   map(agentIDs, ~ getNetworkInterface(EMroot,. ))
-dpList  <-   map(agentIDs, ~ getDestProcConn(EMroot,. ))
-spList  <-   map(agentIDs, ~ getSrcProcConn(EMroot,. ))
-pList   <-   map(agentIDs, ~ getProcess(EMroot,. ))
+resList <-   map(agentIDs, ~ getResults(DataRoot,. ))
+osList  <-   map(agentIDs, ~ getosInfo(DataRoot,. ))
+prList  <-   map(agentIDs, ~ getPerf(DataRoot,. ))
+nwList  <-   map(agentIDs, ~ getNetworkInterface(DataRoot,. ))
+dpList  <-   map(agentIDs, ~ getDestProcConn(DataRoot,. ))
+spList  <-   map(agentIDs, ~ getSrcProcConn(DataRoot,. ))
+pList   <-   map(agentIDs, ~ getProcess(DataRoot,. ))
 
 
 
 inventory <- tibble(
   Number           = seq(1:length(agentIDs)),
-  AgentID          = agentIDs, 
+  Hostname         = collected$Hostname, 
   Results          = map_int(resList, ~ nrow(.)),
   OSInfo           = map_int(osList, ~ nrow(.)),
   Performance      = map_int(prList, ~ nrow(.)),
@@ -91,19 +93,21 @@ inventory <- tibble(
   Processes        = map_int(pList,  ~ nrow(.))
   )
   
-knitr::kable(inventory, cap="AWS/ADS Records per Collection Type by Agent ID")
-
+knitr::kable(inventory, format = "latex", 
+             cap="AWS/ADS Records per Collection Type by Agent ID") %>%
+   kable_styling(bootstrap_options = c("striped"), full_width = F) %>%
+   column_spec(2, width = "10em", background = "yellow") %>%
+   row_spec(0,angle = -45)
 ```
 
-## Performance Time Spans by Agent ID
+\clearpage
+
+### Performance Time Spans by Hostname
 
 ```{r Inv2, results = 'asis'}
 
-prList  <-   map(agentIDs, ~ getPerf(EMroot,. ))
-osList  <-   map(agentIDs, ~ getosInfo(EMroot,. ))
-
-
-
+prList  <-   map(agentIDs, ~ getPerf(DataRoot,. ))
+osList  <-   map(agentIDs, ~ getosInfo(DataRoot,. ))
 
 # Build comprehensive join of perfAll and osAll
 
@@ -113,7 +117,7 @@ osAll   <- bind_rows(osList) %>% select(1,2,8,6,3:5,7) %>% arrange(agentId, time
 
 osValues <- osAll %>% 
   group_by(agentId) %>% 
-  summarize( hostName =   unique(hostName),  osName  = unique(osName),   
+  summarize( hostName =   unique(hostName),  osName  = tail(osName, n = 1),   
              osVersion =  unique(osVersion), cpuType = unique(cpuType), 
              hypervisor = unique(hypervisor))
 
@@ -126,11 +130,14 @@ compInventory <- left_join(perfAll, osValues, by = "agentId") %>% select(1,2,20,
 
 host_perf_time <- compInventory %>% 
   group_by(hostName) %>% 
-  summarize(Max = ymd_hms(max(timestamp)), 
-            Min = ymd_hms(min(timestamp)), 
-            Diff.Days = difftime(Max, Min, units = "days"))
+  summarize(First = ymd_hms(min(timestamp)),
+            Last = ymd_hms(max(timestamp)), 
+            Perf.Days = difftime(Last, First, units = "days"))
   
-knitr::kable(host_perf_time, digits = 2, caption = "Performance Days by Hostname")
+knitr::kable(host_perf_time, digits = 2, format = "latex", 
+             caption = "Performance Days by Hostname") %>%
+  kable_styling(bootstrap_options = c("striped"), full_width = F) %>%
+  column_spec(4, background = "yellow")
 
 
 ## TO-DO
@@ -158,7 +165,7 @@ knitr::kable(host_perf_time, digits = 2, caption = "Performance Days by Hostname
 
 ### Export Performance and OS Information Data to Excel Spreadsheet
 
-```{r ExportData}
+```{r ExportData, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 require(rJava)
 require(xlsx)
 
@@ -171,7 +178,7 @@ comp_n <- compInventory %>%
 
 
 # Create Excel Workbook with each hostName (agentId) on a separate tab.
-fn <- "EM_performance.xlsx"
+fn <- "ADS_performance.xlsx"
 
 if (file.exists(fn)) file.remove(fn)  # to ensure we are writing a brand new file.
 walk2(comp_n$data, comp_n$Host,~ write.xlsx(.x, file = fn, sheetName = .y, append = TRUE))
