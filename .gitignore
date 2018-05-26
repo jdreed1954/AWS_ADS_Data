@@ -7,9 +7,11 @@
 *.pdf
 *.log
 EM-Assessment.Rproj
-data
+data/
+logs
 *.csv
 *.json
 *.xlsx
 EM_performance.xlsx
 EM_Data_Review.log
+export.log

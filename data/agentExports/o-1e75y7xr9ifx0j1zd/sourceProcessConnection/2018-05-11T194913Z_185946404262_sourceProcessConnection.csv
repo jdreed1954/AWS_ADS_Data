@@ -1,7 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-1e75y7xr9ifx0j1zd,172.31.25.58,,54.240.254.131,443,IPv4,TCP,da39a3ee5e6b4b0d3255bfef95601890afd80709,2018-05-11 19:15:00,,
-185946404262,o-1e75y7xr9ifx0j1zd,172.31.25.58,,52.94.212.197,443,IPv4,TCP,A5FF60C43434A64E45E653435E3CCE4FC5A7BE0F,2018-05-11 19:15:00,/usr/bin/amazon-ssm-agent,/usr/bin/amazon-ssm-agent
-185946404262,o-1e75y7xr9ifx0j1zd,172.31.25.58,,54.240.251.223,443,IPv4,TCP,867B811BEEFDADDC482D20BECC14D6EBDC9F20B1,2018-05-11 19:15:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd
-185946404262,o-1e75y7xr9ifx0j1zd,172.31.25.58,,54.240.254.131,443,IPv4,TCP,867B811BEEFDADDC482D20BECC14D6EBDC9F20B1,2018-05-11 19:15:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd
-185946404262,o-1e75y7xr9ifx0j1zd,172.31.25.58,,52.94.209.3,443,IPv4,TCP,A5FF60C43434A64E45E653435E3CCE4FC5A7BE0F,2018-05-11 19:30:00,/usr/bin/amazon-ssm-agent,/usr/bin/amazon-ssm-agent
-185946404262,o-1e75y7xr9ifx0j1zd,172.31.25.58,,54.231.184.196,443,IPv4,TCP,DB63F1C432049B111407F5704BD5C273B0B09219,2018-05-11 19:30:00,/usr/bin/curl,curl -s --fail --retry 5 --max-time 30 -o /tmp/awsdiscoveryagent.3whvsSXr/discovery.gpg https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/discovery.gpg

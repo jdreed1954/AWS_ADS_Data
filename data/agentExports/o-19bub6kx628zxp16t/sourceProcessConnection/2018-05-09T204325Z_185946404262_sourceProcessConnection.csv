@@ -1,2 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-19bub6kx628zxp16t,172.31.29.98,,52.94.209.3,443,IPv4,TCP,A5FF60C43434A64E45E653435E3CCE4FC5A7BE0F,2018-05-07 20:15:00,/usr/bin/amazon-ssm-agent,/usr/bin/amazon-ssm-agent
