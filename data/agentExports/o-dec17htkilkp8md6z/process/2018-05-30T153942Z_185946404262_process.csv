@@ -1,0 +1,4 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-dec17htkilkp8md6z,B9B759138C0CD9E337607B9A18127DCA01CBCA0D,false,sendmail.sendmail,sendmail: ./w4UFMaEP026787 d124507a.ess.barracudanetworks.com.: client DATA status,/usr/sbin/sendmail.sendmail,2018-05-30 15:22:36
+185946404262,o-dec17htkilkp8md6z,F6D339D138ABEE61C981F15B84D7C772EE2A178C,false,sendmail.sendmail,sendmail: ./w4T914ng013535 hdredirect-lb3-890977680.us-east-1.elb.amazonaws.com.: user open,/usr/sbin/sendmail.sendmail,2018-05-30 15:23:22
+185946404262,o-dec17htkilkp8md6z,371B486FB642B85879EF571E54973CD73B742FF1,false,sendmail.sendmail,"sendmail: ./w4T7NN9F003673 from queue      ",/usr/sbin/sendmail.sendmail,2018-05-30 15:23:22

@@ -1,0 +1,17 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-15p810oyrd09unsoy,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-08 03:59:19
+185946404262,o-15p810oyrd09unsoy,3F5AF4E2D2E12EFD0913B398DEC110B769B07DA8,false,sshd,"sshd: root@notty    ",/usr/sbin/sshd,2018-06-08 04:00:01
+185946404262,o-15p810oyrd09unsoy,EB586965DA7D94F74830D5367C21E8B7DCD9C363,false,rsync,rsync --server --sender -vlogDtprze.iLs . /var/www/vhosts/.,/usr/bin/rsync,2018-06-08 04:00:03
+185946404262,o-15p810oyrd09unsoy,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-08 04:00:08
+185946404262,o-15p810oyrd09unsoy,882CBD326297EB2FEEE2C456DEBFCA1F52A2782F,false,sshd,"sshd: root [priv]   ",/usr/sbin/sshd,2018-06-08 04:02:02
+185946404262,o-15p810oyrd09unsoy,776CC0506EB8FC0B5690E8CB7F4FA5C2BF93FA71,false,dash,sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd.new,/bin/dash,2018-06-08 04:02:02
+185946404262,o-15p810oyrd09unsoy,52BA64251CE0DF8C675AA009B30B46CBFE1972C4,false,run-parts,run-parts --lsbsysinit /etc/update-motd.d,/bin/run-parts,2018-06-08 04:02:02
+185946404262,o-15p810oyrd09unsoy,F1AA39C7CED2B5EE7583E220795387D3019C41E2,false,dash,/bin/sh /etc/update-motd.d/99-esm,/bin/dash,2018-06-08 04:02:04
+185946404262,o-15p810oyrd09unsoy,F2B0F774F97F498C1DA98224D12CB0FB84064391,false,dash,/bin/sh -e /usr/bin/ubuntu-advantage is-esm-enabled,/bin/dash,2018-06-08 04:02:04
+185946404262,o-15p810oyrd09unsoy,51DB02F1900672B99DF355E6ADF6B47561C79AD1,false,apt-cache,apt-cache policy,/usr/bin/apt-cache,2018-06-08 04:02:04
+185946404262,o-15p810oyrd09unsoy,FCAA259A2E918208D721EDACE1FDC0128F8BA48B,false,grep,grep -Fq esm.ubuntu.com,/bin/grep,2018-06-08 04:02:04
+185946404262,o-15p810oyrd09unsoy,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-06-08 04:03:01
+185946404262,o-15p810oyrd09unsoy,412B3E1CF101728C509BA16C3CA230ED91F70FE5,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-06-08 04:03:01
+185946404262,o-15p810oyrd09unsoy,BDF341AC72A5BA99B83E9BA2E1ABB6FFB181EA0C,false,sleep,/bin/sleep 2694s,/bin/sleep,2018-06-08 04:03:01
+185946404262,o-15p810oyrd09unsoy,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-08 04:10:29
+185946404262,o-15p810oyrd09unsoy,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-08 04:15:30

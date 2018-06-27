@@ -1,0 +1,3 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,23.203.242.27,80,IPv4,TCP,9EEA16E5BA82040A6DAF2B76B56A320CC011B610,2018-05-26 17:00:00,/opt/sophos-av/engine/_/python.0,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --readargsfromfile"
+185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,54.186.179.15,443,IPv4,TCP,F998D520B908C5ED8B09D2523C88CD7889300622,2018-05-26 17:00:00,/opt/sophos-av/engine/_/python.0,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"

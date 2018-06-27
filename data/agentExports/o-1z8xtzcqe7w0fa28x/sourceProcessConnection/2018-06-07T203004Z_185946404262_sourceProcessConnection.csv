@@ -1,0 +1,4 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-1z8xtzcqe7w0fa28x,192.168.92.21,,54.149.52.142,443,IPv4,TCP,3A791C17EF4EE318AB6EBC51B52931646049255E,2018-06-07 20:00:00,/opt/sophos-av/engine/_/python.3,/opt/sophos-av/engine/python /opt/sophos-av/bin/_/savdctl --no-daemon --no-bootstrap start rms
+185946404262,o-1z8xtzcqe7w0fa28x,192.168.92.21,,66.170.83.69,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-06-07 20:00:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
+185946404262,o-1z8xtzcqe7w0fa28x,192.168.92.21,,13.56.212.79,443,IPv4,TCP,706ACC4B90C6D1761704AAC1D3D3F9CED5D6D085,2018-06-07 20:00:00,/usr/local/ltechagent/ltechagent,./ltechagent

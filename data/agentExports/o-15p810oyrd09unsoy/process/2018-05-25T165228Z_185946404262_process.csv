@@ -1,0 +1,22 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-15p810oyrd09unsoy,15682481E38B641D58929AF75A3CA45B20203D1F,false,dash,sh -c mysql -ubt -pKMmVB!4v*L vindico_educationaltrak < /var/www/vhosts/demo.educationaltrak/htdocs/../temp/response_3784533_4.txt,/bin/dash,2018-05-25 16:35:15
+185946404262,o-15p810oyrd09unsoy,7C12458BC0D2BB9BAA086E022CE482FAED2C5697,false,mysql,mysql -ubt -px xxxxxxxx vindico_educationaltrak,/usr/bin/mysql,2018-05-25 16:35:15
+185946404262,o-15p810oyrd09unsoy,14C6883F3EE51173F59CBCC81AD82B361B3133D3,false,dash,sh -c mysql -ubt -pKMmVB!4v*L vindico_educationaltrak < /var/www/vhosts/demo.educationaltrak/htdocs/../temp/response_3989963_4.txt,/bin/dash,2018-05-25 16:35:52
+185946404262,o-15p810oyrd09unsoy,E17412A9D7CA014D33F3652503A066ECDA4004B1,false,mysql,mysql -ubt -px xxxxxxxx vindico_educationaltrak,/usr/bin/mysql,2018-05-25 16:35:52
+185946404262,o-15p810oyrd09unsoy,7A3F78A3B0DCEF8DA43A57C3BC964A341F1DD41A,false,dash,sh -c mysql -ubt -pKMmVB!4v*L vindico_educationaltrak < /var/www/vhosts/demo.educationaltrak/htdocs/../temp/response_3920077_3.txt,/bin/dash,2018-05-25 16:36:13
+185946404262,o-15p810oyrd09unsoy,80A1493672A79593A2B1667D034AF78400450647,false,mysql,mysql -ubt -px xxxxxxxx vindico_educationaltrak,/usr/bin/mysql,2018-05-25 16:36:13
+185946404262,o-15p810oyrd09unsoy,E4572A58BE35F5947C7D6F1600B752937AB94B63,false,dash,sh -c mysql -ubt -pKMmVB!4v*L vindico_educationaltrak < /var/www/vhosts/demo.educationaltrak/htdocs/../temp/response_4305973_1.txt,/bin/dash,2018-05-25 16:36:29
+185946404262,o-15p810oyrd09unsoy,47AF9796A0192304FAD8F2227965278B2E8F9A83,false,mysql,mysql -ubt -px xxxxxxxx vindico_educationaltrak,/usr/bin/mysql,2018-05-25 16:36:29
+185946404262,o-15p810oyrd09unsoy,FC5F7204CE0BF68756F35352D3EA4162308B330B,false,dash,sh -c mysql -ubt -pKMmVB!4v*L vindico_educationaltrak < /var/www/vhosts/demo.educationaltrak/htdocs/../temp/response_4027465_8.txt,/bin/dash,2018-05-25 16:37:11
+185946404262,o-15p810oyrd09unsoy,E9298E705DA52F9D2E2DDE37C7AB06B0AA126D73,false,mysql,mysql -ubt -px xxxxxxxx vindico_educationaltrak,/usr/bin/mysql,2018-05-25 16:37:11
+185946404262,o-15p810oyrd09unsoy,8B3B4A28DA9EE36EB4ECB9B97D392B5698AA6F04,false,dash,sh -c mysql -ubt -pKMmVB!4v*L vindico_educationaltrak < /var/www/vhosts/demo.educationaltrak/htdocs/../temp/response_3920089_2.txt,/bin/dash,2018-05-25 16:37:22
+185946404262,o-15p810oyrd09unsoy,AAEA8D7ADB0F23A4E1C60C1A80DEB21027100952,false,mysql,mysql -ubt -px xxxxxxxx vindico_educationaltrak,/usr/bin/mysql,2018-05-25 16:37:22
+185946404262,o-15p810oyrd09unsoy,2A92CA3FD003E7670B0C1FB37C9C9340D9C7E47C,false,dash,sh -c mysql -ubt -pKMmVB!4v*L vindico_educationaltrak < /var/www/vhosts/demo.educationaltrak/htdocs/../temp/response_3870854_3.txt,/bin/dash,2018-05-25 16:37:38
+185946404262,o-15p810oyrd09unsoy,1B46EA893DBAFC267ED82D13E41BE4515BB08DE5,false,mysql,mysql -ubt -px xxxxxxxx vindico_educationaltrak,/usr/bin/mysql,2018-05-25 16:37:38
+185946404262,o-15p810oyrd09unsoy,135E30D05A70B3D20A6BDCE90867B339C6ADA4ED,false,sendmail,sendmail: MTA: ./w4PGbxJS029624 aspmx.l.google.com.: client greeting,/usr/lib/sm.bin/sendmail,2018-05-25 16:38:00
+185946404262,o-15p810oyrd09unsoy,A5002183754F85F65AC9BB3118B43E306AE577A4,false,sendmail,"sendmail: MSP: [127.0.0.1]: idle              ",/usr/lib/sm.bin/sendmail,2018-05-25 16:38:00
+185946404262,o-15p810oyrd09unsoy,7B38B191AA1AEE397DAC104BBDC59A33903B1852,false,sendmail,sendmail: MTA: server localhost [127.0.0.1] cmd read,/usr/lib/sm.bin/sendmail,2018-05-25 16:38:00
+185946404262,o-15p810oyrd09unsoy,4B69DA09E059DEABAE084B163A4464E23D687F10,false,sendmail,"sendmail: MTA: ./w4PGc09J029628 from queue    ",/usr/lib/sm.bin/sendmail,2018-05-25 16:38:00
+185946404262,o-15p810oyrd09unsoy,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-05-25 16:45:00
+185946404262,o-15p810oyrd09unsoy,E1B62BDC6DDCFBCE717B2A60EE02F401D8E5C679,false,dash,/bin/sh -c wget https://nace.educationaltrak.com/DataLoader/gizmoResponse.php > /tmp/gizmoResponse_prod.log,/bin/dash,2018-05-25 16:45:00
+185946404262,o-15p810oyrd09unsoy,73E9CD630A8001B0FC58C3D218BD1F49E40B4EF6,false,wget,wget https://nace.educationaltrak.com/DataLoader/gizmoResponse.php,/usr/bin/wget,2018-05-25 16:45:00

@@ -1,0 +1,2 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-5psvqgqbxgdts8rv8,76.216.152.208,,192.168.92.62,8443,IPv4,TCP,88EAACC0E55AA38ED21621C67B6FB3B5B4BF0D51,2018-05-24 20:15:00,/usr/bin/node,node socketServer.js 8443

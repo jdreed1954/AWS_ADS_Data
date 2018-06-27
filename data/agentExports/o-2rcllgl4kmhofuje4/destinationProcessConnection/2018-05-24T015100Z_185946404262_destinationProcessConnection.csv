@@ -1,0 +1,4 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-2rcllgl4kmhofuje4,185.129.148.61,,192.168.92.10,53,IPv4,TCP,B5EA391BBEE0CBE6EEF4AEDCA5929FCC02197EEC,2018-05-26 06:00:00,/usr/sbin/named,/usr/sbin/named -u named -c /etc/named.conf -4
+185946404262,o-2rcllgl4kmhofuje4,60.191.0.242,,192.168.92.10,53,IPv4,TCP,B5EA391BBEE0CBE6EEF4AEDCA5929FCC02197EEC,2018-05-26 17:15:00,/usr/sbin/named,/usr/sbin/named -u named -c /etc/named.conf -4
+185946404262,o-2rcllgl4kmhofuje4,125.212.217.215,,192.168.92.10,53,IPv4,TCP,B5EA391BBEE0CBE6EEF4AEDCA5929FCC02197EEC,2018-05-26 17:45:00,/usr/sbin/named,/usr/sbin/named -u named -c /etc/named.conf -4

@@ -1,0 +1,7 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-dec17htkilkp8md6z,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-25 17:22:27
+185946404262,o-dec17htkilkp8md6z,EB1B2A55FA7477AE2BAF6AB60022D5A2918FE464,false,sendmail.sendmail,sendmail: ./w4L93N8Y010799 from queue,/usr/sbin/sendmail.sendmail,2018-05-25 17:23:22
+185946404262,o-dec17htkilkp8md6z,897D989AA33B5E99B6E92C7CD815B1C4024E1A58,false,sendmail.sendmail,"sendmail: ./w4P8NM89004218 from queue      ",/usr/sbin/sendmail.sendmail,2018-05-25 17:23:22
+185946404262,o-dec17htkilkp8md6z,9E2BE35DFDFF9F5551B9D076BDF651A9DFAEA277,false,git,/usr/bin/git ls-remote -h https://github.com/EducationalMeasures/edmeasures,/usr/bin/git,2018-05-25 17:27:55
+185946404262,o-dec17htkilkp8md6z,24C88476E8A8B25BC0F3D459CF24212068F6D2DC,false,git-remote-https,git-remote-https https://github.com/EducationalMeasures/edmeasures https://github.com/EducationalMeasures/edmeasures,/usr/libexec/git-core/git-remote-https,2018-05-25 17:27:55
+185946404262,o-dec17htkilkp8md6z,4E51A6634112E5F367AA738165AFB2C41EFC00F0,false,sendmail.sendmail,sendmail: ./w4PHXh2I026733 mta6.am0.yahoodns.net.: client DATA status,/usr/sbin/sendmail.sendmail,2018-05-25 17:33:43

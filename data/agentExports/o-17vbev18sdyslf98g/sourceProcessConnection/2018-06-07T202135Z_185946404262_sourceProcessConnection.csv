@@ -1,0 +1,5 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-17vbev18sdyslf98g,192.168.92.20,,35.160.226.126,443,IPv4,TCP,7D8C8D50D7C7DF72F96EC22E71B1369BFEB9D09E,2018-06-07 20:00:00,/opt/sophos-av/engine/_/python.3,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
+185946404262,o-17vbev18sdyslf98g,192.168.92.20,,13.56.212.79,443,IPv4,TCP,706ACC4B90C6D1761704AAC1D3D3F9CED5D6D085,2018-06-07 20:00:00,/usr/local/ltechagent/ltechagent,./ltechagent
+185946404262,o-17vbev18sdyslf98g,192.168.92.20,,173.243.50.203,443,IPv4,TCP,C08A6D74F5B3C2386B2288B7F0B377A7D6318CBA,2018-06-07 20:00:00,/usr/sbin/mozy-daemon,/usr/sbin/mozy-daemon
+185946404262,o-17vbev18sdyslf98g,192.168.92.20,,54.240.251.223,443,IPv4,TCP,867B811BEEFDADDC482D20BECC14D6EBDC9F20B1,2018-06-07 20:00:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd

@@ -1,0 +1,2 @@
+accountNumber,agentId,name,macAddress,family,ipAddress,gateway,netMask,timestamp
+185946404262,o-1xns12efjorz827mb,ens160,00:50:56:01:1A:DE,Ipv4,192.168.92.84,0.0.0.0,255.255.255.0,2018-06-09 02:56:41

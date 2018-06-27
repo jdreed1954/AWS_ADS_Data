@@ -1,0 +1,4 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,54.68.116.119,443,IPv4,TCP,E4B00B6AF4E85B893DA012BBEC9108F1EEB1E5DB,2018-06-07 19:30:00,/opt/sophos-av/engine/_/python.1,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
+185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,13.56.212.79,443,IPv4,TCP,64CB94BC8A5B9A01E1712F7504AF639039913E9D,2018-06-07 19:30:00,/usr/local/ltechagent/ltechagent,./ltechagent
+185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,192.168.92.64,3306,IPv4,TCP,6615F6295B449C781829FEB59C9A4AC5D5330029,2018-06-07 19:30:00,/usr/pgsql-10/bin/postgres,"postgres: postgres edmeasures [local] idle             "

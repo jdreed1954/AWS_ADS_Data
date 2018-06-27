@@ -1,0 +1,112 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 00:44:08
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 00:44:40
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 00:48:40
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 00:48:41
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 00:48:41
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 00:51:03
+185946404262,o-1z8xtzcqe7w0fa28x,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-06-08 01:03:00
+185946404262,o-1z8xtzcqe7w0fa28x,412B3E1CF101728C509BA16C3CA230ED91F70FE5,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-06-08 01:03:00
+185946404262,o-1z8xtzcqe7w0fa28x,1A9A47938CBD03F5E597867271BDEB96AD3DB92A,false,sleep,/bin/sleep 1569s,/bin/sleep,2018-06-08 01:03:00
+185946404262,o-1z8xtzcqe7w0fa28x,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-06-08 01:09:00
+185946404262,o-1z8xtzcqe7w0fa28x,759DFA6B002EB9BDADA38247706989297A731704,false,dash,/bin/sh -c   [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete,/bin/dash,2018-06-08 01:09:00
+185946404262,o-1z8xtzcqe7w0fa28x,26F4A383AA9979DA80900AFB601FC1A17FB3AF43,false,find,find /var/lib/php5 -depth -mindepth 1 -maxdepth 1 -type f -cmin +24 ! -execdir fuser -s {} ; -delete,/usr/bin/find,2018-06-08 01:09:00
+185946404262,o-1z8xtzcqe7w0fa28x,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-06-08 01:09:01
+185946404262,o-1z8xtzcqe7w0fa28x,625292940D4870C3634F2446532735F7A400E0CC,false,pickup,pickup -l -t fifo -u -c,/usr/lib/postfix/pickup,2018-06-08 01:41:06
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:04
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:05
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:05
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:13
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:14
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:14
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:15
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:16
+185946404262,o-1z8xtzcqe7w0fa28x,2DE381B38FEF5DE81D4192ADBACDD77F12A6AA04,false,,,,2018-06-08 01:56:16
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:16
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:56:16
+185946404262,o-1z8xtzcqe7w0fa28x,202572BC224388C8D483DA5BAAB3796069FE9F22,false,python.3,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.3,2018-06-08 01:28:02
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 01:28:18
+185946404262,o-1z8xtzcqe7w0fa28x,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-06-08 02:03:01
+185946404262,o-1z8xtzcqe7w0fa28x,412B3E1CF101728C509BA16C3CA230ED91F70FE5,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-06-08 02:03:01
+185946404262,o-1z8xtzcqe7w0fa28x,2893873141C33680741E9DCAF621887CFA747491,false,sleep,/bin/sleep 1044s,/bin/sleep,2018-06-08 02:03:01
+185946404262,o-1z8xtzcqe7w0fa28x,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-06-08 02:38:28
+185946404262,o-1z8xtzcqe7w0fa28x,202572BC224388C8D483DA5BAAB3796069FE9F22,false,python.3,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.3,2018-06-08 02:28:02
+185946404262,o-1z8xtzcqe7w0fa28x,3416C1FE5B9CB4962212889F307E70D9F1581D06,false,dash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/dash,2018-06-08 02:28:13
+185946404262,o-1z8xtzcqe7w0fa28x,89E585395BCADB66DB58A86584CC7E105F981702,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-06-08 02:28:13
+185946404262,o-1z8xtzcqe7w0fa28x,EABB4D9804BEE6DD89ACD4A305661B8BE7F0FB1C,false,SaviVersion.3,/opt/sophos-av/engine/SaviVersion /opt/sophos-av /opt/sophos-av/lib/sav /opt/sophos-av/lib/sav,/opt/sophos-av/engine/_/SaviVersion.3,2018-06-08 02:28:24
+185946404262,o-1z8xtzcqe7w0fa28x,0EA0EB8A0D62013618165FB98D32EBB24329A586,false,savscand.3,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.1 --ondemandcontrol=socketpair://85/86 socketpair://83/84 --threads=5,/opt/sophos-av/engine/_/savscand.3,2018-06-08 02:28:39
+185946404262,o-1z8xtzcqe7w0fa28x,54B25951995A76B1E49032427CF1D2E9FF1DF127,false,savscand.3,savscand --incident=unix://tmp/incident socketpair://68/70 --threads=5,/opt/sophos-av/engine/_/savscand.3,2018-06-08 02:28:46
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:38:53
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:38:54
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:38:54
+185946404262,o-1z8xtzcqe7w0fa28x,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-06-08 03:39:01
+185946404262,o-1z8xtzcqe7w0fa28x,759DFA6B002EB9BDADA38247706989297A731704,false,dash,/bin/sh -c   [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete,/bin/dash,2018-06-08 03:39:01
+185946404262,o-1z8xtzcqe7w0fa28x,26F4A383AA9979DA80900AFB601FC1A17FB3AF43,false,find,find /var/lib/php5 -depth -mindepth 1 -maxdepth 1 -type f -cmin +24 ! -execdir fuser -s {} ; -delete,/usr/bin/find,2018-06-08 03:39:01
+185946404262,o-1z8xtzcqe7w0fa28x,A941702256D9E13B921F4EABFD9F4B1CD4DE2DB0,false,fuser,fuser -s ./sess_ckf8o9i5v3qtogu02v6oglc6l5,/bin/fuser,2018-06-08 03:39:01
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:41:44
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:43:25
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:43:31
+185946404262,o-1z8xtzcqe7w0fa28x,9CA3C443527E5EF3834C4CE4032AA33D69062C38,false,sshd,"sshd: root@pts/0    ",/usr/sbin/sshd,2018-06-08 03:48:06
+185946404262,o-1z8xtzcqe7w0fa28x,D96D0BD4756B95C91A80997613656B7F4D9A578D,false,console-kit-daemon,/usr/sbin/console-kit-daemon --no-daemon,/usr/sbin/console-kit-daemon,2018-06-08 03:48:06
+185946404262,o-1z8xtzcqe7w0fa28x,957A6411FA3D29DBEDE97B6868F44BDE978670C2,false,polkitd,/usr/lib/policykit-1/polkitd --no-debug,/usr/lib/policykit-1/polkitd,2018-06-08 03:48:07
+185946404262,o-1z8xtzcqe7w0fa28x,9E863A4DDE6F3B444103B29DE8075B8D31391B4C,false,bash,-bash,/bin/bash,2018-06-08 03:48:18
+185946404262,o-1z8xtzcqe7w0fa28x,AA71A6EBDE50C10F2FC7A837AB03BF8B296068BE,false,vim.basic,vi /etc/network/interfaces,/usr/bin/vim.basic,2018-06-08 03:48:31
+185946404262,o-1z8xtzcqe7w0fa28x,59C0E95BEA762D1A77851C7342337AEB8E2CC9BB,false,ssh,ssh root@192.168.92.22,/usr/bin/ssh,2018-06-08 03:51:25
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:16:16
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:16:17
+185946404262,o-1z8xtzcqe7w0fa28x,2DE381B38FEF5DE81D4192ADBACDD77F12A6AA04,false,,,,2018-06-08 03:16:17
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:16:18
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:16:18
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:16:18
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:16:18
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:17:56
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:17:58
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:19:10
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:19:11
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:19:11
+185946404262,o-1z8xtzcqe7w0fa28x,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-08 03:19:24
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:20:35
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:20:36
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:20:36
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:20:37
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:20:37
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:20:37
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:20:37
+185946404262,o-1z8xtzcqe7w0fa28x,625292940D4870C3634F2446532735F7A400E0CC,false,pickup,pickup -l -t fifo -u -c,/usr/lib/postfix/pickup,2018-06-08 03:21:09
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:22:08
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:27:54
+185946404262,o-1z8xtzcqe7w0fa28x,202572BC224388C8D483DA5BAAB3796069FE9F22,false,python.3,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.3,2018-06-08 03:28:03
+185946404262,o-1z8xtzcqe7w0fa28x,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-08 03:28:45
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 02:58:31
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 02:58:32
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 02:58:32
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:00:15
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:00:16
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 03:00:16
+185946404262,o-1z8xtzcqe7w0fa28x,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-06-08 04:39:00
+185946404262,o-1z8xtzcqe7w0fa28x,759DFA6B002EB9BDADA38247706989297A731704,false,dash,/bin/sh -c   [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete,/bin/dash,2018-06-08 04:39:00
+185946404262,o-1z8xtzcqe7w0fa28x,26F4A383AA9979DA80900AFB601FC1A17FB3AF43,false,find,find /var/lib/php5 -depth -mindepth 1 -maxdepth 1 -type f -cmin +24 ! -execdir fuser -s {} ; -delete,/usr/bin/find,2018-06-08 04:39:00
+185946404262,o-1z8xtzcqe7w0fa28x,07A0A3981F4AB2925E99A7891C864156E8321050,false,fuser,fuser -s ./sess_kjldjtgonk9lks83t2034rs9s4,/bin/fuser,2018-06-08 04:39:03
+185946404262,o-1z8xtzcqe7w0fa28x,B6051F403D582574FA667BEA17DDD5A283F29FA7,false,ping,ping 192.168.102.22,/bin/ping,2018-06-08 04:50:18
+185946404262,o-1z8xtzcqe7w0fa28x,941100F8DB14DA4767A5AB5E1C0EB848E84F89AC,false,ping,ping 8.8.8.8,/bin/ping,2018-06-08 04:51:00
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:24:12
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:24:41
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:24:48
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:26:51
+185946404262,o-1z8xtzcqe7w0fa28x,22FB77A8CFCAE6119AC906C142FDAC79EA24C442,false,ping,ping 192.168.92.22,/bin/ping,2018-06-08 04:27:01
+185946404262,o-1z8xtzcqe7w0fa28x,3F5AF4E2D2E12EFD0913B398DEC110B769B07DA8,false,sshd,"sshd: root@notty    ",/usr/sbin/sshd,2018-06-08 04:02:06
+185946404262,o-1z8xtzcqe7w0fa28x,EB586965DA7D94F74830D5367C21E8B7DCD9C363,false,rsync,rsync --server --sender -vlogDtprze.iLs . /var/www/vhosts/.,/usr/bin/rsync,2018-06-08 04:02:06
+185946404262,o-1z8xtzcqe7w0fa28x,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-06-08 04:03:01
+185946404262,o-1z8xtzcqe7w0fa28x,412B3E1CF101728C509BA16C3CA230ED91F70FE5,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-06-08 04:03:01
+185946404262,o-1z8xtzcqe7w0fa28x,8A81D4FD60FED1CCD33283E0D58D01D34159691F,false,sleep,/bin/sleep 2727s,/bin/sleep,2018-06-08 04:03:01
+185946404262,o-1z8xtzcqe7w0fa28x,9CA3C443527E5EF3834C4CE4032AA33D69062C38,false,sshd,"sshd: root@pts/0    ",/usr/sbin/sshd,2018-06-08 04:07:12
+185946404262,o-1z8xtzcqe7w0fa28x,9E863A4DDE6F3B444103B29DE8075B8D31391B4C,false,bash,-bash,/bin/bash,2018-06-08 04:07:14
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:14:03
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:14:09
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:14:10
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:14:10
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:14:26
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:15:34
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:15:38
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:15:39
+185946404262,o-1z8xtzcqe7w0fa28x,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,false,apache2,/usr/sbin/apache2 -k start,/usr/lib/apache2/mpm-prefork/apache2,2018-06-08 04:15:39

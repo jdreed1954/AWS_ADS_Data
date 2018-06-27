@@ -1,0 +1,3 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-17vbev18sdyslf98g,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 12:40:23
+185946404262,o-17vbev18sdyslf98g,7E93B5494C79358E9A18BB20DB92C4529FDCD5E2,false,pickup,pickup -l -t fifo -u -c,/usr/lib/postfix/pickup,2018-05-29 12:45:47

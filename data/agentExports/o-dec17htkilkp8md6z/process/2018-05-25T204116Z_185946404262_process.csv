@@ -1,0 +1,3 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-dec17htkilkp8md6z,560F91FA5C13C4AEA11102BD8F30E609304FEE17,false,sendmail.sendmail,sendmail: ./w4L93N8Y010799 testtesttest.com.: user open,/usr/sbin/sendmail.sendmail,2018-05-25 20:23:22
+185946404262,o-dec17htkilkp8md6z,49089B3C8B75BBCBCBD3D0D1DB79A1BB305AB3EF,false,sendmail.sendmail,"sendmail: ./w4OIIm9d013481 from queue      ",/usr/sbin/sendmail.sendmail,2018-05-25 20:23:22

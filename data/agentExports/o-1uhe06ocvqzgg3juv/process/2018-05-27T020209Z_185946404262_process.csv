@@ -1,0 +1,1251 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-1uhe06ocvqzgg3juv,7AA8C4211E3025921CBB36B83E5E2867204C1DAC,false,bash,/bin/bash /var/opt/aws/discovery/update,/bin/bash,2018-05-27 02:20:49
+185946404262,o-1uhe06ocvqzgg3juv,A5C9ACD024F20C145A14A20F0197B92236E1952A,false,curl,curl -s --fail --retry 5 --max-time 30 -o /tmp/awsdiscoveryagent.0oQ7NWhF/CURRENT_RELEASE.sig https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/CURRENT_RELEASE.sig,/usr/bin/curl,2018-05-27 02:20:50
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 02:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 02:03:00
+185946404262,o-1uhe06ocvqzgg3juv,2B239857E055DCF3F25052508969451A3DD27344,false,sleep,/bin/sleep 1069s,/bin/sleep,2018-05-27 02:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 02:04:08
+185946404262,o-1uhe06ocvqzgg3juv,B5D855F9BA1CB9F3C6430FFBFAEF2E2481A9DBA4,false,sleep,sleep 35,/bin/sleep,2018-05-27 02:04:08
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 03:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 03:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 03:03:01
+185946404262,o-1uhe06ocvqzgg3juv,6E9475F504CFBE8A2510B09F7563D406CAB81091,false,sleep,/bin/sleep 2173s,/bin/sleep,2018-05-27 03:03:01
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-27 03:05:53
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 03:00:33
+185946404262,o-1uhe06ocvqzgg3juv,386E181D91688E51704848AB3FC84F31CD584EDB,false,sleep,sleep 10,/bin/sleep,2018-05-27 03:00:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 03:54:51
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 04:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 04:03:01
+185946404262,o-1uhe06ocvqzgg3juv,B27ADF9076B3393D3693DF1B2FFFB294DA861A30,false,sleep,/bin/sleep 80s,/bin/sleep,2018-05-27 04:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 04:04:30
+185946404262,o-1uhe06ocvqzgg3juv,595C55D5EBF2F6161FA6CDD7391C2C575A877BC2,false,sleep,sleep 27,/bin/sleep,2018-05-27 04:04:30
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 04:12:57
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 05:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-27 05:20:14
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-27 05:20:14
+185946404262,o-1uhe06ocvqzgg3juv,20D7F713DCE6B668067F31CB1864D3F67852A36E,false,SaviVersion.2,/opt/sophos-av/engine/SaviVersion /opt/sophos-av /opt/sophos-av/lib/sav /opt/sophos-av/lib/sav,/opt/sophos-av/engine/_/SaviVersion.2,2018-05-27 05:20:16
+185946404262,o-1uhe06ocvqzgg3juv,9DE939CFE01D37615D0DCC9548E3E8E5D138E42D,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.10 --ondemandcontrol=socketpair://79/86 socketpair://76/77 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-27 05:20:23
+185946404262,o-1uhe06ocvqzgg3juv,318F7A19E52A3E44F02D2F0DC0F20D0604482EDF,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/86 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-27 05:20:30
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-27 05:31:20
+185946404262,o-1uhe06ocvqzgg3juv,539033B12D1AFA47F42B2C054EF6383DD653E5E9,false,bash,/bin/sh /usr/bin/lsb_release --description,/bin/bash,2018-05-27 05:34:22
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 05:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 05:03:01
+185946404262,o-1uhe06ocvqzgg3juv,7A312E5FDCAF741E7D1F8F1B02F2326D8B4AE326,false,sleep,/bin/sleep 2047s,/bin/sleep,2018-05-27 05:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 05:04:42
+185946404262,o-1uhe06ocvqzgg3juv,CF77A8630345929E61B2C00B200AA0710EBC803C,false,sleep,sleep 20,/bin/sleep,2018-05-27 05:04:42
+185946404262,o-1uhe06ocvqzgg3juv,7AA8C4211E3025921CBB36B83E5E2867204C1DAC,false,bash,/bin/bash /var/opt/aws/discovery/update,/bin/bash,2018-05-27 05:37:08
+185946404262,o-1uhe06ocvqzgg3juv,29DD6FAE5F1117D604F76146C00B1D64986E8188,false,curl,curl -s --fail --retry 5 --max-time 30 -o /tmp/awsdiscoveryagent.uHs9t15A/discovery.gpg https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/discovery.gpg,/usr/bin/curl,2018-05-27 05:37:08
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 06:01:01
+185946404262,o-1uhe06ocvqzgg3juv,93A2D1217683C59501EAA3178D22313BE3B788B2,false,bash,/bin/bash /usr/bin/run-parts /etc/cron.hourly,/bin/bash,2018-05-27 06:01:01
+185946404262,o-1uhe06ocvqzgg3juv,F4626D196D022900B623170638E6D8D58A36C999,false,bash,/bin/bash /etc/cron.hourly/0anacron,/bin/bash,2018-05-27 06:01:01
+185946404262,o-1uhe06ocvqzgg3juv,449961C9B8F8370466EC0752DAFDDB8C6AD3605C,false,gawk,"awk -v progname=/etc/cron.hourly/0anacron progname {
+				   print progname "":\n""
+				   progname="""";
+			       }
+			       { print; }",/bin/gawk,2018-05-27 06:01:01
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 06:01:01
+185946404262,o-1uhe06ocvqzgg3juv,B19DD2A0508096992AAA5A1277A2E5066BAB2EF3,false,bash,/bin/sh /usr/bin/on_ac_power,/bin/bash,2018-05-27 06:01:01
+185946404262,o-1uhe06ocvqzgg3juv,C274F4C6241DADE0C8031CE4FA3DE555E4C9C833,false,hal-find-by-capability,hal-find-by-capability --capability ac_adapter,/usr/bin/hal-find-by-capability,2018-05-27 06:01:01
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 06:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 06:03:01
+185946404262,o-1uhe06ocvqzgg3juv,AD8B629013E5145B8E1EBA8388A6AF1C2FFCFD6C,false,sleep,/bin/sleep 740s,/bin/sleep,2018-05-27 06:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 06:20:06
+185946404262,o-1uhe06ocvqzgg3juv,0F6085A49F4BD562AE0CCD6BAC530DFBA959B3FD,false,savconfig.2,/opt/sophos-av/bin/_/savconfig --displaypassword --advanced --xml query,/opt/sophos-av/bin/_/savconfig.2,2018-05-27 06:20:06
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 07:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 07:03:00
+185946404262,o-1uhe06ocvqzgg3juv,9D23E69FF45E358316B026844D2CF368BA27A147,false,sleep,/bin/sleep 35s,/bin/sleep,2018-05-27 07:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 07:05:05
+185946404262,o-1uhe06ocvqzgg3juv,006BD99C2E2267E53E93D06D2E0E252155CC6411,false,sleep,sleep 51,/bin/sleep,2018-05-27 07:05:05
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 07:20:06
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 08:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 08:03:01
+185946404262,o-1uhe06ocvqzgg3juv,050561FE2A91CAEEDB4DB86ECD4B33C346090871,false,sleep,/bin/sleep 2854s,/bin/sleep,2018-05-27 08:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 08:05:16
+185946404262,o-1uhe06ocvqzgg3juv,15C6987A621267B39BF80AAF7E34C6B26933A15C,false,sleep,sleep 17,/bin/sleep,2018-05-27 08:05:16
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 09:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 09:03:01
+185946404262,o-1uhe06ocvqzgg3juv,A1431A76138892271F4CFDBDD972122C40BA0F43,false,sleep,/bin/sleep 574s,/bin/sleep,2018-05-27 09:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 09:10:45
+185946404262,o-1uhe06ocvqzgg3juv,B5F0BC3545772FA3826C83C87CF90B816205DC8B,false,sleep,sleep 4,/bin/sleep,2018-05-27 09:10:45
+185946404262,o-1uhe06ocvqzgg3juv,A791D563C3FC2D14774400946E37A6DD03C592AF,false,bash,/bin/bash /usr/bin/run-parts /etc/cron.daily,/bin/bash,2018-05-27 09:12:01
+185946404262,o-1uhe06ocvqzgg3juv,4358EBF907F4F5D089CD1D5A7B7853B9A6B2D2FA,false,bash,/bin/sh /etc/cron.daily/logrotate,/bin/bash,2018-05-27 09:12:01
+185946404262,o-1uhe06ocvqzgg3juv,C2DDC83128C16D67C475AC9A2FD6D6A10046AB9C,false,gawk,"awk -v progname=/etc/cron.daily/logrotate progname {
+				   print progname "":\n""
+				   progname="""";
+			       }
+			       { print; }",/bin/gawk,2018-05-27 09:12:01
+185946404262,o-1uhe06ocvqzgg3juv,0B195AF6523735C7BEB57E0BF2A4049AA2173069,false,logrotate,/usr/sbin/logrotate /etc/logrotate.conf,/usr/sbin/logrotate,2018-05-27 09:12:01
+185946404262,o-1uhe06ocvqzgg3juv,F8BC51B3B3CB834470293790E4BE515F2377D2CE,false,bash,"sh -c 
+      /usr/bin/fail2ban-client flushlogs >/dev/null || true
+ logrotate_script /var/log/fail2ban.log",/bin/bash,2018-05-27 09:12:01
+185946404262,o-1uhe06ocvqzgg3juv,C55D4DDDF754F51B0B942F5139595907EFCFC170,false,python,/usr/bin/python -Es /usr/bin/fail2ban-client flushlogs,/usr/bin/python,2018-05-27 09:12:01
+185946404262,o-1uhe06ocvqzgg3juv,E2F97FAEBF5B293A4FEA3847E5094C97269DC41B,false,bash,/bin/sh /etc/cron.daily/mlocate.cron,/bin/bash,2018-05-27 09:12:07
+185946404262,o-1uhe06ocvqzgg3juv,639867719F2962E928346661A5DFB64A0219B8B0,false,gawk,"awk -v progname=/etc/cron.daily/mlocate.cron progname {
+				   print progname "":\n""
+				   progname="""";
+			       }
+			       { print; }",/bin/gawk,2018-05-27 09:12:07
+185946404262,o-1uhe06ocvqzgg3juv,3BD555B0D50D10A695780324EE9FF95244F78857,false,updatedb,"/usr/bin/updatedb -f sysfs
+rootfs
+bdev
+proc
+cgroup
+cpuset
+tmpfs
+devtmpfs
+binfmt_misc
+debugfs
+securityfs
+sockfs
+usbfs
+pipefs
+anon_inodefs
+inotifyfs
+devpts
+ramfs
+hugetlbfs
+pstore
+mqueue
+drm
+rpc_pipefs
+autofs",/usr/bin/updatedb,2018-05-27 09:12:07
+185946404262,o-1uhe06ocvqzgg3juv,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,false,httpd,/usr/sbin/httpd,/usr/sbin/httpd,2018-05-27 09:12:16
+185946404262,o-1uhe06ocvqzgg3juv,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,false,httpd,/usr/sbin/httpd,/usr/sbin/httpd,2018-05-27 09:12:16
+185946404262,o-1uhe06ocvqzgg3juv,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,false,httpd,/usr/sbin/httpd,/usr/sbin/httpd,2018-05-27 09:12:16
+185946404262,o-1uhe06ocvqzgg3juv,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,false,httpd,/usr/sbin/httpd,/usr/sbin/httpd,2018-05-27 09:12:16
+185946404262,o-1uhe06ocvqzgg3juv,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,false,httpd,/usr/sbin/httpd,/usr/sbin/httpd,2018-05-27 09:12:16
+185946404262,o-1uhe06ocvqzgg3juv,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,false,httpd,/usr/sbin/httpd,/usr/sbin/httpd,2018-05-27 09:12:16
+185946404262,o-1uhe06ocvqzgg3juv,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,false,httpd,/usr/sbin/httpd,/usr/sbin/httpd,2018-05-27 09:12:16
+185946404262,o-1uhe06ocvqzgg3juv,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,false,httpd,/usr/sbin/httpd,/usr/sbin/httpd,2018-05-27 09:12:16
+185946404262,o-1uhe06ocvqzgg3juv,7F2C084F6EFD4F18A032F2DB11728038D4AA54EF,false,bash,/bin/bash /etc/cron.daily/readahead.cron,/bin/bash,2018-05-27 09:12:31
+185946404262,o-1uhe06ocvqzgg3juv,27BF368E4FF7A508AE74DCFC5A269A7779898A32,false,gawk,"awk -v progname=/etc/cron.daily/readahead.cron progname {
+				   print progname "":\n""
+				   progname="""";
+			       }
+			       { print; }",/bin/gawk,2018-05-27 09:12:31
+185946404262,o-1uhe06ocvqzgg3juv,8851FFA5499CAB6B3FE2402C8965138D1EC47821,false,readahead,/sbin/readahead --sort --output=/var/lib/readahead/early.sorted /var/lib/readahead/custom.early,/sbin/readahead,2018-05-27 09:12:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 09:34:24
+185946404262,o-1uhe06ocvqzgg3juv,E8079C69A7969D3A9CB9D0FDFB4ED256D58B4B60,false,anacron,/usr/sbin/anacron -s,/usr/sbin/anacron,2018-05-27 09:01:01
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 10:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 10:03:01
+185946404262,o-1uhe06ocvqzgg3juv,114424EBBC28292B09A8EB7864B37E9587D928B1,false,sleep,/bin/sleep 2253s,/bin/sleep,2018-05-27 10:03:01
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 10:44:31
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 10:20:05
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 11:01:06
+185946404262,o-1uhe06ocvqzgg3juv,867D8DB8F5B59A1BC26238D0EBCBBD677BF384C7,false,sleep,sleep 19,/bin/sleep,2018-05-27 11:01:06
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 11:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 11:03:01
+185946404262,o-1uhe06ocvqzgg3juv,6CA41FDB6798E3BBC02A168AAA93FB7F0774B254,false,sleep,/bin/sleep 140s,/bin/sleep,2018-05-27 11:03:01
+185946404262,o-1uhe06ocvqzgg3juv,7AA8C4211E3025921CBB36B83E5E2867204C1DAC,false,bash,/bin/bash /var/opt/aws/discovery/update,/bin/bash,2018-05-27 11:05:21
+185946404262,o-1uhe06ocvqzgg3juv,231651132DDE1B9579F36D4A9372B744F050FE11,false,curl,curl -s --fail --retry 5 --max-time 30 -o /tmp/awsdiscoveryagent.rQgzqQbZ/CURRENT_RELEASE.sig https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/CURRENT_RELEASE.sig,/usr/bin/curl,2018-05-27 11:05:22
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 11:20:06
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-27 11:20:15
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-27 11:20:15
+185946404262,o-1uhe06ocvqzgg3juv,20D7F713DCE6B668067F31CB1864D3F67852A36E,false,SaviVersion.2,/opt/sophos-av/engine/SaviVersion /opt/sophos-av /opt/sophos-av/lib/sav /opt/sophos-av/lib/sav,/opt/sophos-av/engine/_/SaviVersion.2,2018-05-27 11:20:24
+185946404262,o-1uhe06ocvqzgg3juv,D0EF2CAD03D7EBC793AA96FAA4E0CD1E4F6892D6,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.11 --ondemandcontrol=socketpair://71/72 socketpair://68/70 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-27 11:20:32
+185946404262,o-1uhe06ocvqzgg3juv,318F7A19E52A3E44F02D2F0DC0F20D0604482EDF,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/86 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-27 11:20:38
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 12:20:06
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 12:01:18
+185946404262,o-1uhe06ocvqzgg3juv,5E376BD923874227401A651EE4E7FBB7C3E9ED29,false,sleep,sleep 21,/bin/sleep,2018-05-27 12:01:18
+185946404262,o-1uhe06ocvqzgg3juv,145DE21E7D470B23B24C97D447E9D8C82E1944EB,false,git,git fetch,/usr/bin/git,2018-05-27 12:01:39
+185946404262,o-1uhe06ocvqzgg3juv,ABA2F071F836CF8364A97EE28B916D617BA998FD,false,git-remote-http,git-remote-http origin http://scm.edmeasures.com/sysadmin.git,/usr/libexec/git-core/git-remote-http,2018-05-27 12:01:39
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 12:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 12:03:00
+185946404262,o-1uhe06ocvqzgg3juv,D536C4CF40FCE9DDB736F647CC6AAE441BEDCB9C,false,sleep,/bin/sleep 198s,/bin/sleep,2018-05-27 12:03:00
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 13:20:06
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 13:35:09
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 13:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 13:03:01
+185946404262,o-1uhe06ocvqzgg3juv,D17E96448F79D92B2E3799E0C2E3041372BE531D,false,sleep,/bin/sleep 895s,/bin/sleep,2018-05-27 13:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 14:01:41
+185946404262,o-1uhe06ocvqzgg3juv,FACAE7CDBB2718B965A03959E0FBE96A523E34BB,false,sleep,sleep 7,/bin/sleep,2018-05-27 14:01:41
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 14:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 14:03:01
+185946404262,o-1uhe06ocvqzgg3juv,84DFEB073E91D0960D305CB776BD72310E54461A,false,sleep,/bin/sleep 2919s,/bin/sleep,2018-05-27 14:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 14:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 15:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 15:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8C6600F33C4D753DCA7AC225CF6C8216C8E0AFA4,false,sleep,/bin/sleep 582s,/bin/sleep,2018-05-27 15:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 15:20:05
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 15:01:52
+185946404262,o-1uhe06ocvqzgg3juv,5E376BD923874227401A651EE4E7FBB7C3E9ED29,false,sleep,sleep 21,/bin/sleep,2018-05-27 15:01:52
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 15:53:37
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 15:53:37
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 15:53:37
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 15:53:37
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 15:53:37
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 15:53:37
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 15:53:37
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 15:53:37
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 16:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 16:03:01
+185946404262,o-1uhe06ocvqzgg3juv,A54CC91FD3E9521BCA46C03D991A1C575D07E3B2,false,sleep,/bin/sleep 812s,/bin/sleep,2018-05-27 16:03:01
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 16:11:42
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 17:02:18
+185946404262,o-1uhe06ocvqzgg3juv,9CADF95D9D7F00990ED2876757073C839A4F6457,false,sleep,sleep 50,/bin/sleep,2018-05-27 17:02:18
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 17:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 17:03:00
+185946404262,o-1uhe06ocvqzgg3juv,AE5207E99757841075F08618C39C43AA3A89801A,false,sleep,/bin/sleep 2124s,/bin/sleep,2018-05-27 17:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 18:02:29
+185946404262,o-1uhe06ocvqzgg3juv,0053E0965109021ADD2F9763E562C5AA0DB83060,false,sleep,sleep 54,/bin/sleep,2018-05-27 18:02:30
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 18:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 18:03:01
+185946404262,o-1uhe06ocvqzgg3juv,F8094CB61D0880095928F6244F1E5498D28FB402,false,sleep,/bin/sleep 2045s,/bin/sleep,2018-05-27 18:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 18:20:05
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 19:02:41
+185946404262,o-1uhe06ocvqzgg3juv,E335BB8C4381A50E2A6B8DB1BE2340E088D75A06,false,sleep,sleep 56,/bin/sleep,2018-05-27 19:02:41
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 19:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 19:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BFE6CA765891E33F457A6B0867F77146D09031A3,false,sleep,/bin/sleep 1467s,/bin/sleep,2018-05-27 19:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 19:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-27 19:20:14
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-27 19:20:14
+185946404262,o-1uhe06ocvqzgg3juv,20D7F713DCE6B668067F31CB1864D3F67852A36E,false,SaviVersion.2,/opt/sophos-av/engine/SaviVersion /opt/sophos-av /opt/sophos-av/lib/sav /opt/sophos-av/lib/sav,/opt/sophos-av/engine/_/SaviVersion.2,2018-05-27 19:20:21
+185946404262,o-1uhe06ocvqzgg3juv,A848D8848539EEA64C95AF85D808DE7367626E23,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.12 --ondemandcontrol=socketpair://79/81 socketpair://76/78 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-27 19:20:29
+185946404262,o-1uhe06ocvqzgg3juv,66AEA8C2EA5A183E6A3B84563A15F4DE48E38B25,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/69 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-27 19:20:35
+185946404262,o-1uhe06ocvqzgg3juv,7AA8C4211E3025921CBB36B83E5E2867204C1DAC,false,bash,/bin/bash /var/opt/aws/discovery/update,/bin/bash,2018-05-27 19:27:28
+185946404262,o-1uhe06ocvqzgg3juv,EB149803563BF78BA97ED6C6A800450709EC0FBF,false,bash,/bin/bash /var/opt/aws/discovery/update,/bin/bash,2018-05-27 19:27:29
+185946404262,o-1uhe06ocvqzgg3juv,20A99366E37C4D532838AAAC14940C88B8493E21,false,gpg2,gpg -q --no-default-keyring --keyring /tmp/awsdiscoveryagent.kHMXtdEN/discovery.gpg --with-colons --fingerprint,/usr/bin/gpg2,2018-05-27 19:27:29
+185946404262,o-1uhe06ocvqzgg3juv,40674E3F5D3E7D60BBAF491A99AAAA22A184AC7D,false,bash,/bin/bash /var/opt/aws/discovery/update,/bin/bash,2018-05-27 19:27:29
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-27 19:30:17
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 20:20:06
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 20:02:52
+185946404262,o-1uhe06ocvqzgg3juv,905E7F7117908EA51BDE57D26FD24055621961A2,false,sleep,sleep 40,/bin/sleep,2018-05-27 20:02:53
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 20:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 20:03:01
+185946404262,o-1uhe06ocvqzgg3juv,7BB7684BEDED0AB80AF537696875F90251F26465,false,sleep,/bin/sleep 1196s,/bin/sleep,2018-05-27 20:03:01
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 21:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 21:03:01
+185946404262,o-1uhe06ocvqzgg3juv,6B08B79D9311FAB7C1B353FDECD506859D0F1FB4,false,sleep,/bin/sleep 412s,/bin/sleep,2018-05-27 21:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 21:03:04
+185946404262,o-1uhe06ocvqzgg3juv,A7031FDE086A5C6CD9BF902CAE11C6202B0919FF,false,sleep,sleep 22,/bin/sleep,2018-05-27 21:03:04
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 21:10:01
+185946404262,o-1uhe06ocvqzgg3juv,48E40210934007460CF1F75754D67B8C4E132AF9,false,,,,2018-05-27 21:10:01
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:35:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:41:15
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 22:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 22:03:01
+185946404262,o-1uhe06ocvqzgg3juv,C3BEB0F07F59D690D9C489981F7AE2D2AE39C15F,false,sleep,/bin/sleep 503s,/bin/sleep,2018-05-27 22:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 22:20:05
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-27 22:20:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-27 22:27:10
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-27 22:31:15
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-27 23:20:06
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-27 23:20:42
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-27 23:20:42
+185946404262,o-1uhe06ocvqzgg3juv,20D7F713DCE6B668067F31CB1864D3F67852A36E,false,SaviVersion.2,/opt/sophos-av/engine/SaviVersion /opt/sophos-av /opt/sophos-av/lib/sav /opt/sophos-av/lib/sav,/opt/sophos-av/engine/_/SaviVersion.2,2018-05-27 23:20:53
+185946404262,o-1uhe06ocvqzgg3juv,3F5EEFB0E5F00FCEA4401A12FD47DBDE4D0CB556,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.13 --ondemandcontrol=socketpair://72/73 socketpair://68/71 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-27 23:21:02
+185946404262,o-1uhe06ocvqzgg3juv,66CD3D0F96B8231FC8D5A682FE6CB88C508E00B0,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/84 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-27 23:21:09
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-27 23:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-27 23:03:00
+185946404262,o-1uhe06ocvqzgg3juv,EB65464F8E48249C9A47309EC37F5B505626714C,false,sleep,/bin/sleep 1087s,/bin/sleep,2018-05-27 23:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-27 23:03:27
+185946404262,o-1uhe06ocvqzgg3juv,99FF15CEAC8BC267B3744C3906032140895E88B8,false,sleep,sleep 39,/bin/sleep,2018-05-27 23:03:27
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 00:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 00:03:01
+185946404262,o-1uhe06ocvqzgg3juv,4D4C29993362749AAC39C2FB3C18F52038A4617D,false,sleep,/bin/sleep 1094s,/bin/sleep,2018-05-28 00:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 00:18:56
+185946404262,o-1uhe06ocvqzgg3juv,E9211F25134EA16D2B4099751F35AEFB5F6A8956,false,sleep,sleep 49,/bin/sleep,2018-05-28 00:18:56
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 00:20:06
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-28 00:51:03
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 01:20:05
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 01:23:53
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 01:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 01:03:00
+185946404262,o-1uhe06ocvqzgg3juv,41366FF1650822FBDB7CDE2287BF448C72B6070D,false,sleep,/bin/sleep 1303s,/bin/sleep,2018-05-28 01:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 01:04:05
+185946404262,o-1uhe06ocvqzgg3juv,A0564A6707D80FBBF39C8971208823599F7B7133,false,sleep,sleep 41,/bin/sleep,2018-05-28 01:04:05
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 02:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 02:03:01
+185946404262,o-1uhe06ocvqzgg3juv,CBF51F493BB6DA4519D09CC28D38809B64C21C8E,false,sleep,/bin/sleep 2874s,/bin/sleep,2018-05-28 02:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 02:04:16
+185946404262,o-1uhe06ocvqzgg3juv,1468D827F9F4B3821342D6533287DA9E18BFE908,false,sleep,sleep 6,/bin/sleep,2018-05-28 02:04:16
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 02:20:05
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:50:27
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:50:27
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:50:27
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:50:27
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:50:27
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:50:27
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:50:27
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:50:27
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:50:27
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 03:28:20
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 03:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 03:03:01
+185946404262,o-1uhe06ocvqzgg3juv,C36364871D85C40F79C37393806FAFD7ED81C750,false,sleep,/bin/sleep 2460s,/bin/sleep,2018-05-28 03:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 04:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 04:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 04:03:01
+185946404262,o-1uhe06ocvqzgg3juv,C66CC76994723AA9675C1129B7031EFBE3F6DC50,false,sleep,/bin/sleep 954s,/bin/sleep,2018-05-28 04:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 04:05:24
+185946404262,o-1uhe06ocvqzgg3juv,DF00D20531BD7A028A63C334DECF26612F7B48C3,false,sleep,sleep 24,/bin/sleep,2018-05-28 04:05:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 04:06:32
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 05:00:50
+185946404262,o-1uhe06ocvqzgg3juv,B5D855F9BA1CB9F3C6430FFBFAEF2E2481A9DBA4,false,sleep,sleep 35,/bin/sleep,2018-05-28 05:00:50
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 05:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 05:03:00
+185946404262,o-1uhe06ocvqzgg3juv,C2B70B2A6182DD04C4BF4AFC1060490AFFF73E59,false,sleep,/bin/sleep 25s,/bin/sleep,2018-05-28 05:03:00
+185946404262,o-1uhe06ocvqzgg3juv,1224C7094824883441CD15F9FD57CB30CAE1F0E1,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.14 --ondemandcontrol=socketpair://81/85 socketpair://79/84 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-28 05:20:25
+185946404262,o-1uhe06ocvqzgg3juv,318F7A19E52A3E44F02D2F0DC0F20D0604482EDF,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/86 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-28 05:20:31
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-28 05:33:49
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-28 05:03:20
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 05:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 06:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 06:03:00
+185946404262,o-1uhe06ocvqzgg3juv,E0FE45A7CD38C112874036BD16B81BC2D8F21167,false,sleep,/bin/sleep 1366s,/bin/sleep,2018-05-28 06:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 06:01:01
+185946404262,o-1uhe06ocvqzgg3juv,595C55D5EBF2F6161FA6CDD7391C2C575A877BC2,false,sleep,sleep 27,/bin/sleep,2018-05-28 06:01:02
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 06:20:06
+185946404262,o-1uhe06ocvqzgg3juv,7AA8C4211E3025921CBB36B83E5E2867204C1DAC,false,bash,/bin/bash /var/opt/aws/discovery/update,/bin/bash,2018-05-28 06:25:46
+185946404262,o-1uhe06ocvqzgg3juv,4C84437952E789A1FF07A4AE113F84FD439E96E4,false,curl,curl -s --fail --retry 5 --max-time 30 -o /tmp/awsdiscoveryagent.xaxGPzCM/CURRENT_RELEASE https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/CURRENT_RELEASE,/usr/bin/curl,2018-05-28 06:25:47
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 07:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 07:03:00
+185946404262,o-1uhe06ocvqzgg3juv,0E9B229E6BA52645E602306205502E3DC3545DD5,false,sleep,/bin/sleep 67s,/bin/sleep,2018-05-28 07:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 07:01:13
+185946404262,o-1uhe06ocvqzgg3juv,485038D64428E30949BABEB9CDEA64BC9579679C,false,sleep,sleep 45,/bin/sleep,2018-05-28 07:01:13
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 08:07:35
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 08:20:05
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 08:01:24
+185946404262,o-1uhe06ocvqzgg3juv,5E376BD923874227401A651EE4E7FBB7C3E9ED29,false,sleep,sleep 21,/bin/sleep,2018-05-28 08:01:24
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 08:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 08:03:01
+185946404262,o-1uhe06ocvqzgg3juv,0436CC12F25D722F1C12F0816CDBC8A3D0CEEB25,false,sleep,/bin/sleep 1442s,/bin/sleep,2018-05-28 08:03:01
+185946404262,o-1uhe06ocvqzgg3juv,E8079C69A7969D3A9CB9D0FDFB4ED256D58B4B60,false,anacron,/usr/sbin/anacron -s,/usr/sbin/anacron,2018-05-28 09:01:01
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 09:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 09:03:01
+185946404262,o-1uhe06ocvqzgg3juv,A0343A8DB972AA44136A1420B51568DBD2781E93,false,sleep,/bin/sleep 1730s,/bin/sleep,2018-05-28 09:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 09:06:46
+185946404262,o-1uhe06ocvqzgg3juv,6830B82437E769007DBE253195DD26F01F4A56AE,false,sleep,sleep 11,/bin/sleep,2018-05-28 09:06:46
+185946404262,o-1uhe06ocvqzgg3juv,A791D563C3FC2D14774400946E37A6DD03C592AF,false,bash,/bin/bash /usr/bin/run-parts /etc/cron.daily,/bin/bash,2018-05-28 09:33:01
+185946404262,o-1uhe06ocvqzgg3juv,E2F97FAEBF5B293A4FEA3847E5094C97269DC41B,false,bash,/bin/sh /etc/cron.daily/mlocate.cron,/bin/bash,2018-05-28 09:33:03
+185946404262,o-1uhe06ocvqzgg3juv,639867719F2962E928346661A5DFB64A0219B8B0,false,gawk,"awk -v progname=/etc/cron.daily/mlocate.cron progname {
+				   print progname "":\n""
+				   progname="""";
+			       }
+			       { print; }",/bin/gawk,2018-05-28 09:33:03
+185946404262,o-1uhe06ocvqzgg3juv,3BD555B0D50D10A695780324EE9FF95244F78857,false,updatedb,"/usr/bin/updatedb -f sysfs
+rootfs
+bdev
+proc
+cgroup
+cpuset
+tmpfs
+devtmpfs
+binfmt_misc
+debugfs
+securityfs
+sockfs
+usbfs
+pipefs
+anon_inodefs
+inotifyfs
+devpts
+ramfs
+hugetlbfs
+pstore
+mqueue
+drm
+rpc_pipefs
+autofs",/usr/bin/updatedb,2018-05-28 09:33:03
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 10:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-28 10:20:14
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-28 10:20:14
+185946404262,o-1uhe06ocvqzgg3juv,8C5198DDC4191D09F75150EFD24C81EB65E2367A,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.15 --ondemandcontrol=socketpair://77/86 socketpair://73/74 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-28 10:20:33
+185946404262,o-1uhe06ocvqzgg3juv,318F7A19E52A3E44F02D2F0DC0F20D0604482EDF,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/86 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-28 10:20:40
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 10:01:56
+185946404262,o-1uhe06ocvqzgg3juv,006BD99C2E2267E53E93D06D2E0E252155CC6411,false,sleep,sleep 51,/bin/sleep,2018-05-28 10:01:56
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 10:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 10:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8CBC506FC76A9E46A1163241E4F79E41B358AEDE,false,sleep,/bin/sleep 2313s,/bin/sleep,2018-05-28 10:03:01
+185946404262,o-1uhe06ocvqzgg3juv,AC694385E65325009835D64CBF1131C7CA824402,false,bash,bash /usr/local/bin/automysqlbackup -bc /etc/automysqlbackup/myserver.conf,/bin/bash,2018-05-28 11:02:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 11:02:01
+185946404262,o-1uhe06ocvqzgg3juv,D5988EDBC276D359E857426FF2F91950EEB5022C,false,sleep,sleep 9,/bin/sleep,2018-05-28 11:02:01
+185946404262,o-1uhe06ocvqzgg3juv,A3BA4B558F2E4034EDC87FC3DC30F2336EFBA11F,false,bash,bash /usr/local/bin/automysqlbackup -bc /etc/automysqlbackup/myserver.conf,/bin/bash,2018-05-28 11:02:01
+185946404262,o-1uhe06ocvqzgg3juv,102A8A0D64EFAD27DFC403B209CA3AE833F181E1,false,mysql,mysql --user=root --password=x xxxxxxx --host=localhost --port=3306 --batch --skip-column-names -e show databases,/usr/bin/mysql,2018-05-28 11:02:01
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 11:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 11:03:00
+185946404262,o-1uhe06ocvqzgg3juv,CEADF539FA6605C2525CAE82664DF366290FD702,false,sleep,/bin/sleep 2935s,/bin/sleep,2018-05-28 11:03:00
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 11:20:06
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:22:24
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 12:20:05
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:32
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 11:46:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 12:02:38
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 12:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 12:03:01
+185946404262,o-1uhe06ocvqzgg3juv,B90B959F62F26864B406996F94F9828206D9DB8C,false,sleep,/bin/sleep 1446s,/bin/sleep,2018-05-28 12:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 13:20:06
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 13:02:27
+185946404262,o-1uhe06ocvqzgg3juv,756CD2CEC59A13303311DAD096EB6E9DA443A84C,false,sleep,sleep 36,/bin/sleep,2018-05-28 13:02:27
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 13:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 13:03:01
+185946404262,o-1uhe06ocvqzgg3juv,D9B3FB31825E67CD1EA1158F60576661A191DE96,false,sleep,/bin/sleep 1515s,/bin/sleep,2018-05-28 13:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 14:20:05
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 14:02:33
+185946404262,o-1uhe06ocvqzgg3juv,A5C40084ED87B9C4D86FD2634B408D1003A46DC9,false,sleep,sleep 26,/bin/sleep,2018-05-28 14:02:33
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 14:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 14:03:00
+185946404262,o-1uhe06ocvqzgg3juv,801D98E29B8BDB12F373ED1453B0F080A9D961F4,false,sleep,/bin/sleep 1791s,/bin/sleep,2018-05-28 14:03:00
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 15:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-28 15:20:14
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-28 15:20:15
+185946404262,o-1uhe06ocvqzgg3juv,20D7F713DCE6B668067F31CB1864D3F67852A36E,false,SaviVersion.2,/opt/sophos-av/engine/SaviVersion /opt/sophos-av /opt/sophos-av/lib/sav /opt/sophos-av/lib/sav,/opt/sophos-av/engine/_/SaviVersion.2,2018-05-28 15:20:21
+185946404262,o-1uhe06ocvqzgg3juv,49F24D59068AE836DF99D72AEBB870C1D7858EEF,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.16 --ondemandcontrol=socketpair://82/83 socketpair://79/81 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-28 15:20:29
+185946404262,o-1uhe06ocvqzgg3juv,0D81C9032B895F232B4249274D975ABA143AA82E,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/76 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-28 15:20:36
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 15:02:48
+185946404262,o-1uhe06ocvqzgg3juv,1468D827F9F4B3821342D6533287DA9E18BFE908,false,sleep,sleep 6,/bin/sleep,2018-05-28 15:02:48
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 15:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 15:03:01
+185946404262,o-1uhe06ocvqzgg3juv,7AFE19A12409701E4C46A85997D907C832D8FF1D,false,sleep,/bin/sleep 144s,/bin/sleep,2018-05-28 15:03:01
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 15:15:25
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 16:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 16:03:00
+185946404262,o-1uhe06ocvqzgg3juv,F84D821B860D8DD400BB0BA86C4D1B34740692A0,false,sleep,/bin/sleep 2557s,/bin/sleep,2018-05-28 16:03:00
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 16:20:06
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 16:02:53
+185946404262,o-1uhe06ocvqzgg3juv,6AD05ABD19238F7F4AAE22E4496A784E1875CE94,false,sleep,sleep 53,/bin/sleep,2018-05-28 16:02:53
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 17:20:05
+185946404262,o-1uhe06ocvqzgg3juv,0F6085A49F4BD562AE0CCD6BAC530DFBA959B3FD,false,savconfig.2,/opt/sophos-av/bin/_/savconfig --displaypassword --advanced --xml query,/opt/sophos-av/bin/_/savconfig.2,2018-05-28 17:20:05
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 17:33:56
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 17:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 17:03:01
+185946404262,o-1uhe06ocvqzgg3juv,FDD29713448D241D786BC23EFDAAF95146901569,false,sleep,/bin/sleep 1663s,/bin/sleep,2018-05-28 17:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 17:03:02
+185946404262,o-1uhe06ocvqzgg3juv,867D8DB8F5B59A1BC26238D0EBCBBD677BF384C7,false,sleep,sleep 19,/bin/sleep,2018-05-28 17:03:02
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 18:20:06
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 18:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 18:03:01
+185946404262,o-1uhe06ocvqzgg3juv,69D88E0DEE9600502EC22F9E0B47CCAD825CE684,false,sleep,/bin/sleep 2169s,/bin/sleep,2018-05-28 18:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 18:03:13
+185946404262,o-1uhe06ocvqzgg3juv,485038D64428E30949BABEB9CDEA64BC9579679C,false,sleep,sleep 45,/bin/sleep,2018-05-28 18:03:14
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 19:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 19:03:01
+185946404262,o-1uhe06ocvqzgg3juv,6C58856A2BEB5CC358EE7EE89F5FE3BAEBA2F1CD,false,sleep,/bin/sleep 703s,/bin/sleep,2018-05-28 19:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 19:03:23
+185946404262,o-1uhe06ocvqzgg3juv,4561C275543D87F424740FF4B127BD3E4262C1C1,false,sleep,sleep 16,/bin/sleep,2018-05-28 19:03:23
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-28 19:32:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 20:36:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 20:36:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 20:36:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 20:36:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 20:36:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 20:36:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 20:36:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 20:36:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-28 20:36:40
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 20:03:34
+185946404262,o-1uhe06ocvqzgg3juv,1EB18C629DE1DA3A5EDFE26B92B857C057E9370F,false,sleep,sleep 38,/bin/sleep,2018-05-28 20:03:34
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 20:20:06
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 21:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 21:03:01
+185946404262,o-1uhe06ocvqzgg3juv,762FC099FA47472FB126792C141D65D39CBFB881,false,sleep,/bin/sleep 1318s,/bin/sleep,2018-05-28 21:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 21:03:42
+185946404262,o-1uhe06ocvqzgg3juv,6AD05ABD19238F7F4AAE22E4496A784E1875CE94,false,sleep,sleep 53,/bin/sleep,2018-05-28 21:03:42
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 21:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-28 22:20:15
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-28 22:20:15
+185946404262,o-1uhe06ocvqzgg3juv,20D7F713DCE6B668067F31CB1864D3F67852A36E,false,SaviVersion.2,/opt/sophos-av/engine/SaviVersion /opt/sophos-av /opt/sophos-av/lib/sav /opt/sophos-av/lib/sav,/opt/sophos-av/engine/_/SaviVersion.2,2018-05-28 22:20:26
+185946404262,o-1uhe06ocvqzgg3juv,8A999BAC05FA7A3358BE347920ACD2CD55A8CA60,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.17 --ondemandcontrol=socketpair://76/77 socketpair://73/74 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-28 22:20:36
+185946404262,o-1uhe06ocvqzgg3juv,56F7C0B5F22A01E7AF99BA724D2EE3D2C38D846D,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/77 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-28 22:20:43
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-28 22:34:04
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 22:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 22:03:01
+185946404262,o-1uhe06ocvqzgg3juv,65F10B4C62F00272E0C15A5CC8A301C2ABCC3A55,false,sleep,/bin/sleep 1525s,/bin/sleep,2018-05-28 22:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 22:20:05
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-28 22:20:10
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-28 23:01:25
+185946404262,o-1uhe06ocvqzgg3juv,1EB18C629DE1DA3A5EDFE26B92B857C057E9370F,false,sleep,sleep 38,/bin/sleep,2018-05-28 23:01:25
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-28 23:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-28 23:03:01
+185946404262,o-1uhe06ocvqzgg3juv,468610D938B3D2F03E923A6C76853674DCD63F96,false,sleep,/bin/sleep 1185s,/bin/sleep,2018-05-28 23:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-28 23:20:06
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 00:20:06
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 00:01:36
+185946404262,o-1uhe06ocvqzgg3juv,3D5580D632F03C56B1D489F87A3B13966B102B3B,false,sleep,sleep 52,/bin/sleep,2018-05-29 00:01:37
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 00:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 00:03:00
+185946404262,o-1uhe06ocvqzgg3juv,C923593EEFF22391DA1A1D691839C581A9F9ECF0,false,sleep,/bin/sleep 1823s,/bin/sleep,2018-05-29 00:03:00
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 01:37:03
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 01:02:18
+185946404262,o-1uhe06ocvqzgg3juv,7F647712C76CD20AD8480B02E316078E3B1F9127,false,sleep,sleep 18,/bin/sleep,2018-05-29 01:02:18
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 01:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 01:03:00
+185946404262,o-1uhe06ocvqzgg3juv,B64A56F1059F884A16F15D75490D381C041BE1E7,false,sleep,/bin/sleep 1042s,/bin/sleep,2018-05-29 01:03:00
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 01:20:05
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 01:29:47
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 02:02:29
+185946404262,o-1uhe06ocvqzgg3juv,4BAAD67BB7655C19D7A2B8D1CADE8EF6B4713A5C,false,sleep,sleep 33,/bin/sleep,2018-05-29 02:02:30
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 02:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 02:03:01
+185946404262,o-1uhe06ocvqzgg3juv,6CA41FDB6798E3BBC02A168AAA93FB7F0774B254,false,sleep,/bin/sleep 140s,/bin/sleep,2018-05-29 02:03:01
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 03:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 03:03:01
+185946404262,o-1uhe06ocvqzgg3juv,770F503D1D7FE4C86A3AF5F231FADB1D7CDE57D9,false,sleep,/bin/sleep 952s,/bin/sleep,2018-05-29 03:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 03:20:05
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 03:00:33
+185946404262,o-1uhe06ocvqzgg3juv,006BD99C2E2267E53E93D06D2E0E252155CC6411,false,sleep,sleep 51,/bin/sleep,2018-05-29 03:00:33
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 04:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 04:03:00
+185946404262,o-1uhe06ocvqzgg3juv,57BA9F6AD82ACAA3A250ED52D2C1D640F429FC6F,false,sleep,/bin/sleep 1039s,/bin/sleep,2018-05-29 04:03:00
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 04:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-29 04:20:15
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-29 04:20:15
+185946404262,o-1uhe06ocvqzgg3juv,20D7F713DCE6B668067F31CB1864D3F67852A36E,false,SaviVersion.2,/opt/sophos-av/engine/SaviVersion /opt/sophos-av /opt/sophos-av/lib/sav /opt/sophos-av/lib/sav,/opt/sophos-av/engine/_/SaviVersion.2,2018-05-29 04:20:24
+185946404262,o-1uhe06ocvqzgg3juv,A714A6EA9B24C9356C92E04EE93A63EBBC13402B,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.18 --ondemandcontrol=socketpair://81/82 socketpair://79/80 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-29 04:20:34
+185946404262,o-1uhe06ocvqzgg3juv,318F7A19E52A3E44F02D2F0DC0F20D0604482EDF,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/86 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-29 04:20:41
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 05:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 05:03:01
+185946404262,o-1uhe06ocvqzgg3juv,0C6A4633D4C21D7B8BB341BBDCA9BD20E77D1441,false,sleep,/bin/sleep 1632s,/bin/sleep,2018-05-29 05:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 05:03:04
+185946404262,o-1uhe06ocvqzgg3juv,E335BB8C4381A50E2A6B8DB1BE2340E088D75A06,false,sleep,sleep 56,/bin/sleep,2018-05-29 05:03:04
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:39
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 04:58:40
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 05:18:32
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 05:20:06
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 05:36:45
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 06:20:06
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 06:32:56
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 06:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 06:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8C99ADFC96B77746E7A31148A47148AC3F8046C4,false,sleep,/bin/sleep 2501s,/bin/sleep,2018-05-29 06:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 06:03:15
+185946404262,o-1uhe06ocvqzgg3juv,D86A08C869BA7FB751C4870A5122E262A4B90B48,false,sleep,sleep 44,/bin/sleep,2018-05-29 06:03:15
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 07:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 07:03:01
+185946404262,o-1uhe06ocvqzgg3juv,10B38885A7C91A78A4026EBF3689315EF43AD4FB,false,sleep,/bin/sleep 2663s,/bin/sleep,2018-05-29 07:03:01
+185946404262,o-1uhe06ocvqzgg3juv,CAC4E0FD46ACD49073771BF76724F7C9BA3CC9EA,false,sshd,"sshd: root@notty ",/usr/sbin/sshd,2018-05-29 07:08:52
+185946404262,o-1uhe06ocvqzgg3juv,6F222AA9CD05B9C817F78821367EC3B29A7D638A,false,bash,bash -c rsync --server --sender -vlogDtprze.iLs . /dbbackup/.,/bin/bash,2018-05-29 07:08:53
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 07:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 08:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 08:03:01
+185946404262,o-1uhe06ocvqzgg3juv,4E6158A6C4DD6DB3544D8BA390D5F0D98AE9E889,false,sleep,/bin/sleep 922s,/bin/sleep,2018-05-29 08:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 08:04:10
+185946404262,o-1uhe06ocvqzgg3juv,7F647712C76CD20AD8480B02E316078E3B1F9127,false,sleep,sleep 18,/bin/sleep,2018-05-29 08:04:10
+185946404262,o-1uhe06ocvqzgg3juv,E8079C69A7969D3A9CB9D0FDFB4ED256D58B4B60,false,anacron,/usr/sbin/anacron -s,/usr/sbin/anacron,2018-05-29 09:01:00
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 09:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 09:03:00
+185946404262,o-1uhe06ocvqzgg3juv,06F14198AFA9A20AE81ADAA475C56297C8034E24,false,sleep,/bin/sleep 1853s,/bin/sleep,2018-05-29 09:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 09:09:22
+185946404262,o-1uhe06ocvqzgg3juv,B5D855F9BA1CB9F3C6430FFBFAEF2E2481A9DBA4,false,sleep,sleep 35,/bin/sleep,2018-05-29 09:09:22
+185946404262,o-1uhe06ocvqzgg3juv,A791D563C3FC2D14774400946E37A6DD03C592AF,false,bash,/bin/bash /usr/bin/run-parts /etc/cron.daily,/bin/bash,2018-05-29 09:15:00
+185946404262,o-1uhe06ocvqzgg3juv,E2F97FAEBF5B293A4FEA3847E5094C97269DC41B,false,bash,/bin/sh /etc/cron.daily/mlocate.cron,/bin/bash,2018-05-29 09:15:02
+185946404262,o-1uhe06ocvqzgg3juv,639867719F2962E928346661A5DFB64A0219B8B0,false,gawk,"awk -v progname=/etc/cron.daily/mlocate.cron progname {
+				   print progname "":\n""
+				   progname="""";
+			       }
+			       { print; }",/bin/gawk,2018-05-29 09:15:02
+185946404262,o-1uhe06ocvqzgg3juv,3BD555B0D50D10A695780324EE9FF95244F78857,false,updatedb,"/usr/bin/updatedb -f sysfs
+rootfs
+bdev
+proc
+cgroup
+cpuset
+tmpfs
+devtmpfs
+binfmt_misc
+debugfs
+securityfs
+sockfs
+usbfs
+pipefs
+anon_inodefs
+inotifyfs
+devpts
+ramfs
+hugetlbfs
+pstore
+mqueue
+drm
+rpc_pipefs
+autofs",/usr/bin/updatedb,2018-05-29 09:15:02
+185946404262,o-1uhe06ocvqzgg3juv,7F2C084F6EFD4F18A032F2DB11728038D4AA54EF,false,bash,/bin/bash /etc/cron.daily/readahead.cron,/bin/bash,2018-05-29 09:15:18
+185946404262,o-1uhe06ocvqzgg3juv,27BF368E4FF7A508AE74DCFC5A269A7779898A32,false,gawk,"awk -v progname=/etc/cron.daily/readahead.cron progname {
+				   print progname "":\n""
+				   progname="""";
+			       }
+			       { print; }",/bin/gawk,2018-05-29 09:15:18
+185946404262,o-1uhe06ocvqzgg3juv,8851FFA5499CAB6B3FE2402C8965138D1EC47821,false,readahead,/sbin/readahead --sort --output=/var/lib/readahead/early.sorted /var/lib/readahead/custom.early,/sbin/readahead,2018-05-29 09:15:18
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 09:20:05
+185946404262,o-1uhe06ocvqzgg3juv,B04B3F5691180EA26D4366DA0C90544FE091034C,false,python.2,/opt/sophos-av/update/../engine/python /opt/sophos-av/update/../engine/_/talpa_select requiredpacknames,/opt/sophos-av/engine/_/python.2,2018-05-29 09:20:06
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 10:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-29 10:20:15
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-29 10:20:15
+185946404262,o-1uhe06ocvqzgg3juv,20D7F713DCE6B668067F31CB1864D3F67852A36E,false,SaviVersion.2,/opt/sophos-av/engine/SaviVersion /opt/sophos-av /opt/sophos-av/lib/sav /opt/sophos-av/lib/sav,/opt/sophos-av/engine/_/SaviVersion.2,2018-05-29 10:20:24
+185946404262,o-1uhe06ocvqzgg3juv,1C8E942794FB35B9A3D4CD5B7F28B674D28CF0F9,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.19 --ondemandcontrol=socketpair://70/71 socketpair://68/69 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-29 10:20:32
+185946404262,o-1uhe06ocvqzgg3juv,318F7A19E52A3E44F02D2F0DC0F20D0604482EDF,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/86 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-29 10:20:39
+185946404262,o-1uhe06ocvqzgg3juv,AA43778AE2F9FA51DD8A7869249D028028B4F247,false,bash,sh -c command -V uptime,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,2C340BAC36A0246CEA290E332A5F6F9FD9C4E06D,false,bash,sh -c command -V netstat,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,1F7D00C17055A7220885DE1814C49C22C63F986E,false,bash,sh -c command -V iostat,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,1F7D00C17055A7220885DE1814C49C22C63F986E,false,bash,sh -c command -V iostat,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,1F7D00C17055A7220885DE1814C49C22C63F986E,false,bash,sh -c command -V iostat,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,1F7D00C17055A7220885DE1814C49C22C63F986E,false,bash,sh -c command -V iostat,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,1F7D00C17055A7220885DE1814C49C22C63F986E,false,bash,sh -c command -V iostat,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,1F7D00C17055A7220885DE1814C49C22C63F986E,false,bash,sh -c command -V iostat,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,1F7D00C17055A7220885DE1814C49C22C63F986E,false,bash,sh -c command -V iostat,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,2C340BAC36A0246CEA290E332A5F6F9FD9C4E06D,false,bash,sh -c command -V netstat,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,DF415D0D7A16EF7CB888F42544A205CC668D58AE,false,bash,sh -c netstat -an | grep ESTABLISHED | grep '^udp' | awk '{print $4}' | grep -v '127.0.0.1' | wc -l,/bin/bash,2018-05-29 10:21:57
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 10:21:58
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 10:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 10:03:01
+185946404262,o-1uhe06ocvqzgg3juv,49CE0FB4F830F63225F0377B4C81F391E9A3C1B7,false,sleep,/bin/sleep 2100s,/bin/sleep,2018-05-29 10:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 10:04:34
+185946404262,o-1uhe06ocvqzgg3juv,D86A08C869BA7FB751C4870A5122E262A4B90B48,false,sleep,sleep 44,/bin/sleep,2018-05-29 10:04:34
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 11:20:06
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 11:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 11:03:01
+185946404262,o-1uhe06ocvqzgg3juv,9D924E1B827A49C02506439DADD4FB0AE766B5B6,false,sleep,/bin/sleep 555s,/bin/sleep,2018-05-29 11:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 11:04:45
+185946404262,o-1uhe06ocvqzgg3juv,5E376BD923874227401A651EE4E7FBB7C3E9ED29,false,sleep,sleep 21,/bin/sleep,2018-05-29 11:04:45
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 12:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 12:03:01
+185946404262,o-1uhe06ocvqzgg3juv,05F4752231EAA255000E1FFC0091F6A126D8A027,false,sleep,/bin/sleep 651s,/bin/sleep,2018-05-29 12:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 12:04:57
+185946404262,o-1uhe06ocvqzgg3juv,99FF15CEAC8BC267B3744C3906032140895E88B8,false,sleep,sleep 39,/bin/sleep,2018-05-29 12:04:57
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 12:20:05
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 13:20:06
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 13:02:37
+185946404262,o-1uhe06ocvqzgg3juv,0053E0965109021ADD2F9763E562C5AA0DB83060,false,sleep,sleep 54,/bin/sleep,2018-05-29 13:02:37
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 13:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 13:03:01
+185946404262,o-1uhe06ocvqzgg3juv,012EE29B3231F3100EB1335D167846401984D87D,false,sleep,/bin/sleep 2445s,/bin/sleep,2018-05-29 13:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 14:02:49
+185946404262,o-1uhe06ocvqzgg3juv,26823E1F04EB01EA4A94FBD70206EFE254719D81,false,sleep,sleep 55,/bin/sleep,2018-05-29 14:02:49
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 14:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 14:03:00
+185946404262,o-1uhe06ocvqzgg3juv,927E5B2F2D749213FFFD71D44298DB28DD7C46DD,false,sleep,/bin/sleep 42s,/bin/sleep,2018-05-29 14:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 15:03:00
+185946404262,o-1uhe06ocvqzgg3juv,B5D855F9BA1CB9F3C6430FFBFAEF2E2481A9DBA4,false,sleep,sleep 35,/bin/sleep,2018-05-29 15:03:00
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 15:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 15:03:01
+185946404262,o-1uhe06ocvqzgg3juv,13A341FC63F566432ABC6AAB57A142EFEF36EDD2,false,sleep,/bin/sleep 708s,/bin/sleep,2018-05-29 15:03:01
+185946404262,o-1uhe06ocvqzgg3juv,7AA8C4211E3025921CBB36B83E5E2867204C1DAC,false,bash,/bin/bash /var/opt/aws/discovery/update,/bin/bash,2018-05-29 15:14:49
+185946404262,o-1uhe06ocvqzgg3juv,129A1893BAA011B326FF102A9545234E3C9249F5,false,curl,curl -s --fail --retry 5 --max-time 30 -o /tmp/awsdiscoveryagent.Xo39gOWH/CURRENT_RELEASE.sig https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/CURRENT_RELEASE.sig,/usr/bin/curl,2018-05-29 15:14:49
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 15:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-29 15:20:15
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-29 15:20:15
+185946404262,o-1uhe06ocvqzgg3juv,F52EFA138480DC7BC2BFB7107FED8A8163F01760,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.20 --ondemandcontrol=socketpair://86/87 socketpair://83/85 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-29 15:20:31
+185946404262,o-1uhe06ocvqzgg3juv,56F7C0B5F22A01E7AF99BA724D2EE3D2C38D846D,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/77 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-29 15:20:38
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 16:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 16:03:01
+185946404262,o-1uhe06ocvqzgg3juv,1BAB076009D533B2B200C2FA2127D0AAF439B1FA,false,sleep,/bin/sleep 1766s,/bin/sleep,2018-05-29 16:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 16:03:41
+185946404262,o-1uhe06ocvqzgg3juv,595C55D5EBF2F6161FA6CDD7391C2C575A877BC2,false,sleep,sleep 27,/bin/sleep,2018-05-29 16:03:41
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 16:20:06
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 17:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 17:03:01
+185946404262,o-1uhe06ocvqzgg3juv,549B1D2653FE41BB5E284539B06E57DACC8FAE85,false,sleep,/bin/sleep 2417s,/bin/sleep,2018-05-29 17:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 17:03:53
+185946404262,o-1uhe06ocvqzgg3juv,3E15B63539E228C5F163DE44F025E4AB5FB1E4B6,false,sleep,sleep 57,/bin/sleep,2018-05-29 17:03:53
+185946404262,o-1uhe06ocvqzgg3juv,61A79FF2BD49936568FEC31CC723B3D85FF936EF,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 18:20:05
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 18:20:05
+185946404262,o-1uhe06ocvqzgg3juv,0F6085A49F4BD562AE0CCD6BAC530DFBA959B3FD,false,savconfig.2,/opt/sophos-av/bin/_/savconfig --displaypassword --advanced --xml query,/opt/sophos-av/bin/_/savconfig.2,2018-05-29 18:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 18:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 18:03:01
+185946404262,o-1uhe06ocvqzgg3juv,DEEBCAC778EFD8DF50D734E44DFE7A4D52193D57,false,sleep,/bin/sleep 1570s,/bin/sleep,2018-05-29 18:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 18:04:04
+185946404262,o-1uhe06ocvqzgg3juv,ECF31647DF5100E0991FD8B6E3652EABA754E7D0,false,sleep,sleep 12,/bin/sleep,2018-05-29 18:04:04
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 19:35:51
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 19:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 19:03:01
+185946404262,o-1uhe06ocvqzgg3juv,B9A612BC018A0237C936AD5A0DFB99B55F0B76D8,false,sleep,/bin/sleep 543s,/bin/sleep,2018-05-29 19:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 19:04:46
+185946404262,o-1uhe06ocvqzgg3juv,386E181D91688E51704848AB3FC84F31CD584EDB,false,sleep,sleep 10,/bin/sleep,2018-05-29 19:04:46
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 19:20:05
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 20:03:00
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 20:03:00
+185946404262,o-1uhe06ocvqzgg3juv,23CD2684EA2748D0F35C9784292ACB9A45182E36,false,sleep,/bin/sleep 1506s,/bin/sleep,2018-05-29 20:03:00
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 20:04:57
+185946404262,o-1uhe06ocvqzgg3juv,61887E7E07A58916E71F43098F72C14F455F1748,false,sleep,sleep 34,/bin/sleep,2018-05-29 20:04:58
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 20:20:06
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:28:35
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-29 21:02:26
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 21:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 21:03:01
+185946404262,o-1uhe06ocvqzgg3juv,FDF495186FCD005E172EAC58B15AA7790E4DC712,false,sleep,/bin/sleep 1356s,/bin/sleep,2018-05-29 21:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 21:05:09
+185946404262,o-1uhe06ocvqzgg3juv,BC9C2D241AD40E14B7D53880CA750ED1D5F4ED60,false,sleep,sleep 46,/bin/sleep,2018-05-29 21:05:09
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 22:35:32
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 22:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 22:03:01
+185946404262,o-1uhe06ocvqzgg3juv,CF4905818C33143EF7C3241616A1B061A6164F31,false,sleep,/bin/sleep 1512s,/bin/sleep,2018-05-29 22:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 22:20:05
+185946404262,o-1uhe06ocvqzgg3juv,0F6085A49F4BD562AE0CCD6BAC530DFBA959B3FD,false,savconfig.2,/opt/sophos-av/bin/_/savconfig --displaypassword --advanced --xml query,/opt/sophos-av/bin/_/savconfig.2,2018-05-29 22:20:05
+185946404262,o-1uhe06ocvqzgg3juv,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 22:20:10
+185946404262,o-1uhe06ocvqzgg3juv,E2D26A7CDDBA0E183974B38BC7C5D149A6618E38,false,bash,/bin/sh /opt/sophos-av/update/cache/Primary/install.sh --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av,/bin/bash,2018-05-29 22:20:15
+185946404262,o-1uhe06ocvqzgg3juv,DBA9AB7BA5E09BAD917EDE097AA0B1470ADEF3A4,false,python,"/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python -c import Installer.SavForLinux,sys;sys.exit(Installer.SavForLinux.SavForLinux.main(sys.argv)) /opt/sophos-av/update/cache/Primary --customerIDFile=/opt/sophos-av/update/cache/Primary/customer_ID.txt --run-in-english --update /opt/sophos-av --coredir=x86/64 ",/opt/sophos-av/update/cache/Primary/sav-linux/x86/64/engine/_/python,2018-05-29 22:20:15
+185946404262,o-1uhe06ocvqzgg3juv,EA0D24833C669B3C6DB69543E1EDAC2CDF9F7E6D,false,savscand.2,savscand --incident=unix://tmp/incident --namedscan=unix://root@tmp/namedscansprocessor.21 --ondemandcontrol=socketpair://74/76 socketpair://72/73 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-29 22:20:34
+185946404262,o-1uhe06ocvqzgg3juv,56F7C0B5F22A01E7AF99BA724D2EE3D2C38D846D,false,savscand.2,savscand --incident=unix://tmp/incident socketpair://66/77 --threads=5,/opt/sophos-av/engine/_/savscand.2,2018-05-29 22:20:42
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-29 23:00:31
+185946404262,o-1uhe06ocvqzgg3juv,D86BBE20D7BFB221B9ED569764E3CD23318C708B,false,sleep,sleep 15,/bin/sleep,2018-05-29 23:00:31
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-29 23:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-29 23:03:01
+185946404262,o-1uhe06ocvqzgg3juv,B75C35C50FC150728EDBCC608813F5CD9B6D63BF,false,sleep,/bin/sleep 351s,/bin/sleep,2018-05-29 23:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5",/opt/sophos-av/engine/_/python.2,2018-05-29 23:20:06
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-30 00:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-30 00:03:01
+185946404262,o-1uhe06ocvqzgg3juv,2C12745A1C344C7C10DFEF331E765243F7C20C1B,false,sleep,/bin/sleep 1105s,/bin/sleep,2018-05-30 00:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-30 00:05:43
+185946404262,o-1uhe06ocvqzgg3juv,F8FFAE8532BC7DA856921B8EA071DC7E950E57FD,false,sleep,sleep 23,/bin/sleep,2018-05-30 00:05:43
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,false,,,,2018-05-30 01:19:33
+185946404262,o-1uhe06ocvqzgg3juv,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-30 01:03:01
+185946404262,o-1uhe06ocvqzgg3juv,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-30 01:03:01
+185946404262,o-1uhe06ocvqzgg3juv,BAAB39B70FF02042D7B301BCF721074763BC02F0,false,sleep,/bin/sleep 721s,/bin/sleep,2018-05-30 01:03:01
+185946404262,o-1uhe06ocvqzgg3juv,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-30 01:00:53
+185946404262,o-1uhe06ocvqzgg3juv,006BD99C2E2267E53E93D06D2E0E252155CC6411,false,sleep,sleep 51,/bin/sleep,2018-05-30 01:00:54

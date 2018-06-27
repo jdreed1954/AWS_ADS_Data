@@ -1,0 +1,3 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-4hca3adua5ibubvrl,192.168.92.44,,52.89.142.184,443,IPv4,TCP,369E58A9735491C5C58C5265035289D7B8BEC6BE,2018-06-09 03:45:00,/opt/sophos-av/engine/_/python.3,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --daemon --RMS=0"
+185946404262,o-4hca3adua5ibubvrl,192.168.92.44,,162.220.222.6,443,IPv4,TCP,FAB811027E27CA730201301BEF7114199DCE5EAE,2018-06-09 03:45:00,/opt/teamviewer/tv_bin/teamviewerd,/opt/teamviewer/tv_bin/teamviewerd -f

@@ -1,0 +1,6 @@
+accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
+185946404262,o-4hca3adua5ibubvrl,192.168.92.44,,52.89.142.184,443,IPv4,TCP,9C216E5C323BFF411E217DBE42C01408C26B2151,2018-05-26 16:30:00,/opt/sophos-av/engine/_/python.2,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --daemon --RMS=0"
+185946404262,o-4hca3adua5ibubvrl,192.168.92.44,,162.250.3.2,443,IPv4,TCP,FAB811027E27CA730201301BEF7114199DCE5EAE,2018-05-26 16:30:00,/opt/teamviewer/tv_bin/teamviewerd,/opt/teamviewer/tv_bin/teamviewerd -f
+185946404262,o-4hca3adua5ibubvrl,192.168.92.44,,52.89.142.184,443,IPv4,TCP,9C216E5C323BFF411E217DBE42C01408C26B2151,2018-05-26 16:45:00,/opt/sophos-av/engine/_/python.2,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --daemon --RMS=0"
+185946404262,o-4hca3adua5ibubvrl,192.168.92.44,,162.250.3.2,443,IPv4,TCP,FAB811027E27CA730201301BEF7114199DCE5EAE,2018-05-26 16:45:00,/opt/teamviewer/tv_bin/teamviewerd,/opt/teamviewer/tv_bin/teamviewerd -f
+185946404262,o-4hca3adua5ibubvrl,192.168.92.44,,54.240.251.223,443,IPv4,TCP,867B811BEEFDADDC482D20BECC14D6EBDC9F20B1,2018-05-26 16:45:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd

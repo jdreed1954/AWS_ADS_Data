@@ -1,0 +1,12 @@
+accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
+185946404262,o-4t5xlzfuo6cn2noou,8351F5C30F5FFF5DD6B609061F37F6BADE24ABA7,false,bash,/bin/bash /usr/emlocal/bin/git_update.sh,/bin/bash,2018-05-24 20:01:21
+185946404262,o-4t5xlzfuo6cn2noou,905E7F7117908EA51BDE57D26FD24055621961A2,false,sleep,sleep 40,/bin/sleep,2018-05-24 20:01:21
+185946404262,o-4t5xlzfuo6cn2noou,E84AB28CA0C0194D2B2F461D1936B884ABCCBE35,false,crond,CROND,/usr/sbin/crond,2018-05-24 20:03:01
+185946404262,o-4t5xlzfuo6cn2noou,538A2EDB1EB9C6E3AD2A63F473F4C2C517E9FEB8,false,bash,/bin/bash -c nice -10 /bin/sleep $(( ( $RANDOM % 3000 ) + 1 ))s; nice -10 /var/opt/aws/discovery/update > /var/log/aws/discovery/aws-discovery-agent-upgrade.log 2>&1,/bin/bash,2018-05-24 20:03:01
+185946404262,o-4t5xlzfuo6cn2noou,375873FE48634BF7BE18C9706884418BF7A183EB,false,sleep,/bin/sleep 1476s,/bin/sleep,2018-05-24 20:03:01
+185946404262,o-4t5xlzfuo6cn2noou,3B5033CF35BDEFB7BD9441490269A77D7337433E,false,sshd,"sshd: [accepted] ",/usr/sbin/sshd,2018-05-24 20:06:03
+185946404262,o-4t5xlzfuo6cn2noou,08DB6AE7B8F7E3BF4AC81B44CAA8288767C8F778,false,sshd,"sshd: [net]      ",/usr/sbin/sshd,2018-05-24 20:06:03
+185946404262,o-4t5xlzfuo6cn2noou,3B5033CF35BDEFB7BD9441490269A77D7337433E,false,sshd,"sshd: [accepted] ",/usr/sbin/sshd,2018-05-24 20:09:08
+185946404262,o-4t5xlzfuo6cn2noou,08DB6AE7B8F7E3BF4AC81B44CAA8288767C8F778,false,sshd,"sshd: [net]      ",/usr/sbin/sshd,2018-05-24 20:09:08
+185946404262,o-4t5xlzfuo6cn2noou,57A2A51EC7C18629216CF0D381BC5E1E28A9CA60,false,sshd,sshd: unknown [priv],/usr/sbin/sshd,2018-05-24 20:11:08
+185946404262,o-4t5xlzfuo6cn2noou,F89FF85D2362261CDD3B7F5B9CD5E82EB0BC2285,false,sshd,sshd: unknown [net],/usr/sbin/sshd,2018-05-24 20:11:08
