@@ -165,7 +165,7 @@ ftr <- flextable(rw_stats$DiskReadOps,
       col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
       add_header(Max = "Disk Read Operations", Mean = "Per Second", top= TRUE) %>%
       bg(i = ~ Max == max(Max), bg = "#EFEF99" ) %>%
-      add_footer(Max = "*Highlighted row: Maximum DIsk Read Operations/s.")
+      add_footer(Max = "*Highlighted row: Maximum Disk Read Operations/s.")
 
 
 autofit(ftr)
@@ -227,7 +227,7 @@ storagePer <-  storageTbl %>%
                Role = "Host Role", top= TRUE) %>%
     bg(i = ~ PctUsed == max(PctUsed), bg = "#EFEF99" ) %>% 
     add_footer(PctUsed = "*Highlighted row: Maximum Percent Utilization (PctUsed).") %>%
-    bg(i = ~ TotalCap.G == max(TotalCap.G), bg = "Teal" ) %>%
+    bg(i = ~ TotalCap.G == max(TotalCap.G), bg = "wheat3" ) %>%
     add_footer(PctUsed = "*Highlighted row: Maximum Total Disk Capacity (TotalCap.G).") 
     
 
