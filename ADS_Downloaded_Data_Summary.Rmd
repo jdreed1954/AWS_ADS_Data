@@ -3,25 +3,27 @@ title: "AWS/ADS Downloaded Data Summary"
 author: "Prestige Services"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output: 
-  html_document:
-    df_print: paged
-  word_document:
-        reference_docx: headingthree.docx
-        highlight: tango
-        df_print: tibble
   pdf_document:
         includes:
           in_header: header.tex
           df_print: kable
+  word_document:
+        reference_docx: headingthree.docx
+        highlight: tango
+        df_print: tibble
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(kableExtra)
 
-DataRoot <- "data/agentExports"
+
 
 source("awsADS_functions.R")
+DataRoot <- "data/agentExports"
+agentIDs <- getAgentIDs(root = DataRoot)
 
 knitr::opts_chunk$set(echo = FALSE)
 ```

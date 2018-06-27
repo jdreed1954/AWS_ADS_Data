@@ -1,5 +1,11 @@
 #!/bin/bash -v
 
+#  Expected time for this script to take when downloading 21 agentIDs.
+#
+# real    18m9.859s
+# user    0m4.109s
+# sys     0m5.609s
+
 PYC=/mnt/c/Users/jdree/PycharmProjects/AWS_Utils/export.py
 
 DIR=/mnt/c/Users/jdree/Desktop/MyProjects/EM-Assessment/data
@@ -18,11 +24,11 @@ declare -a AGENTS=("o-10811obiw9eie9c9z" "o-15p810oyrd09unsoy" \
                    "o-910scsu50d58mqp7e" "o-3gs0l8zsxncd68g2r" \
                    "o-dec17htkilkp8md6z")
 
-
+time(
 for i in "${AGENTS[@]}"
 do
   echo "$i"
-  python  ${PYC} --directory ${DIR} --filter ${i} --log-file ${i}.log
+  python  ${PYC} --directory ${DIR} --filter ${i} --log-file logs/${i}.log
 done
-
+)
 exit

@@ -1,0 +1,233 @@
+---
+title: "Educational Measures Host Performance Statistics"
+author: "Prestige Services"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  pdf_document: 
+        includes:
+          in_header: header.tex
+  word_document:
+        reference_docx: headingthree.docx
+        highlight: tango
+        df_print: tibble
+        fontsize: 12pt
+header-includes: \usepackage{fancyhdr} \pagestyle{fancy} \fancyhead[CO,CE]{} \fancyfoot[CO,CE]{
+  Host Performance Statistics for Educational Measures} \fancyfoot[LE,RO]{\thepage}
+
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(lubridate)
+library(kableExtra)
+library(rlang)
+library(broom)
+
+
+source("awsADS_functions.R")
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Host Performance Statistics
+
+The purpose of this report is to provide statistics of system performance in tabular and graphical form.  The data are collected by agents installed on each server.
+
+## Reports
+
+This document will detail four areas of concern:
+
+* CPU Utilization 
+* Memory Utilization
+* Storage Utilization
+* NetworkUtilization
+
+In each of these areas, we will display tabular and graphical data as tools to make recommendations for resizing your current deployments.
+
+### List Agent IDs in Current Data Store
+
+The agent IDs are the unique identifiers of the AWS ADS agents installed within the customer's data center.  In the case of VMware hypervisor VMs, the agent ID is the identity of the OVA appliance installed. If additional performance metrics are required for a VM or the customer has a non-virtualized server, the agent ID is the identity of the actual agent installed on the server or VM.
+
+Following are the Agent IDs found in the data store containing exported data from the AWS Migration Hub.  The Agent IDs will be used to identify which environment the data pertain to.
+
+```{r}
+
+
+DataRoot <- "data/agentExports"
+agentIDs <- getAgentIDs(root = DataRoot)
+
+compInventory <- getCompInventory(DataRoot)
+collection <- getHostCollection((DataRoot))
+coll <- collection %>%
+  select(-1) %>%
+  arrange(Hostname)
+knitr::kable(coll)
+```
+
+There are `r length(agentIDs)` Agent IDs.  See the list of these immediately above.
+
+## Data Inventory
+
+The purpose of this report is to provide a high-level summary of the records collected to date.  We will refresh this report periodically to make sure we are making progress toward our goal of getting about 14 days worth of performance data for each system.  Refer to the the table titled **Performance Time Spans (Days) by Hostname** and the **Perf.Days** column.
+
+```{r Inv2, results = 'asis', fig.cap = "Performance Time Spans (Days) Days by Hostname"}
+
+compInventory <- getCompInventory(DataRoot)
+
+# Calculate the number of Days Performance for each server (hostName)
+
+host_perf_time <- compInventory %>% 
+  group_by(hostName) %>% 
+  summarize(First = ymd_hms(min(timestamp)),
+            Last = ymd_hms(max(timestamp)), 
+            Perf.Days = difftime(Last, First, units = "days"))
+  
+knitr::kable(host_perf_time, digits = 2, format = "markdown", caption = "Performance Days by Hostname")
+  
+#     column_spec(4, background = "yellow")  
+# knitr::kable(host_perf_time, digits = 2, format = "latex", caption = "Performance Days by Hostname") %>%
+#   kable_styling(bootstrap_options = "basic", full_width = FALSE, latex_options = "basic", 
+#                 position = "hold_position", font_size = NULL) %>%
+#     column_spec(4, background = "yellow")
+```
+
+\clearpage
+
+## Names of Performance and OS Fields
+
+
+```{r Fields, results = 'asis'}
+
+knitr::kable(names(compInventory), col.names = c("Performance Fields"), caption = "Fields Avalilable in Performance Data")
+
+```
+
+\clearpage
+
+## CPU Utilization
+
+```{r CPU, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+df <- compInventory %>% arrange(hostName)
+cpu_sizing <- getCPUs(df)
+knitr::kable(cpu_sizing,digits = 2, format = "latex") %>%
+  add_header_above(c(" " = 1, "CPU Utilization (Percent)" = 6, "Cores" = 3))
+
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(scales)
+library(data.table)
+ce <- tibble(
+  Host = cpu_sizing$Host,
+  Mean = cpu_sizing$Mean,
+  P95  = cpu_sizing$P95,
+  Max  = cpu_sizing$Max
+)
+legend_title <- "Statistic"
+
+ce <- arrange(ce, Host)
+mce <- melt(ce,id.vars = "Host")
+ggplot(mce, aes(x = Host, y = value, fill = variable)) + 
+  geom_bar(position = "dodge", stat = "identity") + ylab("Percent CPU Utilization") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5)) +
+  scale_fill_manual(legend_title, values = c("red", "blue", "green"))
+
+```
+
+\clearpage
+
+## Memory Utilization
+
+```{r}
+
+mem_sizing <- getMEMs(df)
+knitr::kable(arrange(mem_sizing, Host), digits = 2,  format = "latex") %>%
+  add_header_above(c(" " = 1, "RAM Megabytes Free" = 5, "Real" = 1, " " = 1, "Percent" = 1))
+```
+
+```{r}
+me <- tibble(
+  Host = mem_sizing$Host,
+  Mean = mem_sizing$Mean,
+  Max  = mem_sizing$Max,
+  RAM  = mem_sizing$RAM.MB
+)
+me <- arrange(me, Host)
+mme <- melt(me,id.vars = "Host")
+ggplot(mme, aes(x = Host, y = value, fill = variable)) + 
+  geom_bar(position = "dodge", stat = "identity") + ylab("RAM Utilization (MB)") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5)) +
+  scale_fill_manual(legend_title, values = c("red", "blue", "green"))
+
+```
+
+\clearpage
+
+## Host Performance Statistics
+
+```{r , fig.height= 4.0,reults = "asis", comment = "", echo = FALSE}
+comp_n <- compInventory %>% arrange(hostName) %>% group_by(agentId) %>% nest()
+
+Host = fixHostnames(map_chr(agentIDs, ~ subset(df,agentId == .x)$hostName[1]))
+Data <-  map(agentIDs, ~ subset(df,agentId == .x))
+
+
+for (i in 1:length(comp_n$agentId)) {
+  
+# -------------------------------------------------------------------------------------  PAGE 1
+   
+####################################################################################### CPUUSAGPCT
+  par(mfrow = c(2,1))
+  hdr <- paste("Host: ", Host[i]," Metric: CpuUsagePct", sep = "")
+  p <- ggplot(Data[[i]], aes(x = timestamp, y = CpuUsagePct)) + geom_line() + 
+   ggtitle( label = hdr) + xlab("Date") + ylab("CPU Utilization Percent")
+  print(p)
+
+###################################################################################### MEMUSAGEPCT
+   hdr <- paste("Host: ", Host[i]," Metric: MemUsagePct", sep = "")
+   Data[[i]]$MemUsagePct <- (Data[[i]]$RAM.MB - Data[[i]]$freeRAM.MB) /  Data[[i]]$RAM.MB * 100
+   p <- ggplot(Data[[i]], aes(x = timestamp, y = MemUsagePct)) + geom_line() + 
+      ggtitle( label = hdr) + xlab("Date") + ylab("Memory Utilization Percent")
+   print(p)  
+
+  # ------------------------------------------------------------------------------------- PAGE 2
+   par(mfrow = c(2,1))
+   ####################################################################################### DISKUTIL
+  # hdr <- paste("Host: ", Host[i]," Metric: DskUtilPct", sep = "")
+  # Data[[i]]$ DskUtilPct <- (Data[[i]]$DiskSize.GB - Data[[i]]$DiskFreeSize.GB) /  Data[[i]]$DiskSize.GB * 100
+  # p <- ggplot(Data[[i]], aes(x = timestamp, y = DskUtilPct)) + geom_line() + 
+  #  ggtitle( label = hdr) + xlab("Date") + ylab("Disk Utilization Percent")
+  # print(p)
+
+  ####################################################################################### DISK READS + WRITES
+   hdr <- paste("Host: ", Host[i]," Metric: DskBytes Written and Read", sep = "")
+   dskDat <- Data[[i]] %>%
+     select(c("timestamp","DiskBytesReadPS", "DiskBytesWrittenPS"))
+   mDskDat <- melt(dskDat, id = "timestamp")
+   p <- ggplot(mDskDat, aes(x = timestamp, y = value, color = variable)) + geom_line() + 
+      ggtitle( label = hdr) + xlab("Date") + ylab("Disk Read and Write Rates (Bytes per second)") +
+      scale_fill_manual("Metric", values = c("red", "blue"))
+
+   print(p) 
+   
+   
+# ------------------------------------------------------------------------------------- PAGE 3
+
+      
+####################################################################################### NETWORK READS + WRITES
+   hdr <- paste("Host: ", Host[i]," Metric: NetworkBytes Written and Read", sep = "")
+   dskDat <- Data[[i]] %>%
+     select(c("timestamp","NetworkBytesReadPS", "NetworkBytesWrittenPS"))
+   mDskDat <- melt(dskDat, id = "timestamp")
+   p <- ggplot(mDskDat, aes(x = timestamp, y = value, color = variable)) + geom_line() + 
+      ggtitle( label = hdr) + xlab("Date") + ylab("Network Read and Write Rates (Bytes per second)") +
+      scale_fill_manual("Metric", values = c("red", "blue"))
+   print(p) 
+   #cat("\\newpage")
+}
+```
+
+
+**Run Date: **"`r format(Sys.time(), '%d %B %Y')`"

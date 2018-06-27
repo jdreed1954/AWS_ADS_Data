@@ -1,0 +1,225 @@
+---
+title: "Educational Measures Assessment Report"
+author: "Prestige Services LLC"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  html_document:
+    df_print: paged
+    fontsize: 12pt
+  word_document:
+        reference_docx: headingthree.docx
+        highlight: tango
+        df_print: tibble
+  pdf_document:
+        includes:
+          in_header: header.tex
+header-includes: \usepackage{fancyhdr} \pagestyle{fancy} \fancyhead[CO,CE]{} \fancyfoot[CO,CE]{
+  Educational Measures Assessment Report} \fancyfoot[LE,RO]{\thepage}
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(lubridate)
+library(flextable)
+library(openxlsx)
+
+DataRoot <- "data/agentExports"
+Customer <-  "EM"
+
+source("awsADS_functions.R")
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Systems Assessment for Educational Measures
+
+## Executive Summary
+
+Educational Measures (EM) contacted Prestige Services LLC (PS) to assess their hosted workloads to evaluate whether or not to migrate these to a public cloud provider or an alternative hosted environment.  PS undertook this assessment by taking the following actions:
+
+ * Interviews of stakeholders - Justin and Andrew Foster
+ * Initiation of Amazon Web Services Application Discovery Service agents on twenty-one EM virtual machines.
+ * Collect at least ten business days of configuration and performance data (CPU, Memory, Network, and Disk).
+ * Summarize and evaluate characteristics of each virtual machine to determine the best recommendation as it pertains to cloud migration.
+ 
+Most VMs are operating well within their capacities with the exception of **anand**, which is operating at 97 percent (95th percentile) CPU.  This virtual machine is responsible for continuous integration and source control.  If this VM continues its role in the cloud, its capacity should be increased and utilization monitored carefully.
+
+### Virtual Machine Summary - IP Address and Recorded Performance Timespan
+ 
+ The following table documents each virtual machines coverage timespan. Note that **anand**, **caruana** and **lasker** are the only systems with less that fifteen days coverage.
+ 
+ 
+```{r HostSummary, results = 'asis', fig.cap = "Performance Days by Hostname"}
+hs <- getHostSummary(DataRoot)
+hs$Last <- as.character(ymd_hms(hs$Last))
+hs$First <- as.character(ymd_hms(hs$First))
+
+ft <- flextable(hs, col_keys = c("Number", "Host", "IP", "First", "Last", "Perf.Days")) %>%
+     add_header(IP = "Virtual Machine", First = "Summary", top= TRUE) %>%
+     bg(i = ~ Perf.Days < 15.0, bg = "#EFEF99" )
+
+autofit(ft)
+```
+
+### Virtual Machine Summary - OS Name and Version
+ 
+ 
+```{r HostSummary2, results = 'asis', fig.cap = "Performance Days by Hostname"}
+
+ft <- flextable(hs, col_keys = c("Number", "Host", "OS.Name", "OS.Version")) %>%
+     add_header(Host = "Virtual Machine", OS.Name = "Operating Systems", top= TRUE) %>%
+     bg(i = ~ grepl("Ubuntu", OS.Name), bg = "#EFEF99" )
+
+autofit(ft)
+```
+
+## System Performance Summaries
+
+### CPU Utilization
+
+```{r CPU, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+compInventory <- getCompInventory(DataRoot)
+df <- compInventory
+
+
+cpu_sizing <- getCPUs(df) %>% arrange(Host)
+
+ft <- regulartable(cpu_sizing) %>%
+ add_header(Mean = "Virtual Machine", Med = "CPU Utilization (%)", top= TRUE) %>%
+ bg(i = ~ CPU != CPUs.Rec, bg = "#EFEF99" ) 
+
+autofit(ft)
+```
+
+### Memory Utilization
+
+```{r}
+mem_sizing <- getMEMs(df)
+mem_sizing <-  mem_sizing %>%
+  mutate(RAM.Rec = ifelse(RAM.util < 48.0, RAM.GB/2, RAM.GB)) %>% select(-c(5,6)) %>% arrange(Host)
+Number <- tibble(Number = seq(1:nrow(mem_sizing)))
+mem_sizing <- cbind(Number,mem_sizing)          
+fmu <- flextable(mem_sizing,
+  col_keys = c("Number", "Host","Min","Max","Mean", "RAM.MB", "RAM.GB", "RAM.util", "RAM.Rec")) %>%
+  add_header(Max = "Virtual Machine", Mean = "Memory Utilization (%)",
+            RAM.util = "Percent", RAM.Rec = "GB", top= TRUE) %>%
+  bg(i = ~ RAM.GB != RAM.Rec, bg = "#EFEF99" )
+
+autofit(fmu)
+
+```
+
+### Network Read/Write
+
+```{r}
+net_stats <- getNetStats(df)
+
+ftr <- flextable(net_stats$NetworkRead, 
+      col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
+      add_header(Max = "Network Bytes Read", Mean = "Per Second", top= TRUE)
+autofit(ftr)
+
+ftw <- flextable(net_stats$NetworkWrite, 
+      col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
+      add_header(Max = "Network Bytes Written", Mean = "Per Second", top= TRUE)
+
+autofit(ftw)
+
+```
+
+### Disk Read/Write Bytes Per Second
+
+```{r}
+rw_stats <- getDiskRWStats(df)
+
+
+ftr <- flextable(rw_stats$DiskRead, 
+      col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
+      add_header(Max = "Disk Bytes Read", Mean = "Per Second", top= TRUE)
+autofit(ftr)
+
+ftw <- flextable(rw_stats$DiskWrite, 
+      col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
+      add_header(Max = "Disk Bytes Written", Mean = "Per Second", top= TRUE)
+
+autofit(ftw)
+
+```
+
+### Disk Read/Write Operations Per Second
+
+```{r}
+rw_stats <- getDiskOpsStats(df)
+
+
+ftr <- flextable(rw_stats$DiskReadOps, 
+      col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
+      add_header(Max = "Disk Read Operations", Mean = "Per Second", top= TRUE)
+
+autofit(ftr)
+
+ftw <- flextable(rw_stats$DiskWriteOps, 
+      col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
+      add_header(Max = "Disk Write Operations", Mean = "Per Second", top= TRUE)
+
+autofit(ftw)
+
+```
+
+
+### VM Roles and Storage Capacity Details
+
+```{r}
+
+hostRoles <- tibble(
+  Host = c(
+          "alekhine",        "anand",        "caruana",             "PostgresCanary", "analytics",
+          "postgres-pr-001", "centralmysql", "CentralMySQLReplica", "Euwe",           "golive",
+          "hou7",            "kosteniuk7",   "kramnik7",            "lasker",         "menchik7", 
+          "polgar7",         "smyslov",      "VirtualMySQL",        "Fischer",        "kasparov",  "Tal"),
+
+  Role = c(
+        "DNS server" ,     "Source Control and CI server", "Hosting server for wordpress, SFTP and other web sites",
+        "Yellow Fin Analytics support servers",            "Yellowfin Analytics applications server", 
+        "Yellowfin Analytics database server",             "Database server to support Euwe, Central.arraylearn.com",
+        "Replica of centralmysql to support Analytics reports", 
+        "Application server to support CentralMySQL,Central.arraylearn.com", 
+        "Autonomous Array server", "Autonomous Array server",  "Autonomous Array server",  
+        "Autonomous Array server", "Autonomous Array server", "Autonomous Array server", 
+        "Autonomous Array server", 
+        "Distributed Applications Array server supports VirtualMySQL", 
+        "Distributed Database Array server supports Smyslov",
+        "Edtrak QA server", "EdTrak related hosting www servers", "EdTrack Production Server")
+)
+
+
+StorageFile <- "EM_All_Storage.xlsx"
+storageTbl <- read.xlsx(StorageFile)
+
+storagePer <-  storageTbl %>% 
+  arrange(Host, FileSystem) %>% 
+  distinct(Host, FileSystem, Size.MB, .keep_all = TRUE) %>%
+  group_by(Host) %>%
+  summarize( TotalCap.G = sum(Size.MB)/1024,
+             TotalFree.G = sum(FreeSpace.MB)/1024) %>%
+  mutate(PctUsed = (TotalCap.G- TotalFree.G)/TotalCap.G * 100)
+  storagePer <- left_join(storagePer, hostRoles)
+  
+  ft <- flextable(storagePer, 
+          col_keys = c("Host", "TotalCap.G", "TotalFree.G",  "PctUsed",  "Role"))
+autofit(ft)
+
+```
+ 
+
+
+## Observations/Summary
+
+
+
+
+
+
+**Run Date: **"`r format(Sys.time(), '%d %B %Y')`"
+

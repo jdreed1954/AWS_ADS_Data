@@ -1,0 +1,35 @@
+---
+title: "Flex Table Experiment"
+author: "James D. Reed"
+date: "June 16, 2018"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(huxtable)
+library(flextable)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+data(iris)
+# myft <- regulartable(
+#   head(mtcars), 
+#   col_keys = c("am", "carb", "gear", "mpg", "drat" ))
+# myft
+
+myft <- huxtable(
+  head(mtcars[,c(1:5)]),
+  col_keys = c("am", "carb", "gear", "mpg", "drat" ))
+  
+ myft <- set_caption(myft,"Car Table") 
+
+```
+

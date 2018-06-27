@@ -1,5 +1,5 @@
 ---
-title: "AWS/ADS Downloaded Data Inventory"
+title: "Educational Measures Downloaded Data Inventory"
 author: "Prestige Services"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output: 
@@ -10,8 +10,9 @@ output:
         reference_docx: headingthree.docx
         highlight: tango
         df_print: tibble
-  html_document:
-    df_print: paged
+        fontsize: 12pt
+header-includes: \usepackage{fancyhdr} \pagestyle{fancy} \fancyhead[CO,CE]{} \fancyfoot[CO,CE]{
+  Downloaded Data Inventory for Educational Measures} \fancyfoot[LE,RO]{\thepage}
 ---
 
 ```{r setup, include=FALSE}
@@ -26,24 +27,32 @@ source("awsADS_functions.R")
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
 # AWS Data Inventory
 
-The purpose of this report is to provide a high-level summary of the records collected to date.  We will refresh this report periodically to make sure we are making progress toward our goal of getting about 14 days worth of performance data for each system.  Refer to the the table titled **Performance Time Spans by Hostname** and the **Perf.Days** column.
+The purpose of this report is to provide a high-level summary of the records collected to date.  We will refresh this report periodically to make sure we are making progress toward our goal of getting about 14 days worth of performance data for each system.  Refer to the the table titled **Performance Time Spans (Days) by Hostname** and the **Perf.Days** column.
 
-## Reports
 
-The data collected from AWS consists of several types of data.  Here are the tables that have been collected:
+```{r Inv2, results = 'asis', fig.cap = "Performance Time Spans (Days) Days by Hostname"}
 
-**Included in this Report**
+compInventory <- getCompInventory(DataRoot)
 
-* results
-* osInfo
-* systemPerformance
-* networkInterface
-* destinationProcessConnection
-* sourceProcessConnection
-* process
+# Calculate the number of Days Performance for each server (hostName)
+
+host_perf_time <- compInventory %>% 
+  group_by(hostName) %>% 
+  summarize(First = ymd_hms(min(timestamp)),
+            Last = ymd_hms(max(timestamp)), 
+            Perf.Days = difftime(Last, First, units = "days"))
+  
+knitr::kable(host_perf_time, digits = 2, format = "markdown", caption = "Performance Days by Hostname")
+  
+#     column_spec(4, background = "yellow")  
+# knitr::kable(host_perf_time, digits = 2, format = "latex", caption = "Performance Days by Hostname") %>%
+#   kable_styling(bootstrap_options = "basic", full_width = FALSE, latex_options = "basic", 
+#                 position = "hold_position", font_size = NULL) %>%
+#     column_spec(4, background = "yellow")
+```
+
 
 \clearpage
 
@@ -100,98 +109,41 @@ knitr::kable(inventory, format = "latex",
    row_spec(0,angle = -45)
 ```
 
-\clearpage
-
-### Performance Time Spans by Hostname
-
-```{r Inv2, results = 'asis'}
-
-prList  <-   map(agentIDs, ~ getPerf(DataRoot,. ))
-osList  <-   map(agentIDs, ~ getosInfo(DataRoot,. ))
-
-# Build comprehensive join of perfAll and osAll
-
-perfAll <- bind_rows(prList) %>% select(1,2,19, 3:18) %>% arrange(agentId,timestamp)
-osAll   <- bind_rows(osList) %>% select(1,2,8,6,3:5,7) %>% arrange(agentId, timestamp)
 
 
-osValues <- osAll %>% 
-  group_by(agentId) %>% 
-  summarize( hostName =   unique(hostName),  osName  = tail(osName, n = 1),   
-             osVersion =  unique(osVersion), cpuType = unique(cpuType), 
-             hypervisor = unique(hypervisor))
-
-# This is the tibble to use for sizing and review - write this to an Exce3l file in tabs: Summary, host(1), host(2), ...
-compInventory <- left_join(perfAll, osValues, by = "agentId") %>% select(1,2,20,3:19,21:24)
-#######################################################################################################################
-
-
-# Calculate the number of Days Performance for each server (hostName)
-
-host_perf_time <- compInventory %>% 
-  group_by(hostName) %>% 
-  summarize(First = ymd_hms(min(timestamp)),
-            Last = ymd_hms(max(timestamp)), 
-            Perf.Days = difftime(Last, First, units = "days"))
-  
-knitr::kable(host_perf_time, digits = 2, format = "latex", 
-             caption = "Performance Days by Hostname") %>%
-  kable_styling(bootstrap_options = c("striped"), full_width = F) %>%
-  column_spec(4, background = "yellow")
-
-
-## TO-DO
-#######################################################################################################################
-
-#
-# Build statistical summary table by hostName with these statistics:
-#
-#  Min and Max
-#  Mean, Median
-#  Std, 
-#  95% Percentile
-
-# Spreadsheet name:  <customer-prefix>-aws-performance.xlsx
-#
-# Tab     Name
-#  1      Summary
-#  2      hostName[1]
-# ...     ...
-#  N      hostName[last]
-#
-
-```
-
-
-### Export Performance and OS Information Data to Excel Spreadsheet
 
 ```{r ExportData, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-require(rJava)
-require(xlsx)
+### Export Performance and OS Information Data to Excel Spreadsheet
+
+### Export Performance and OS Information Data to Excel Workbook
+Sys.setenv("R_ZIPCMD" = "C:/Rtools/bin/zip.exe")
+library(openxlsx)
 
 # Create Nested file from compInventory
-
-comp_n <- compInventory %>% 
+comp_n <- compInventory %>%
   mutate(Host = hostName) %>%
-  group_by(Host) %>% 
+  group_by(Host) %>%
       nest()
 
-
-# Create Excel Workbook with each hostName (agentId) on a separate tab.
-fn <- "ADS_performance.xlsx"
+## Create Excel Workbook with each hostName (agentId) on a separate tab.
+fn <- paste("EM_performance_","(",as.Date(Sys.time()),").xlsx", sep = "")
 
 if (file.exists(fn)) file.remove(fn)  # to ensure we are writing a brand new file.
-walk2(comp_n$data, comp_n$Host,~ write.xlsx(.x, file = fn, sheetName = .y, append = TRUE))
 
-# List tabs in performance spreadsheet.  These should match the agentIds e wrote to the file.
-file <- system.file("EM_performance.xlsx", fn, package = "xlsx")
+## Create workbook and add empty worksheets
+wb <- createWorkbook(fn)
+walk(comp_n$Host,~ addWorksheet(wb, strtrim(.,31)))
 
-wb <- loadWorkbook(fn)  
-sheets <- getSheets(wb)
+# Write the data to Worksheets
+walk2(comp_n$data, comp_n$Host,~ writeData(wb, strtrim(.y,31), .x))
 
+# Save Workbook
+saveWorkbook(wb, fn, overwrite = TRUE)
 
 ```
 
-Spreadsheet created workbook **`r fn`** with **`r length(sheets)`** worksheets (tabs).
+Workbook created: **`r fn`** with **`r length(sheets(wb))`** worksheets (tabs).
 
-**Run Date: **`r Sys.Date()`
+
+**Run Date: **"`r format(Sys.time(), '%d %B %Y')`"
+

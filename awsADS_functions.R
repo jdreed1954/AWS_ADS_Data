@@ -56,7 +56,9 @@ getPerf             <-
     perf_tbl <- tibble()
     perfFiles    <- list.files(sysPerfDir, full.name = TRUE)
     perfFilesNum <- length(perfFiles)
-    if (perfFilesNum == 0) { return(perf_tbl)}
+    if (perfFilesNum == 0) {
+      return(perf_tbl)
+    }
     
     for (j in 1:perfFilesNum) {
       perf_tbl  <- rbind(perf_tbl,
@@ -104,7 +106,7 @@ getosInfo           <-
                         skip = 1
                       ))
     }
-    
+    d_tbl$hostName <- fixHostnames(d_tbl$hostName)
     return(d_tbl)
   }
 
@@ -415,15 +417,85 @@ lsRootFiles         <- function(root = 'data/agentExports') {
 }
 
 getStats <- function(df,metric) {
-  vals <-  df$metric
-  Min <- min(vals, ignore.na = TRUE)
-  Max <- max(vals, ignore.na = TRUE)
-  Std <-  sd(vals, na.rm = TRUE)
-  Med <- median(vals, na.rm = TRUE)
-  Mean <- mean(vals, ignore.na = TRUE)
+  IDs <- unique(df$agentId)
+  stats <- tibble(
+    Host = map_chr(IDs, ~ subset(df,agentId == .x)$hostName[1]),
+    Min =  map_dbl(IDs, ~ sapply(filter(df,agentId == .x)[,metric], min, na.rm = TRUE)),
+    Max =  map_dbl(IDs, ~ sapply(filter(df,agentId == .x)[,metric], max, na.rm = TRUE)),
+    Mean = map_dbl(IDs, ~ sapply(filter(df,agentId == .x)[,metric], mean, na.rm = TRUE)),
+    Std =  map_dbl(IDs, ~ sapply(filter(df,agentId == .x)[,metric], sd, na.rm = TRUE)),
+    Med =  map_dbl(IDs, ~ sapply(filter(df,agentId == .x)[,metric], median, na.rm = TRUE)),
+    P95 =  map_dbl(IDs, ~ sapply(filter(df,agentId == .x)[,metric], quantile, .95))
+  )
+  stats$Host <- fixHostnames(stats$Host)
+  return (stats)
   
-  return (list(Min, Max, Std, Med, Mean))
 }
+
+
+fixHostnames <- function(names) {
+  ret <- vector(mode = "character", length = length(names))
+  for ( i in 1:length(names)) { 
+    ret[i] <- strsplit(names[i], ".", fixed = TRUE)[[1]][1]
+  }
+  return(unlist(ret))
+}
+
+
+getCPUs <- function(df) {
+  
+  dt <- getStats(df,"CpuUsagePct")
+  IDs <- unique(df$agentId)
+  dt$CPU <-  map_dbl(IDs, ~ sapply(filter(df,agentId == .x)[,"NumCpus"], max, na.rm = TRUE))
+  dt$CPU.util = dt$P95 * dt$CPU /100
+  dt$CPUs.Rec = ceiling(dt$CPU.util)
+  
+  return (dt)
+  
+}
+
+getMEMs <- function(df) {
+  
+  dt <- getStats(df,"freeRAM.MB")
+  dt <- dt %>% select(-"P95")
+  IDs <- unique(df$agentId)
+  dt$RAM.MB   <- map_dbl(IDs, ~ sapply(filter(df,agentId == .x)[,"RAM.MB"], max, na.rm = TRUE))
+  dt$RAM.GB  <- ceiling(dt$RAM.MB / 1024)
+  dt$RAM.util = (dt$RAM.MB - dt$Min) / dt$RAM.MB * 100
+  #dt$RAM.rec  = ceiling(dt$RAM.util)
+  
+  return (dt)
+  
+}
+
+
+getDiskOpsStats <- function(df) {
+  
+  dtr <- getStats(df,"DiskReadOpsPS")    %>% arrange(Host)
+  dtw <- getStats(df,"DiskWriteOpsPS") %>% arrange(Host)
+  
+  return (list(DiskReadOps = dtr, DiskWriteOps = dtw))
+  
+}
+
+getDiskRWStats <- function(df) {
+  
+  dtr <- getStats(df,"DiskBytesReadPS")    %>% arrange(Host)
+  dtw <- getStats(df,"DiskBytesWrittenPS") %>% arrange(Host)
+  
+  return (list(DiskRead = dtr, DiskWrite = dtw))
+  
+}
+
+getNetStats <- function(df) {
+  
+  dtr <- getStats(df,"NetworkBytesReadPS")    %>% arrange(Host)
+  dtw <- getStats(df,"NetworkBytesWrittenPS") %>% arrange(Host)
+  
+  return (list(NetworkRead = dtr, NetworkWrite = dtw))
+  
+}
+
 
 genStatsDF <- function(df) {
   
@@ -477,12 +549,9 @@ genCompPerf <-  function(DataRoot, agentIDs) {
 }
 
 genPctPlot <- function(dat, metric){
-  
   print(dat$metric)
   p <- ggplot(dat, aes(x = timestamp, y = metric)) + geom_line()
   return(p)
-  
-  
 }
 
 
@@ -498,7 +567,75 @@ getHostCollection <- function(DataRoot) {
                         ~as.character(getSourceProcConn(root = DataRoot, agentID = .)[1,"sourceIp"]))
   )
   
-  
   return(collected)
+}
+
+getHostSummary <- function(DataRoot) {
+  
+  agentIDs <- getAgentIDs(root = DataRoot)
+  hs <-  tibble(
+    Number     = seq(1:length(agentIDs)),
+    Host       = map_chr(agentIDs, 
+                  ~as.character(getosInfo(root = DataRoot, agentID = .x)[1,"hostName"])),
+    IP         = map_chr(agentIDs,
+                  ~as.character(getSourceProcConn(root = DataRoot, agentID = .x)[1,"sourceIp"])),
+    First      =  as_datetime(map_dbl(agentIDs, ~min(getPerf(DataRoot, .x)$timestamp))),
+    Last       =  as_datetime(map_dbl(agentIDs, ~max(getPerf(DataRoot, .x)$timestamp))), 
+    Perf.Days  = difftime(as.POSIXct(Last), as.POSIXct(First), units = "days"),
+    OS.Name         = map_chr(agentIDs,
+                         ~as.character(getosInfo(root = DataRoot, agentID = .x)[1,"osName"])),
+    OS.Version = map_chr(agentIDs,
+                         ~as.character(getosInfo(root = DataRoot, agentID = .x)[1,"osVersion"]))
+  )
+  hs <- arrange(hs, Host)
+  hs$Number <- seq(1:length(agentIDs))
+  
+  return(hs)
+}
+
+configRmd <- function(inp = "ADS_Downloaded_Data_Inventory") {
+  require(rmarkdown)
+  #-------- define the input filename --------#
+  infile <- "ADS_Downloaded_Data_Inventory"
+  #----- Now just hit the source button! -----#
+  
+  
+  # check that the input file actually exists!
+  stopifnot(file.exists(paste(infile,".Rmd", sep = "")))
+  
+  # create the output filename
+  outfile <- paste("ADS_Downloaded_Data_Inventory_","(",as.Date(Sys.time()),").pdf", sep = "")
+  #outfile <- paste("ADS_Downloaded_Data_Inventory_.pdf", sep = "")
+  
+  # compile the document
+  rmarkdown::render(input="ADS_Downloaded_Data_Inventory.Rmd", output_file=outfile)
+  
+ 
+} 
+
+
+getCompInventory <- function(DataRoot) {
+  
+  agentIDs <- getAgentIDs(root = DataRoot)
+  prList   <- map(agentIDs, ~ getPerf(DataRoot,. ))
+  osList   <- map(agentIDs, ~ getosInfo(DataRoot,. ))
+  
+  # Build comprehensive join of perfAll and osAll
+  
+  perfAll <- bind_rows(prList) %>% select(1,2,19, 3:18) %>% arrange(agentId,timestamp)
+  osAll   <- bind_rows(osList) %>% select(1,2,8,6,3:5,7) %>% arrange(agentId, timestamp)
+  
+  
+  osValues <- osAll %>% 
+    group_by(agentId) %>% 
+    summarize( hostName =   unique(hostName),  osName  = tail(osName, n = 1),   
+               osVersion =  unique(osVersion), cpuType = unique(cpuType), 
+               hypervisor = unique(hypervisor))
+  
+  # This is the tibble to use for sizing and review - write this to an Exce3l file in tabs: Summary, host(1), host(2), ...
+  compInventory <- left_join(perfAll, osValues, by = "agentId") %>% select(1,2,20,3:19,21:24)
+  
+  return(compInventory)
+  
   
 }

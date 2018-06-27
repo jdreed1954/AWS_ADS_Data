@@ -1,0 +1,210 @@
+---
+title: "Educational Measures Systems Summary"
+author: "Prestige Services"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  word_document:
+        reference_docx: headingthree.docx
+        highlight: tango
+        df_print: tibble
+  pdf_document:
+        includes:
+          in_header: header.tex
+  html_document:
+    df_print: paged
+    fontsize: 12pt
+header-includes: \usepackage{fancyhdr} \pagestyle{fancy} \fancyhead[CO,CE]{} \fancyfoot[CO,CE]{
+  Systems Summary for Educational Measures} \fancyfoot[LE,RO]{\thepage}
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(lubridate)
+library(kableExtra)
+library(openxlsx)
+
+DataRoot <- "data/agentExports"
+Customer <-  "EM"
+
+source("awsADS_functions.R")
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# AWS Data Inventory
+
+This report/script will create an Excel workbook summarizing the key parameters for each system.  In addition what is known about the server, blank fields will be provided from which to fill in proposed cloud provider model and costs.
+
+
+```{r Inv2, results = 'asis', fig.cap = "Performance Days by Hostname"}
+
+compInventory <- getCompInventory(DataRoot)
+
+# Calculate the number of Days Performance for each server (hostName)
+
+host_perf_time <- compInventory %>% 
+  group_by(hostName) %>% 
+  summarize(First = ymd_hms(min(timestamp)),
+            Last = ymd_hms(max(timestamp)), 
+            Perf.Days = difftime(Last, First, units = "days"))
+  
+knitr::kable(host_perf_time, digits = 2, format = "markdown", caption = "Performance Days by Hostname")
+  
+#     column_spec(4, background = "yellow")  
+# knitr::kable(host_perf_time, digits = 2, format = "latex", caption = "Performance Days by Hostname") %>%
+#   kable_styling(bootstrap_options = "basic", full_width = FALSE, latex_options = "basic", 
+#                 position = "hold_position", font_size = NULL) %>%
+#     column_spec(4, background = "yellow")
+```
+
+
+\clearpage
+
+### List Agent IDs in Current Data Store
+
+The agent IDs are the unique identifiers of the AWS ADS agents installed within the customer's data center.  In the case of VMware hypervisor VMs, the agent ID is the identity of the OVA appliance installed. If additional performance metrics are required for a VM or the customer has a non-virtualized server, the agent ID is the identity of the actual agent installed on the server or VM.
+
+Following are the Agent IDs found in the data store containing exported data from the AWS Migration Hub.  The Agent IDs will be used to identify which environment the data pertain to.
+
+```{r}
+agentIDs <- getAgentIDs(root = DataRoot)  # this list is required at many places in subsequent blk
+collected <- getHostCollection(DataRoot)
+
+knitr::kable(collected, format = "markdown") #%>%
+#  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+#   row_spec(0,angle = -45) 
+```
+
+There are `r length(agentIDs)` Agent IDs.  See the list of these immediately above.
+
+\clearpage
+
+## CPU Utilization
+
+```{r CPU, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+df <- compInventory
+cpu_sizing <- getCPUs(df) %>% arrange(Host)
+knitr::kable(cpu_sizing,digits = 2, format = "markdown") #%>%
+  #add_header_above(c(" " = 1, "CPU Utilization (Percent)" = 6, "Cores" = 3))
+
+```
+
+\clearpage
+
+## Memory Utilization
+
+```{r}
+
+mem_sizing <- getMEMs(df)
+mem_sizing <-  mem_sizing %>%
+  mutate(RAM.Rec = ifelse(RAM.util < 48.0, RAM.GB/2, RAM.GB)) %>% select(-c(5,6)) %>% arrange(Host)
+knitr::kable(arrange(mem_sizing, Host), digits = 2,  format = "markdown") # %>%
+  #add_header_above(c(" " = 1, "RAM Megabytes Free" = 3, "Real" = 1, " " = 1, "Percent" = 1, "Recommended" = 1))
+```
+
+### VM Role and Storage Details
+
+```{r}
+
+hostRoles <- tibble(
+  Host = c(
+          "alekhine",        "anand",        "caruana",             "PostgresCanary", "analytics",
+          "postgres-pr-001", "centralmysql", "CentralMySQLReplica", "Euwe",           "golive",
+          "hou7",            "kosteniuk7",   "kramnik7",            "lasker",         "menchik7", 
+          "polgar7",         "smyslov",      "VirtualMySQL",        "Fischer",        "kasparov",  "Tal"),
+
+  Role = c(
+        "DNS server" ,     "Source Control and CI server", "Hosting server for wordpress, SFTP and other web sites",
+        "Yellow Fin Analytics support servers",            "Yellowfin Analytics applications server", 
+        "Yellowfin Analytics database server",             "Database server to support Euwe, Central.arraylearn.com",
+        "Replica of centralmysql to support Analytics reports", 
+        "Application server to support CentralMySQL,Central.arraylearn.com", 
+        "Autonomous Array server", "Autonomous Array server",  "Autonomous Array server",  
+        "Autonomous Array server", "Autonomous Array server", "Autonomous Array server",  "Autonomous Array server", 
+        "Distributed Applications Array server supports VirtualMySQL", "Distributed Database Array server supports Smyslov",
+        "Edtrak QA server", "EdTrak related hosting www servers", "EdTrack Production Server")
+)
+
+
+StorageFile <- "EM_All_Storage.xlsx"
+storageTbl <- read.xlsx(StorageFile)
+
+storagePer <-  storageTbl %>% 
+  arrange(Host, FileSystem) %>% 
+  distinct(Host, FileSystem, Size.MB, .keep_all = TRUE) %>%
+  group_by(Host) %>%
+  summarize( TotalCap.G = sum(Size.MB)/1024,
+             TotalFree.G = sum(FreeSpace.MB)/1024) %>%
+  mutate(PctUsed = (TotalCap.G- TotalFree.G)/TotalCap.G * 100)
+  storagePer <- left_join(storagePer, hostRoles)
+
+knitr::kable(storagePer, digits = 2, format = "markdown") # %>%
+  # kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+
+
+
+```{r}
+### Export Format
+
+nRows = length(agentIDs)
+Hosts <- mem_sizing$Host
+termChoice <- "3 yr"
+export <-  tibble(
+  Host               = cpu_sizing$Host,
+  Role               = map_chr(Hosts,~ filter(storagePer, Host == .x)$Role[1]),
+  CPUs               = cpu_sizing$CPU,
+  CPUs.Rec           = cpu_sizing$CPUs.Rec,
+  RAM.GB             = mem_sizing$RAM.GB,
+  RAM.Rec            = mem_sizing$RAM.Rec,
+  NetWCrds           = map_dbl(Hosts,~ filter(compInventory, hostName == .x)$NumNwCrds[1]),
+  NumDisks           = map_dbl(Hosts,~ filter(compInventory, hostName == .x)$NumDisks[1]),
+  Disk.Cap.GB        = map_dbl(Hosts,~ filter(storagePer, Host == .x)$TotalCap.G[1]),
+  osName             = map_chr(Hosts,~ filter(compInventory, hostName == .x)$osName[1]),
+  osversion          = map_chr(Hosts,~ filter(compInventory, hostName == .x)$osVersion[1]),
+  Model.Cld          = rep(" ",nRows),
+  CPUs.Cld           = rep(" ",nRows),
+  RAM.Cld            = rep(" ",nRows),
+  Disk.Cld           = rep(" ",nRows),
+  Network.Perf       = rep(" ",nRows),
+  OnDemand           = rep(" ",nRows),
+  Reserved.Term      = rep(termChoice,nRows),
+  Reserved.Cost.Hr   = rep(" ",nRows),
+  Upfront            = rep(" ",nRows),
+  Effective.Reserved = rep(" ",nRows)
+)
+```
+
+
+
+```{r ExportData, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+### Export Configuration Details to Use as Costing Tool
+# 
+# ### Export Performance and OS Information Data to Excel Workbook
+Sys.setenv("R_ZIPCMD" = "C:/Rtools/bin/zip.exe")
+
+# 
+
+# 
+# ## Create Excel Workbook with a single sheet for costing.
+fn <- paste(Customer, "_pricing_","(",as.Date(Sys.time()),").xlsx", sep = "")
+# 
+if (file.exists(fn)) file.remove(fn)  # to ensure we are writing a brand new file.
+# 
+# ## Create workbook and add empty worksheet
+wb <- createWorkbook(fn)
+addWorksheet(wb, "export")
+# 
+# Write the data to Worksheet
+writeData(wb, "export", export)
+# 
+# Save Workbook
+saveWorkbook(wb, fn, overwrite = TRUE)
+
+```
+
+
+**Run Date: **"`r format(Sys.time(), '%d %B %Y')`"
+
