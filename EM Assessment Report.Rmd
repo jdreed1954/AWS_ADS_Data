@@ -87,7 +87,8 @@ cpu_sizing <- getCPUs(df) %>% arrange(Host)
 
 ft <- regulartable(cpu_sizing) %>%
  add_header(Mean = "Virtual Machine", Med = "CPU Utilization (%)", top= TRUE) %>%
- bg(i = ~ CPU != CPUs.Rec, bg = "#EFEF99" ) 
+ bg(i = ~ CPU != CPUs.Rec, bg = "#EFEF99" ) %>% 
+ add_footer(CPUs.Rec = "*Highlighted rows: recomended CPU count is different from current.")
 
 autofit(ft)
 ```
@@ -104,7 +105,9 @@ fmu <- flextable(mem_sizing,
   col_keys = c("Number", "Host","Min","Max","Mean", "RAM.MB", "RAM.GB", "RAM.util", "RAM.Rec")) %>%
   add_header(Max = "Virtual Machine", Mean = "Memory Utilization (%)",
             RAM.util = "Percent", RAM.Rec = "GB", top= TRUE) %>%
-  bg(i = ~ RAM.GB != RAM.Rec, bg = "#EFEF99" )
+  bg(i = ~ RAM.GB != RAM.Rec, bg = "#EFEF99" ) %>%
+  add_footer(CPUs.Rec = "*Highlighted rows: recomended RAM is different from current.")
+
 
 autofit(fmu)
 
@@ -121,8 +124,11 @@ ftr <- flextable(net_stats$NetworkRead,
 autofit(ftr)
 
 ftw <- flextable(net_stats$NetworkWrite, 
-      col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
-      add_header(Max = "Network Bytes Written", Mean = "Per Second", top= TRUE)
+  col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
+  add_header(Max = "Network Bytes Written", Mean = "Per Second", top= TRUE) %>%
+  bg(i = ~ Max == max(Max), bg = "#EFEF99" ) %>%
+  add_footer(Max = "*Highlighted row: Network Maximum Bytes Written/s")
+
 
 autofit(ftw)
 
@@ -141,7 +147,9 @@ autofit(ftr)
 
 ftw <- flextable(rw_stats$DiskWrite, 
       col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
-      add_header(Max = "Disk Bytes Written", Mean = "Per Second", top= TRUE)
+      add_header(Max = "Disk Bytes Written", Mean = "Per Second", top= TRUE) %>%
+  bg(i = ~ Max == max(Max), bg = "#EFEF99" ) %>%
+  add_footer(Max = "*Highlighted row: Network Maximum Bytes Read/s.")
 
 autofit(ftw)
 
@@ -155,13 +163,19 @@ rw_stats <- getDiskOpsStats(df)
 
 ftr <- flextable(rw_stats$DiskReadOps, 
       col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
-      add_header(Max = "Disk Read Operations", Mean = "Per Second", top= TRUE)
+      add_header(Max = "Disk Read Operations", Mean = "Per Second", top= TRUE) %>%
+      bg(i = ~ Max == max(Max), bg = "#EFEF99" ) %>%
+      add_footer(Max = "*Highlighted row: Maximum DIsk Read Operations/s.")
+
 
 autofit(ftr)
 
 ftw <- flextable(rw_stats$DiskWriteOps, 
       col_keys = c("Host","Min","Max","Mean", "Std", "Med", "P95" )) %>%
-      add_header(Max = "Disk Write Operations", Mean = "Per Second", top= TRUE)
+      add_header(Max = "Disk Write Operations", Mean = "Per Second", top= TRUE) %>%
+      bg(i = ~ Max == max(Max), bg = "#EFEF99" ) %>%
+      add_footer(Max = "*Highlighted row: Maximum Disk Write Operations/s.")
+
 
 autofit(ftw)
 
@@ -204,10 +218,20 @@ storagePer <-  storageTbl %>%
   summarize( TotalCap.G = sum(Size.MB)/1024,
              TotalFree.G = sum(FreeSpace.MB)/1024) %>%
   mutate(PctUsed = (TotalCap.G- TotalFree.G)/TotalCap.G * 100)
-  storagePer <- left_join(storagePer, hostRoles)
-  
+  storagePer <- left_join(storagePer, hostRoles, by = "Host")
+  n <- tibble(Number = seq(1:nrow(storagePer)))
+  storagePer <- cbind(n, storagePer)
   ft <- flextable(storagePer, 
-          col_keys = c("Host", "TotalCap.G", "TotalFree.G",  "PctUsed",  "Role"))
+    col_keys = c("Number", "Host", "TotalCap.G", "TotalFree.G",  "PctUsed",  "Role")) %>%
+    add_header(PctUsed = "Disk Capacity (GB), Free (GB) and Percent Used (%)", 
+               Role = "Host Role", top= TRUE) %>%
+    bg(i = ~ PctUsed == max(PctUsed), bg = "#EFEF99" ) %>% 
+    add_footer(PctUsed = "*Highlighted row: Maximum Percent Utilization (PctUsed).") %>%
+    bg(i = ~ TotalCap.G == max(TotalCap.G), bg = "Teal" ) %>%
+    add_footer(PctUsed = "*Highlighted row: Maximum Total Disk Capacity (TotalCap.G).") 
+    
+
+    
 autofit(ft)
 
 ```
