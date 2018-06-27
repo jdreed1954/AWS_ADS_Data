@@ -1,5 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-1xns12efjorz827mb,192.168.92.84,,54.244.5.167,443,IPv4,TCP,8E9CFECB79497DF5D97D5524101A2C14DBC2CFBE,2018-06-04 20:30:00,/opt/sophos-av/engine/_/python.0,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-1xns12efjorz827mb,192.168.92.84,,52.218.208.8,443,IPv4,TCP,4554B86097FEBAF48C838AF364FA3C2DD39157D4,2018-06-04 20:30:00,/usr/bin/curl,curl -s --fail --retry 5 --max-time 30 -o /tmp/awsdiscoveryagent.jhMZrIJZ/CURRENT_RELEASE.sig https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/CURRENT_RELEASE.sig
-185946404262,o-1xns12efjorz827mb,192.168.92.84,,13.56.212.79,443,IPv4,TCP,64CB94BC8A5B9A01E1712F7504AF639039913E9D,2018-06-04 20:30:00,/usr/local/ltechagent/ltechagent,./ltechagent
-185946404262,o-1xns12efjorz827mb,192.168.92.84,,54.240.253.128,443,IPv4,TCP,2F749BAA43ADB5C8726B6BD43ED38BADBD4A1647,2018-06-04 20:30:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd

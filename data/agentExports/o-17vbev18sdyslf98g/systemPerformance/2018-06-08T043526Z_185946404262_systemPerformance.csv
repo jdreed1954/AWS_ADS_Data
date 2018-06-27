@@ -1,2 +1,0 @@
-accountNumber,agentId,totalDiskBytesReadPerSecond (Kbps),totalDiskBytesWrittenPerSecond (Kbps),totalDiskReadOpsPerSecond,totalDiskWriteOpsPerSecond,totalNetworkBytesReadPerSecond (Kbps),totalNetworkBytesWrittenPerSecond (Kbps),totalNumLogicalProcessors,totalNumCores,totalNumCpus,totalNumDisks,totalNumNetworkCards,totalCpuUsagePct,totalDiskSize (GB),totalDiskFreeSize (GB),totalRAM (MB),freeRAM (MB),timestamp
-185946404262,o-17vbev18sdyslf98g,0.1639052734375,28.383203125,0.0110747,2.50822,1.431953125,26.87109375,2,2,2,1,9,1.67214,,,7984.96875,2264.8828125,2018-06-08 04:30:14

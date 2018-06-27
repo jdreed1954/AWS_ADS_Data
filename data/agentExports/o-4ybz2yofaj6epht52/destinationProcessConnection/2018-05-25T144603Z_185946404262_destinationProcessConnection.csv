@@ -1,3 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-4ybz2yofaj6epht52,192.168.92.64,,192.168.92.61,3306,IPv4,TCP,6965B478A2AB1F4A3A0DC988CD0F43A545F7AC6C,2018-05-25 14:30:00,/usr/sbin/mysqld,/usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid
-185946404262,o-4ybz2yofaj6epht52,192.168.92.65,,192.168.92.61,3306,IPv4,TCP,6965B478A2AB1F4A3A0DC988CD0F43A545F7AC6C,2018-05-25 14:30:00,/usr/sbin/mysqld,/usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid

@@ -1,5 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-1z8xtzcqe7w0fa28x,96.44.130.10,,192.168.92.131,80,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-05-29 12:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,66.249.73.68,,192.168.92.131,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-05-29 12:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,96.81.52.113,,192.168.92.131,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-05-29 12:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,173.164.34.41,,192.168.92.131,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-05-29 12:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start

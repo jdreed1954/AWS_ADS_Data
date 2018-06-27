@@ -1,3 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-2rcllgl4kmhofuje4,71.6.167.142,,192.168.92.10,53,IPv4,TCP,B5EA391BBEE0CBE6EEF4AEDCA5929FCC02197EEC,2018-06-08 03:30:00,/usr/sbin/named,/usr/sbin/named -u named -c /etc/named.conf -4
-185946404262,o-2rcllgl4kmhofuje4,10.1.10.12,,192.168.92.10,22,IPv4,TCP,593D7A90F035311969750062A393F4E5DF7082C4,2018-06-08 04:00:00,/usr/sbin/sshd,"sshd: root@notty    "

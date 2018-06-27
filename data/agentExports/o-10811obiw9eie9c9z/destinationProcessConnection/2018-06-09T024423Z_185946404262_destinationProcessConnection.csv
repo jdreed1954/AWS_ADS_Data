@@ -1,3 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-10811obiw9eie9c9z,96.81.52.113,,192.168.92.85,443,IPv4,TCP,0C0B3D21C2D5F6A72D882EB62F49DBFE20D2A63F,2018-06-09 02:15:00,/usr/sbin/httpd,/usr/sbin/httpd -DFOREGROUND
-185946404262,o-10811obiw9eie9c9z,173.164.34.41,,192.168.92.85,443,IPv4,TCP,0C0B3D21C2D5F6A72D882EB62F49DBFE20D2A63F,2018-06-09 02:15:00,/usr/sbin/httpd,/usr/sbin/httpd -DFOREGROUND

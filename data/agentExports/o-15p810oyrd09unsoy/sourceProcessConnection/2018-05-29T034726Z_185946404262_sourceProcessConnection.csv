@@ -1,8 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-15p810oyrd09unsoy,192.168.92.22,,23.78.188.194,80,IPv4,TCP,BEA3ACC19F415E8CCD3D267A024B2D7F4AC46B5E,2018-05-29 03:15:00,/opt/sophos-av/engine/_/python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --trigger -v5"
-185946404262,o-15p810oyrd09unsoy,192.168.92.22,,34.213.84.59,443,IPv4,TCP,5D275F20B4697DD8A7B65E5B14D87EE5D12EF58F,2018-05-29 03:15:00,/opt/sophos-av/engine/_/python.2,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-15p810oyrd09unsoy,192.168.92.22,,13.56.212.79,443,IPv4,TCP,706ACC4B90C6D1761704AAC1D3D3F9CED5D6D085,2018-05-29 03:15:00,/usr/local/ltechagent/ltechagent,./ltechagent
-185946404262,o-15p810oyrd09unsoy,192.168.92.22,,173.243.50.213,443,IPv4,TCP,C08A6D74F5B3C2386B2288B7F0B377A7D6318CBA,2018-05-29 03:15:00,/usr/sbin/mozy-daemon,/usr/sbin/mozy-daemon
-185946404262,o-15p810oyrd09unsoy,192.168.92.22,,34.213.84.59,443,IPv4,TCP,5D275F20B4697DD8A7B65E5B14D87EE5D12EF58F,2018-05-29 03:30:00,/opt/sophos-av/engine/_/python.2,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-15p810oyrd09unsoy,192.168.92.22,,13.56.212.79,443,IPv4,TCP,706ACC4B90C6D1761704AAC1D3D3F9CED5D6D085,2018-05-29 03:30:00,/usr/local/ltechagent/ltechagent,./ltechagent
-185946404262,o-15p810oyrd09unsoy,192.168.92.22,,173.243.50.213,443,IPv4,TCP,C08A6D74F5B3C2386B2288B7F0B377A7D6318CBA,2018-05-29 03:30:00,/usr/sbin/mozy-daemon,/usr/sbin/mozy-daemon

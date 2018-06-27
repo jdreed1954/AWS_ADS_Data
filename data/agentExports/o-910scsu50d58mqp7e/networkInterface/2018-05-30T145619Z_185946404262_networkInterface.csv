@@ -1,3 +1,0 @@
-accountNumber,agentId,name,macAddress,family,ipAddress,gateway,netMask,timestamp
-185946404262,o-910scsu50d58mqp7e,ens192,00:50:56:01:1A:C1,Ipv4,192.168.92.65,0.0.0.0,255.255.255.0,2018-05-30 14:56:19
-185946404262,o-910scsu50d58mqp7e,ens224,00:50:56:01:1A:D0,Ipv4,192.168.92.67,0.0.0.0,255.255.255.0,2018-05-30 14:56:19

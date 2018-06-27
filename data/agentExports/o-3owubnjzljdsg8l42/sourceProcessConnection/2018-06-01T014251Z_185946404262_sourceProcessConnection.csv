@@ -1,3 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-3owubnjzljdsg8l42,192.168.92.63,,54.200.27.27,443,IPv4,TCP,2F714C913054C099E6DFA51D2A32A30F35A1CA8E,2018-06-01 01:15:00,/opt/sophos-av/engine/_/python.1,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-3owubnjzljdsg8l42,192.168.92.63,,54.240.254.131,443,IPv4,TCP,2F749BAA43ADB5C8726B6BD43ED38BADBD4A1647,2018-06-01 01:15:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd

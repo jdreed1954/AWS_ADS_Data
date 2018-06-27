@@ -1,3 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,52.34.254.85,443,IPv4,TCP,F998D520B908C5ED8B09D2523C88CD7889300622,2018-06-05 03:30:00,/opt/sophos-av/engine/_/python.0,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,10.1.25.30,5044,IPv4,TCP,FB2DFEC09FD4AF16A66373B0D9061A1AAD4454EE,2018-06-05 03:30:00,/usr/share/filebeat/bin/filebeat,/usr/share/filebeat/bin/filebeat -c /etc/filebeat/filebeat.yml -path.home /usr/share/filebeat -path.config /etc/filebeat -path.data /var/lib/filebeat -path.logs /var/log/filebeat

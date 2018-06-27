@@ -1,3 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-2egn2tmcilnkvgqd3,192.168.92.64,,54.68.116.119,443,IPv4,TCP,049524531FC78717A68C0C75CD43A87E6C40892C,2018-05-26 17:15:00,/opt/sophos-av/engine/_/python.0,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-2egn2tmcilnkvgqd3,192.168.92.64,,192.168.92.61,3306,IPv4,TCP,6965B478A2AB1F4A3A0DC988CD0F43A545F7AC6C,2018-05-26 17:15:00,/usr/sbin/mysqld,/usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid

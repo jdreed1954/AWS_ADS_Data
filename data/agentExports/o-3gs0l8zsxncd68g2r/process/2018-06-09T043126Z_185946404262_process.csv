@@ -1,8 +1,0 @@
-accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
-185946404262,o-3gs0l8zsxncd68g2r,B4FFA0ABBB14FFAB3B9B3D92E3727E69A0F1E8E3,false,sendmail.sendmail,sendmail: ./w5871Yhv016372 analytics.edmeasures.com.: user open,/usr/sbin/sendmail.sendmail,2018-06-09 04:13:07
-185946404262,o-3gs0l8zsxncd68g2r,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-09 04:14:26
-185946404262,o-3gs0l8zsxncd68g2r,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-09 04:19:26
-185946404262,o-3gs0l8zsxncd68g2r,AE2C856B9A7D18B0AC08CAAA071AB79684FCAFFD,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --readargsfromfile",/opt/sophos-av/engine/_/python.2,2018-06-09 04:21:58
-185946404262,o-3gs0l8zsxncd68g2r,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-09 04:21:58
-185946404262,o-3gs0l8zsxncd68g2r,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-09 04:22:27
-185946404262,o-3gs0l8zsxncd68g2r,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-06-09 04:27:28

@@ -1,4 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-15p810oyrd09unsoy,192.168.92.21,,192.168.92.22,22,IPv4,TCP,882CBD326297EB2FEEE2C456DEBFCA1F52A2782F,2018-06-08 03:45:00,/usr/sbin/sshd,"sshd: root [priv]   "
-185946404262,o-15p810oyrd09unsoy,10.1.10.12,,192.168.92.22,22,IPv4,TCP,882CBD326297EB2FEEE2C456DEBFCA1F52A2782F,2018-06-08 04:00:00,/usr/sbin/sshd,"sshd: root [priv]   "
-185946404262,o-15p810oyrd09unsoy,10.1.10.12,,192.168.92.22,22,IPv4,TCP,3F5AF4E2D2E12EFD0913B398DEC110B769B07DA8,2018-06-08 04:00:00,/usr/sbin/sshd,"sshd: root@notty    "

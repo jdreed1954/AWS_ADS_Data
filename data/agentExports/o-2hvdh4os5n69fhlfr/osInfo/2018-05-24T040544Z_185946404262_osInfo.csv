@@ -1,2 +1,0 @@
-accountNumber,agentId,osName,osVersion,cpuType,hostName,hypervisor,timestamp
-185946404262,o-2hvdh4os5n69fhlfr,Linux - CentOS Linux release 7.5.1804 (Core)  x86_64 (Linux 3.10.0-862.2.3.el7.x86_64),7.5.1804.0,x86_64,postgres-pr-001,,2018-05-24 04:05:44

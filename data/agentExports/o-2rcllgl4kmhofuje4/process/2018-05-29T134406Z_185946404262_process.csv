@@ -1,7 +1,0 @@
-accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
-185946404262,o-2rcllgl4kmhofuje4,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 13:25:12
-185946404262,o-2rcllgl4kmhofuje4,AE2C856B9A7D18B0AC08CAAA071AB79684FCAFFD,false,python.2,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --readargsfromfile",/opt/sophos-av/engine/_/python.2,2018-05-29 13:29:09
-185946404262,o-2rcllgl4kmhofuje4,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 13:30:13
-185946404262,o-2rcllgl4kmhofuje4,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 13:33:13
-185946404262,o-2rcllgl4kmhofuje4,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 13:38:14
-185946404262,o-2rcllgl4kmhofuje4,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-29 13:41:15

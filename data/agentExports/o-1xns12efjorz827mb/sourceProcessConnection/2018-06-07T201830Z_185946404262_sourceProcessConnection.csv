@@ -1,4 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-1xns12efjorz827mb,192.168.92.84,,34.216.199.116,443,IPv4,TCP,CAEA17EF1037ABB7F08B49F5A48463EDB2A4BDA4,2018-06-07 19:45:00,/opt/sophos-av/engine/_/python.1,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-1xns12efjorz827mb,192.168.92.84,,34.216.199.116,443,IPv4,TCP,CAEA17EF1037ABB7F08B49F5A48463EDB2A4BDA4,2018-06-07 20:00:00,/opt/sophos-av/engine/_/python.1,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-1xns12efjorz827mb,192.168.92.84,,13.56.212.79,443,IPv4,TCP,64CB94BC8A5B9A01E1712F7504AF639039913E9D,2018-06-07 20:00:00,/usr/local/ltechagent/ltechagent,./ltechagent

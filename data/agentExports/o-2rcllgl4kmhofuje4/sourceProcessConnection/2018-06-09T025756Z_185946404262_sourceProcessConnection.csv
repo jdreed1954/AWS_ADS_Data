@@ -1,4 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-2rcllgl4kmhofuje4,192.168.92.10,,23.35.182.95,80,IPv4,TCP,39CF6A7737B44665C2BABAE9DD48822BF9DB657F,2018-06-09 02:30:00,/opt/sophos-av/engine/_/python.3,"/opt/sophos-av/update/../engine/python -c import savupdate.Updater,sys; sys.exit(savupdate.Updater.main(sys.argv)) /opt/sophos-av/update --readargsfromfile"
-185946404262,o-2rcllgl4kmhofuje4,192.168.92.10,,52.89.142.184,443,IPv4,TCP,C9067148DCC635CBFABD3968F104CE69E5F9A8A2,2018-06-09 02:30:00,/opt/sophos-av/engine/_/python.3,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-2rcllgl4kmhofuje4,192.168.92.10,,13.56.212.79,443,IPv4,TCP,64CB94BC8A5B9A01E1712F7504AF639039913E9D,2018-06-09 02:30:00,/usr/local/ltechagent/ltechagent,./ltechagent

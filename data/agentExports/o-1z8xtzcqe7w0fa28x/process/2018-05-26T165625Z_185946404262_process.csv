@@ -1,7 +1,0 @@
-accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
-185946404262,o-1z8xtzcqe7w0fa28x,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-05-26 16:39:00
-185946404262,o-1z8xtzcqe7w0fa28x,759DFA6B002EB9BDADA38247706989297A731704,false,dash,/bin/sh -c   [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete,/bin/dash,2018-05-26 16:39:00
-185946404262,o-1z8xtzcqe7w0fa28x,26F4A383AA9979DA80900AFB601FC1A17FB3AF43,false,find,find /var/lib/php5 -depth -mindepth 1 -maxdepth 1 -type f -cmin +24 ! -execdir fuser -s {} ; -delete,/usr/bin/find,2018-05-26 16:39:00
-185946404262,o-1z8xtzcqe7w0fa28x,358C36F9EE7E3F8C5DE4D7379AB68BB9AA56D805,false,fuser,fuser -s ./sess_fl5rnbhlkffdlsecrh9cr0jir7,/bin/fuser,2018-05-26 16:39:01
-185946404262,o-1z8xtzcqe7w0fa28x,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-26 16:40:10
-185946404262,o-1z8xtzcqe7w0fa28x,D538E806B42401FCA208C07FDE0FB335EA15C539,false,,,,2018-05-26 16:49:25

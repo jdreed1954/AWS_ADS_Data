@@ -1,6 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-17vbev18sdyslf98g,96.81.52.113,,192.168.92.120,443,IPv4,TCP,74941A4F065328B99667F205ADA6EFFD67B212B5,2018-06-05 04:00:00,/usr/lib/apache2/mpm-event/apache2,/usr/sbin/apache2 -k start
-185946404262,o-17vbev18sdyslf98g,153.3.253.98,,192.168.92.120,443,IPv4,TCP,74941A4F065328B99667F205ADA6EFFD67B212B5,2018-06-05 04:00:00,/usr/lib/apache2/mpm-event/apache2,/usr/sbin/apache2 -k start
-185946404262,o-17vbev18sdyslf98g,173.164.34.41,,192.168.92.120,443,IPv4,TCP,74941A4F065328B99667F205ADA6EFFD67B212B5,2018-06-05 04:00:00,/usr/lib/apache2/mpm-event/apache2,/usr/sbin/apache2 -k start
-185946404262,o-17vbev18sdyslf98g,96.81.52.113,,192.168.92.121,443,IPv4,TCP,74941A4F065328B99667F205ADA6EFFD67B212B5,2018-06-05 04:00:00,/usr/lib/apache2/mpm-event/apache2,/usr/sbin/apache2 -k start
-185946404262,o-17vbev18sdyslf98g,10.1.10.12,,192.168.92.20,22,IPv4,TCP,882CBD326297EB2FEEE2C456DEBFCA1F52A2782F,2018-06-05 04:00:00,/usr/sbin/sshd,"sshd: root [priv]   "

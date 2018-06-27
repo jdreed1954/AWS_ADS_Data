@@ -1,4 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,52.88.10.22,443,IPv4,TCP,E4B00B6AF4E85B893DA012BBEC9108F1EEB1E5DB,2018-06-09 02:30:00,/opt/sophos-av/engine/_/python.1,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --no-daemon --RMS=0"
-185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,192.168.92.64,3306,IPv4,TCP,55D55B29064B7FAC5C65CF517A615DE0DE9446DF,2018-06-09 02:30:00,/usr/pgsql-10/bin/postgres,"postgres: postgres edmeasures [local] SELECT           "
-185946404262,o-2hvdh4os5n69fhlfr,192.168.92.30,,54.240.251.223,443,IPv4,TCP,2F749BAA43ADB5C8726B6BD43ED38BADBD4A1647,2018-06-09 02:30:00,/var/opt/aws/discovery/aws-discoveryd,/var/opt/aws/discovery/aws-discoveryd

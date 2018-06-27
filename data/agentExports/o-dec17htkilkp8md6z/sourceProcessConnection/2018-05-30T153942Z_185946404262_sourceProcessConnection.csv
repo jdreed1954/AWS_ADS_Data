@@ -1,5 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-dec17htkilkp8md6z,192.168.92.50,,54.200.27.27,443,IPv4,TCP,6E55A0935FE8A372CAA05FEF656F28BEDF429C1B,2018-05-30 15:15:00,/opt/sophos-av/engine/_/python.2,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --daemon --RMS=0"
-185946404262,o-dec17htkilkp8md6z,192.168.92.111,,192.168.92.111,8080,IPv4,TCP,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,2018-05-30 15:15:00,/usr/sbin/httpd,/usr/sbin/httpd
-185946404262,o-dec17htkilkp8md6z,192.168.92.50,,173.243.50.209,443,IPv4,TCP,C08A6D74F5B3C2386B2288B7F0B377A7D6318CBA,2018-05-30 15:15:00,/usr/sbin/mozy-daemon,/usr/sbin/mozy-daemon
-185946404262,o-dec17htkilkp8md6z,192.168.92.50,,209.222.83.70,25,IPv4,TCP,B9B759138C0CD9E337607B9A18127DCA01CBCA0D,2018-05-30 15:15:00,/usr/sbin/sendmail.sendmail,sendmail: ./w4UFMaEP026787 d124507a.ess.barracudanetworks.com.: client DATA status

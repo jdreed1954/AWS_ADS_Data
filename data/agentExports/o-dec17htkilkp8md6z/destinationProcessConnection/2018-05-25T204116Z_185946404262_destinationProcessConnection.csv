@@ -1,3 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-dec17htkilkp8md6z,106.75.50.37,,192.168.92.50,443,IPv4,TCP,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,2018-05-24 20:15:00,/usr/sbin/httpd,/usr/sbin/httpd
-185946404262,o-dec17htkilkp8md6z,192.168.92.20,,192.168.92.50,25,IPv4,TCP,147EE70C34D2FAB4B716438929FFEBD3EFBB09EA,2018-05-24 20:15:00,/usr/sbin/sendmail.sendmail,sendmail: w4PKFYCh009209 [192.168.92.20]: RCPT TO:<poonam.nathu@gmail.com> ORCPT=rfc822;poonam.nathu@gmail.com

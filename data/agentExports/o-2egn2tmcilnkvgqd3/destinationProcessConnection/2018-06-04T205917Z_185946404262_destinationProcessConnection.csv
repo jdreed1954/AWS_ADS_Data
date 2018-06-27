@@ -1,5 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-2egn2tmcilnkvgqd3,10.1.15.69,,192.168.92.64,3306,IPv4,TCP,6965B478A2AB1F4A3A0DC988CD0F43A545F7AC6C,2018-06-04 20:30:00,/usr/sbin/mysqld,/usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid
-185946404262,o-2egn2tmcilnkvgqd3,10.1.20.92,,192.168.92.64,3306,IPv4,TCP,6965B478A2AB1F4A3A0DC988CD0F43A545F7AC6C,2018-06-04 20:30:00,/usr/sbin/mysqld,/usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid
-185946404262,o-2egn2tmcilnkvgqd3,192.168.92.30,,192.168.92.64,3306,IPv4,TCP,6965B478A2AB1F4A3A0DC988CD0F43A545F7AC6C,2018-06-04 20:30:00,/usr/sbin/mysqld,/usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid
-185946404262,o-2egn2tmcilnkvgqd3,10.1.15.22,,192.168.92.64,22,IPv4,TCP,C56F89BAA66D7ABCF457B34DC561C6285E54BF35,2018-06-04 20:30:00,/usr/sbin/sshd,"sshd: root@pts/0    "

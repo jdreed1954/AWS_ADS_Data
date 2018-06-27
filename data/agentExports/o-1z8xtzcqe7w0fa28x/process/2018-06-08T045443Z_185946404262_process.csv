@@ -1,7 +1,0 @@
-accountNumber,agentId,agentAssignedProcessId,isSystem,name,cmdLine,path,agentProvidedTimeStamp
-185946404262,o-1z8xtzcqe7w0fa28x,D030952BB5421CE4EF086D53D13F7C9C2DE48588,false,cron,CRON,/usr/sbin/cron,2018-06-08 04:39:00
-185946404262,o-1z8xtzcqe7w0fa28x,759DFA6B002EB9BDADA38247706989297A731704,false,dash,/bin/sh -c   [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete,/bin/dash,2018-06-08 04:39:00
-185946404262,o-1z8xtzcqe7w0fa28x,26F4A383AA9979DA80900AFB601FC1A17FB3AF43,false,find,find /var/lib/php5 -depth -mindepth 1 -maxdepth 1 -type f -cmin +24 ! -execdir fuser -s {} ; -delete,/usr/bin/find,2018-06-08 04:39:00
-185946404262,o-1z8xtzcqe7w0fa28x,07A0A3981F4AB2925E99A7891C864156E8321050,false,fuser,fuser -s ./sess_kjldjtgonk9lks83t2034rs9s4,/bin/fuser,2018-06-08 04:39:03
-185946404262,o-1z8xtzcqe7w0fa28x,B6051F403D582574FA667BEA17DDD5A283F29FA7,false,ping,ping 192.168.102.22,/bin/ping,2018-06-08 04:50:18
-185946404262,o-1z8xtzcqe7w0fa28x,941100F8DB14DA4767A5AB5E1C0EB848E84F89AC,false,ping,ping 8.8.8.8,/bin/ping,2018-06-08 04:51:00

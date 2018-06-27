@@ -1,9 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-1z8xtzcqe7w0fa28x,173.164.34.41,,192.168.92.130,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-06-08 04:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,66.249.79.71,,192.168.92.131,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-06-08 04:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,96.81.52.113,,192.168.92.131,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-06-08 04:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,173.164.34.41,,192.168.92.131,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-06-08 04:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,184.53.49.7,,192.168.92.131,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-06-08 04:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,192.186.179.68,,192.168.92.131,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-06-08 04:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,216.244.66.231,,192.168.92.131,443,IPv4,TCP,1A508541455B4018ADC0C732B9D89B88ECB5CEE5,2018-06-08 04:30:00,/usr/lib/apache2/mpm-prefork/apache2,/usr/sbin/apache2 -k start
-185946404262,o-1z8xtzcqe7w0fa28x,173.164.34.41,,192.168.92.21,22,IPv4,TCP,9CA3C443527E5EF3834C4CE4032AA33D69062C38,2018-06-08 04:30:00,/usr/sbin/sshd,"sshd: root@pts/0    "

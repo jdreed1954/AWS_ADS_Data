@@ -1,5 +1,0 @@
-accountNumber,agentId,sourceIp,sourcePort,destinationIp,destinationPort,ipVersion,transportProtocol,agentAssignedProcessId,agentCreationDate
-185946404262,o-5psvqgqbxgdts8rv8,192.168.92.62,,192.168.92.44,3306,IPv4,TCP,da39a3ee5e6b4b0d3255bfef95601890afd80709,2018-05-25 20:45:00,,
-185946404262,o-5psvqgqbxgdts8rv8,192.168.92.62,,54.244.5.167,443,IPv4,TCP,9C216E5C323BFF411E217DBE42C01408C26B2151,2018-05-25 20:45:00,/opt/sophos-av/engine/_/python.2,"sophosmgmtd -c import sophosmgmtd.sophosmgmtd,sys;sys.exit(sophosmgmtd.sophosmgmtd.main(sys.argv)) --daemon --RMS=0"
-185946404262,o-5psvqgqbxgdts8rv8,192.168.92.62,,192.168.92.44,3306,IPv4,TCP,3E43D4CF02E35EB1CC57D121CAFCA3DB132A9FA1,2018-05-25 20:45:00,/usr/sbin/httpd,/usr/sbin/httpd
-185946404262,o-5psvqgqbxgdts8rv8,192.168.92.62,,173.243.50.155,443,IPv4,TCP,C08A6D74F5B3C2386B2288B7F0B377A7D6318CBA,2018-05-25 20:45:00,/usr/sbin/mozy-daemon,/usr/sbin/mozy-daemon
