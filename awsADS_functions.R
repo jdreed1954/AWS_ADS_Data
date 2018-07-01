@@ -488,7 +488,6 @@ getDiskRWStats <- function(df) {
 }
 
 getNetStats <- function(df) {
-  
   dtr <- getStats(df,"NetworkBytesReadPS")    %>% arrange(Host)
   dtw <- getStats(df,"NetworkBytesWrittenPS") %>% arrange(Host)
   
@@ -570,7 +569,7 @@ getHostCollection <- function(DataRoot) {
   return(collected)
 }
 
-getHostSummary <- function(DataRoot) {
+getHostSummary <- function(root = DataRoot) {
   
   agentIDs <- getAgentIDs(root = DataRoot)
   hs <-  tibble(
